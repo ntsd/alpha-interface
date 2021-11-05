@@ -1,0 +1,5 @@
+db
+peerdb
+waspdb
+*.log
+wasp-cli.json
