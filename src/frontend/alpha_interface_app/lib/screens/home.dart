@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 
 class HomePage extends StatefulWidget {
-  HomePage({this.title});
   final String title;
+  HomePage(this.title);
 
   @override
   _HomePageState createState() => _HomePageState();
