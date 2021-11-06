@@ -21,7 +21,10 @@ const (
 	ParamReceiver = wasmlib.Key("receiver")
 )
 
-const ResultOwner = wasmlib.Key("owner")
+const (
+	ResultOwner        = wasmlib.Key("owner")
+	ResultTransactions = wasmlib.Key("transactions")
+)
 
 const (
 	StateOwner        = wasmlib.Key("owner")
@@ -29,15 +32,17 @@ const (
 )
 
 const (
-	FuncInit     = "init"
-	FuncSetOwner = "setOwner"
-	FuncTransfer = "transfer"
-	ViewGetOwner = "getOwner"
+	FuncInit             = "init"
+	FuncSetOwner         = "setOwner"
+	FuncTransfer         = "transfer"
+	ViewGetOwner         = "getOwner"
+	ViewViewTransactions = "viewTransactions"
 )
 
 const (
-	HFuncInit     = wasmlib.ScHname(0x1f44d644)
-	HFuncSetOwner = wasmlib.ScHname(0x2a15fe7b)
-	HFuncTransfer = wasmlib.ScHname(0xa15da184)
-	HViewGetOwner = wasmlib.ScHname(0x137107a6)
+	HFuncInit             = wasmlib.ScHname(0x1f44d644)
+	HFuncSetOwner         = wasmlib.ScHname(0x2a15fe7b)
+	HFuncTransfer         = wasmlib.ScHname(0xa15da184)
+	HViewGetOwner         = wasmlib.ScHname(0x137107a6)
+	HViewViewTransactions = wasmlib.ScHname(0xfe6197b5)
 )

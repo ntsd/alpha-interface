@@ -42,3 +42,6 @@ func funcTransfer(ctx wasmlib.ScFuncContext, f *TransferContext) {
 	transfers := wasmlib.NewScTransferIotas(amount)
 	ctx.TransferToAddress(receiver.Address(), transfers)
 }
+
+func viewViewTransactions(ctx wasmlib.ScViewContext, f *ViewTransactionsContext) {
+}

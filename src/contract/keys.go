@@ -10,21 +10,23 @@ package alphainterfacecontract
 import "github.com/iotaledger/wasp/packages/vm/wasmlib"
 
 const (
-	IdxParamNumber       = 0
-	IdxParamOwner        = 1
-	IdxParamReceiver     = 2
-	IdxResultOwner       = 3
-	IdxStateOwner        = 4
-	IdxStateTransactions = 5
+	IdxParamNumber        = 0
+	IdxParamOwner         = 1
+	IdxParamReceiver      = 2
+	IdxResultOwner        = 3
+	IdxResultTransactions = 4
+	IdxStateOwner         = 5
+	IdxStateTransactions  = 6
 )
 
-const keyMapLen = 6
+const keyMapLen = 7
 
 var keyMap = [keyMapLen]wasmlib.Key{
 	ParamNumber,
 	ParamOwner,
 	ParamReceiver,
 	ResultOwner,
+	ResultTransactions,
 	StateOwner,
 	StateTransactions,
 }

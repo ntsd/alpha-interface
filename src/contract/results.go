@@ -24,3 +24,49 @@ type MutableGetOwnerResults struct {
 func (s MutableGetOwnerResults) Owner() wasmlib.ScMutableAgentID {
 	return wasmlib.NewScMutableAgentID(s.id, idxMap[IdxResultOwner])
 }
+
+type ArrayOfImmutableTransaction struct {
+	objID int32
+}
+
+func (a ArrayOfImmutableTransaction) Length() int32 {
+	return wasmlib.GetLength(a.objID)
+}
+
+func (a ArrayOfImmutableTransaction) GetTransaction(index int32) ImmutableTransaction {
+	return ImmutableTransaction{objID: a.objID, keyID: wasmlib.Key32(index)}
+}
+
+type ImmutableViewTransactionsResults struct {
+	id int32
+}
+
+func (s ImmutableViewTransactionsResults) Transactions() ArrayOfImmutableTransaction {
+	arrID := wasmlib.GetObjectID(s.id, idxMap[IdxResultTransactions], wasmlib.TYPE_ARRAY|wasmlib.TYPE_BYTES)
+	return ArrayOfImmutableTransaction{objID: arrID}
+}
+
+type ArrayOfMutableTransaction struct {
+	objID int32
+}
+
+func (a ArrayOfMutableTransaction) Clear() {
+	wasmlib.Clear(a.objID)
+}
+
+func (a ArrayOfMutableTransaction) Length() int32 {
+	return wasmlib.GetLength(a.objID)
+}
+
+func (a ArrayOfMutableTransaction) GetTransaction(index int32) MutableTransaction {
+	return MutableTransaction{objID: a.objID, keyID: wasmlib.Key32(index)}
+}
+
+type MutableViewTransactionsResults struct {
+	id int32
+}
+
+func (s MutableViewTransactionsResults) Transactions() ArrayOfMutableTransaction {
+	arrID := wasmlib.GetObjectID(s.id, idxMap[IdxResultTransactions], wasmlib.TYPE_ARRAY|wasmlib.TYPE_BYTES)
+	return ArrayOfMutableTransaction{objID: arrID}
+}

@@ -29,6 +29,11 @@ type GetOwnerCall struct {
 	Results ImmutableGetOwnerResults
 }
 
+type ViewTransactionsCall struct {
+	Func    *wasmlib.ScView
+	Results ImmutableViewTransactionsResults
+}
+
 type Funcs struct{}
 
 var ScFuncs Funcs
@@ -53,6 +58,12 @@ func (sc Funcs) Transfer(ctx wasmlib.ScFuncCallContext) *TransferCall {
 
 func (sc Funcs) GetOwner(ctx wasmlib.ScViewCallContext) *GetOwnerCall {
 	f := &GetOwnerCall{Func: wasmlib.NewScView(ctx, HScName, HViewGetOwner)}
+	f.Func.SetPtrs(nil, &f.Results.id)
+	return f
+}
+
+func (sc Funcs) ViewTransactions(ctx wasmlib.ScViewCallContext) *ViewTransactionsCall {
+	f := &ViewTransactionsCall{Func: wasmlib.NewScView(ctx, HScName, HViewViewTransactions)}
 	f.Func.SetPtrs(nil, &f.Results.id)
 	return f
 }

@@ -16,6 +16,7 @@ func OnLoad() {
 	exports.AddFunc(FuncSetOwner, funcSetOwnerThunk)
 	exports.AddFunc(FuncTransfer, funcTransferThunk)
 	exports.AddView(ViewGetOwner, viewGetOwnerThunk)
+	exports.AddView(ViewViewTransactions, viewViewTransactionsThunk)
 
 	for i, key := range keyMap {
 		idxMap[i] = key.KeyID()
@@ -104,4 +105,23 @@ func viewGetOwnerThunk(ctx wasmlib.ScViewContext) {
 	}
 	viewGetOwner(ctx, f)
 	ctx.Log("alphainterfacecontract.viewGetOwner ok")
+}
+
+type ViewTransactionsContext struct {
+	Results MutableViewTransactionsResults
+	State   ImmutableAlphaInterfaceContractState
+}
+
+func viewViewTransactionsThunk(ctx wasmlib.ScViewContext) {
+	ctx.Log("alphainterfacecontract.viewViewTransactions")
+	f := &ViewTransactionsContext{
+		Results: MutableViewTransactionsResults{
+			id: wasmlib.OBJ_ID_RESULTS,
+		},
+		State: ImmutableAlphaInterfaceContractState{
+			id: wasmlib.OBJ_ID_STATE,
+		},
+	}
+	viewViewTransactions(ctx, f)
+	ctx.Log("alphainterfacecontract.viewViewTransactions ok")
 }
