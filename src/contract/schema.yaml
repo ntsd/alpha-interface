@@ -1,22 +1,36 @@
 name: AlphaInterfaceContract
 description: AlphaInterfaceContract description
 structs:
-  crop:
+  Crop:
     id: String // crop id `name_country`
     name: String // name of the crop
     country: String // the country name
-    yield: Int64 // yield value of the crop unit hectogramme (100 grammes) per hectare
+    yield: Int64 // yield value of the crop unit hectogram (100 grammes) per hectare
     updatedAt: Int64 // unix timestamp
   Position:
-    crop: id // crop id
-    price: Int64 // price when open the position
-    amount: Int64 // amount to transfer in IOTA
-    status: String // opening, closed
+    id: String // position id
+    cropID: String // crop id
+    type: String // short, long
+    averagePrice: Int64 // price of the position
+    amount: Int64 // amount in IOTA
+    leverage: Int64 // 2, 4, 8
+    status: String // opening, closed, liquidated
+    owner: AgentID // agent id of the owner
+  Order:
+    orderID: String // order id
+    cropID: String // crop id
+    type: String // short, long
+    positionID: String // position id
+    curAmount: Int64 // cur order amount of the order in IOTA
+    fullAmount: Int64 // amount with leverage
+    leverage: Int64 // 2, 4, 8
     owner: AgentID // agent id of the owner
 typedefs: {}
 state:
   owner: AgentID // current owner of this smart contract
-  positions: Position[]
+  crops: Crop[] // crop array
+  positions: Position[] // position array
+  orders: Order[] // order array
 funcs:
   init:
     params:
@@ -25,14 +39,39 @@ funcs:
     access: owner // current owner of this smart contract
     params:
       owner: AgentID // new owner of this smart contract
-  transfer:
+  setCrop:
+    access: owner // current owner of this smart contract
     params:
-      number: Int64 // the number IOTAs to transfer
-      receiver: AgentID // the receiver agent id
+      name: String // name of the crop
+      country: String // the country name
+      yield: Int64 // yield value of the crop unit hectogram (100 grammes) per hectare
+  createOrder:
+    params:
+      cropID: String // crop id `name_country`
+      leverage: Int64 // 2, 4, 8
+      type: String // short, long
+  closeOrder:
+    params:
+      orderID: String // order id
+  closePosition:
+    params:
+      positionID: String // position id
+      amount: Int64 // iota amount
 views:
   getOwner:
     results:
       owner: AgentID // current owner of this smart contract
-  viewTransactions:
+  getMyPositions:
     results:
-      transactions: Transaction[]
+      positions: Position[]
+  getOrders:
+    results:
+      orders: Order[]
+  getCrops:
+    results:
+      crops: Crop[]
+  getCrop:
+    params:
+      cropID: String
+    results:
+      crop: Crop
