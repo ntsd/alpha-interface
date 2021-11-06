@@ -1,0 +1,6608 @@
+[
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 1961,
+    "Unit": "hg/ha",
+    "Value": 10800
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 1962,
+    "Unit": "hg/ha",
+    "Value": 10800
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 1963,
+    "Unit": "hg/ha",
+    "Value": 10800
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 1964,
+    "Unit": "hg/ha",
+    "Value": 10857
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 1965,
+    "Unit": "hg/ha",
+    "Value": 10857
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 1966,
+    "Unit": "hg/ha",
+    "Value": 10714
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 1967,
+    "Unit": "hg/ha",
+    "Value": 11297
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 1968,
+    "Unit": "hg/ha",
+    "Value": 11388
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 1969,
+    "Unit": "hg/ha",
+    "Value": 11514
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 1970,
+    "Unit": "hg/ha",
+    "Value": 11746
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 1971,
+    "Unit": "hg/ha",
+    "Value": 11270
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 1972,
+    "Unit": "hg/ha",
+    "Value": 10938
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 1973,
+    "Unit": "hg/ha",
+    "Value": 11250
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 1974,
+    "Unit": "hg/ha",
+    "Value": 11170
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 1975,
+    "Unit": "hg/ha",
+    "Value": 12000
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 1976,
+    "Unit": "hg/ha",
+    "Value": 12903
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 1977,
+    "Unit": "hg/ha",
+    "Value": 9677
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 1978,
+    "Unit": "hg/ha",
+    "Value": 10484
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 1979,
+    "Unit": "hg/ha",
+    "Value": 10461
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 1980,
+    "Unit": "hg/ha",
+    "Value": 10490
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 1981,
+    "Unit": "hg/ha",
+    "Value": 10791
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 1982,
+    "Unit": "hg/ha",
+    "Value": 10739
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 1983,
+    "Unit": "hg/ha",
+    "Value": 10992
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 1984,
+    "Unit": "hg/ha",
+    "Value": 10855
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 1985,
+    "Unit": "hg/ha",
+    "Value": 10860
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 1986,
+    "Unit": "hg/ha",
+    "Value": 10845
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 1987,
+    "Unit": "hg/ha",
+    "Value": 10845
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 1988,
+    "Unit": "hg/ha",
+    "Value": 11085
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 1989,
+    "Unit": "hg/ha",
+    "Value": 10948
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 1990,
+    "Unit": "hg/ha",
+    "Value": 10537
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 1991,
+    "Unit": "hg/ha",
+    "Value": 10637
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 1992,
+    "Unit": "hg/ha",
+    "Value": 8000
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 1993,
+    "Unit": "hg/ha",
+    "Value": 10000
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 1994,
+    "Unit": "hg/ha",
+    "Value": 9200
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 1995,
+    "Unit": "hg/ha",
+    "Value": 8889
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 1996,
+    "Unit": "hg/ha",
+    "Value": 10000
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 1997,
+    "Unit": "hg/ha",
+    "Value": 12500
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 1998,
+    "Unit": "hg/ha",
+    "Value": 12000
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 1999,
+    "Unit": "hg/ha",
+    "Value": 12000
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 2000,
+    "Unit": "hg/ha",
+    "Value": 5968
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 2001,
+    "Unit": "hg/ha",
+    "Value": 10000
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 2002,
+    "Unit": "hg/ha",
+    "Value": 14619
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 2003,
+    "Unit": "hg/ha",
+    "Value": 8889
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 2004,
+    "Unit": "hg/ha",
+    "Value": 9206
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 2005,
+    "Unit": "hg/ha",
+    "Value": 14042
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 2006,
+    "Unit": "hg/ha",
+    "Value": 15424
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 2007,
+    "Unit": "hg/ha",
+    "Value": 15678
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 2008,
+    "Unit": "hg/ha",
+    "Value": 14110
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 2009,
+    "Unit": "hg/ha",
+    "Value": 18202
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 2010,
+    "Unit": "hg/ha",
+    "Value": 20613
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 2011,
+    "Unit": "hg/ha",
+    "Value": 16100
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 2012,
+    "Unit": "hg/ha",
+    "Value": 18000
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 2013,
+    "Unit": "hg/ha",
+    "Value": 18489
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 2014,
+    "Unit": "hg/ha",
+    "Value": 15213
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 2015,
+    "Unit": "hg/ha",
+    "Value": 14291
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 2016,
+    "Unit": "hg/ha",
+    "Value": 13770
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 2017,
+    "Unit": "hg/ha",
+    "Value": 13933
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 2018,
+    "Unit": "hg/ha",
+    "Value": 6748
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 2019,
+    "Unit": "hg/ha",
+    "Value": 14699
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 1961,
+    "Unit": "hg/ha",
+    "Value": 14000
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 1962,
+    "Unit": "hg/ha",
+    "Value": 14000
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 1963,
+    "Unit": "hg/ha",
+    "Value": 14260
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 1964,
+    "Unit": "hg/ha",
+    "Value": 14257
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 1965,
+    "Unit": "hg/ha",
+    "Value": 14400
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 1966,
+    "Unit": "hg/ha",
+    "Value": 14400
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 1967,
+    "Unit": "hg/ha",
+    "Value": 14144
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 1968,
+    "Unit": "hg/ha",
+    "Value": 17064
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 1969,
+    "Unit": "hg/ha",
+    "Value": 17177
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 1970,
+    "Unit": "hg/ha",
+    "Value": 14757
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 1971,
+    "Unit": "hg/ha",
+    "Value": 13400
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 1972,
+    "Unit": "hg/ha",
+    "Value": 15652
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 1973,
+    "Unit": "hg/ha",
+    "Value": 16170
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 1974,
+    "Unit": "hg/ha",
+    "Value": 16170
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 1975,
+    "Unit": "hg/ha",
+    "Value": 16116
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 1976,
+    "Unit": "hg/ha",
+    "Value": 16598
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 1977,
+    "Unit": "hg/ha",
+    "Value": 15833
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 1978,
+    "Unit": "hg/ha",
+    "Value": 16183
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 1979,
+    "Unit": "hg/ha",
+    "Value": 16102
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 1980,
+    "Unit": "hg/ha",
+    "Value": 16711
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 1981,
+    "Unit": "hg/ha",
+    "Value": 16690
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 1982,
+    "Unit": "hg/ha",
+    "Value": 16658
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 1983,
+    "Unit": "hg/ha",
+    "Value": 16641
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 1984,
+    "Unit": "hg/ha",
+    "Value": 16612
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 1985,
+    "Unit": "hg/ha",
+    "Value": 16652
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 1986,
+    "Unit": "hg/ha",
+    "Value": 16875
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 1987,
+    "Unit": "hg/ha",
+    "Value": 17020
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 1988,
+    "Unit": "hg/ha",
+    "Value": 17034
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 1989,
+    "Unit": "hg/ha",
+    "Value": 16963
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 1990,
+    "Unit": "hg/ha",
+    "Value": 17582
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 1991,
+    "Unit": "hg/ha",
+    "Value": 16800
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 1992,
+    "Unit": "hg/ha",
+    "Value": 15000
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 1993,
+    "Unit": "hg/ha",
+    "Value": 16786
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 1994,
+    "Unit": "hg/ha",
+    "Value": 16667
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 1995,
+    "Unit": "hg/ha",
+    "Value": 16563
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 1996,
+    "Unit": "hg/ha",
+    "Value": 16364
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 1997,
+    "Unit": "hg/ha",
+    "Value": 15000
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 1998,
+    "Unit": "hg/ha",
+    "Value": 16500
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 1999,
+    "Unit": "hg/ha",
+    "Value": 15000
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 2000,
+    "Unit": "hg/ha",
+    "Value": 11979
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 2001,
+    "Unit": "hg/ha",
+    "Value": 20000
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 2002,
+    "Unit": "hg/ha",
+    "Value": 29800
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 2003,
+    "Unit": "hg/ha",
+    "Value": 8400
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 2004,
+    "Unit": "hg/ha",
+    "Value": 16000
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 2005,
+    "Unit": "hg/ha",
+    "Value": 12069
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 2006,
+    "Unit": "hg/ha",
+    "Value": 26204
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 2007,
+    "Unit": "hg/ha",
+    "Value": 26277
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 2008,
+    "Unit": "hg/ha",
+    "Value": 26277
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 2009,
+    "Unit": "hg/ha",
+    "Value": 21429
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 2010,
+    "Unit": "hg/ha",
+    "Value": 16448
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 2011,
+    "Unit": "hg/ha",
+    "Value": 16400
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 2012,
+    "Unit": "hg/ha",
+    "Value": 21986
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 2013,
+    "Unit": "hg/ha",
+    "Value": 21972
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 2014,
+    "Unit": "hg/ha",
+    "Value": 24882
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 2015,
+    "Unit": "hg/ha",
+    "Value": 21457
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 2016,
+    "Unit": "hg/ha",
+    "Value": 20517
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 2017,
+    "Unit": "hg/ha",
+    "Value": 12957
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 2018,
+    "Unit": "hg/ha",
+    "Value": 14727
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 2019,
+    "Unit": "hg/ha",
+    "Value": 19457
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 1961,
+    "Unit": "hg/ha",
+    "Value": 86667
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 1962,
+    "Unit": "hg/ha",
+    "Value": 76667
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 1963,
+    "Unit": "hg/ha",
+    "Value": 81333
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 1964,
+    "Unit": "hg/ha",
+    "Value": 86000
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 1965,
+    "Unit": "hg/ha",
+    "Value": 88000
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 1966,
+    "Unit": "hg/ha",
+    "Value": 90667
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 1967,
+    "Unit": "hg/ha",
+    "Value": 98000
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 1968,
+    "Unit": "hg/ha",
+    "Value": 100000
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 1969,
+    "Unit": "hg/ha",
+    "Value": 101987
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 1970,
+    "Unit": "hg/ha",
+    "Value": 95364
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 1971,
+    "Unit": "hg/ha",
+    "Value": 111333
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 1972,
+    "Unit": "hg/ha",
+    "Value": 103947
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 1973,
+    "Unit": "hg/ha",
+    "Value": 110000
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 1974,
+    "Unit": "hg/ha",
+    "Value": 109639
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 1975,
+    "Unit": "hg/ha",
+    "Value": 114412
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 1976,
+    "Unit": "hg/ha",
+    "Value": 178788
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 1977,
+    "Unit": "hg/ha",
+    "Value": 105263
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 1978,
+    "Unit": "hg/ha",
+    "Value": 137363
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 1979,
+    "Unit": "hg/ha",
+    "Value": 143575
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 1980,
+    "Unit": "hg/ha",
+    "Value": 148603
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 1981,
+    "Unit": "hg/ha",
+    "Value": 154237
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 1982,
+    "Unit": "hg/ha",
+    "Value": 155114
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 1983,
+    "Unit": "hg/ha",
+    "Value": 157647
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 1984,
+    "Unit": "hg/ha",
+    "Value": 144444
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 1985,
+    "Unit": "hg/ha",
+    "Value": 140909
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 1986,
+    "Unit": "hg/ha",
+    "Value": 158667
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 1987,
+    "Unit": "hg/ha",
+    "Value": 155000
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 1988,
+    "Unit": "hg/ha",
+    "Value": 155714
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 1989,
+    "Unit": "hg/ha",
+    "Value": 152632
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 1990,
+    "Unit": "hg/ha",
+    "Value": 168421
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 1991,
+    "Unit": "hg/ha",
+    "Value": 166418
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 1992,
+    "Unit": "hg/ha",
+    "Value": 166667
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 1993,
+    "Unit": "hg/ha",
+    "Value": 166912
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 1994,
+    "Unit": "hg/ha",
+    "Value": 165942
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 1995,
+    "Unit": "hg/ha",
+    "Value": 166187
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 1996,
+    "Unit": "hg/ha",
+    "Value": 166429
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 1997,
+    "Unit": "hg/ha",
+    "Value": 167857
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 1998,
+    "Unit": "hg/ha",
+    "Value": 167857
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 1999,
+    "Unit": "hg/ha",
+    "Value": 167857
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 2000,
+    "Unit": "hg/ha",
+    "Value": 167857
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 2001,
+    "Unit": "hg/ha",
+    "Value": 167857
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 2002,
+    "Unit": "hg/ha",
+    "Value": 164286
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 2003,
+    "Unit": "hg/ha",
+    "Value": 166667
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 2004,
+    "Unit": "hg/ha",
+    "Value": 176471
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 2005,
+    "Unit": "hg/ha",
+    "Value": 150000
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 2006,
+    "Unit": "hg/ha",
+    "Value": 150000
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 2007,
+    "Unit": "hg/ha",
+    "Value": 150400
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 2008,
+    "Unit": "hg/ha",
+    "Value": 140000
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 2009,
+    "Unit": "hg/ha",
+    "Value": 140000
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 2010,
+    "Unit": "hg/ha",
+    "Value": 120000
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 2011,
+    "Unit": "hg/ha",
+    "Value": 100000
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 2012,
+    "Unit": "hg/ha",
+    "Value": 109524
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 2013,
+    "Unit": "hg/ha",
+    "Value": 131960
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 2014,
+    "Unit": "hg/ha",
+    "Value": 136054
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 2015,
+    "Unit": "hg/ha",
+    "Value": 130903
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 2016,
+    "Unit": "hg/ha",
+    "Value": 119868
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 2017,
+    "Unit": "hg/ha",
+    "Value": 159794
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 2018,
+    "Unit": "hg/ha",
+    "Value": 190026
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 2019,
+    "Unit": "hg/ha",
+    "Value": 161413
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 1961,
+    "Unit": "hg/ha",
+    "Value": 10220
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 1962,
+    "Unit": "hg/ha",
+    "Value": 9735
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 1963,
+    "Unit": "hg/ha",
+    "Value": 8317
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 1964,
+    "Unit": "hg/ha",
+    "Value": 9510
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 1965,
+    "Unit": "hg/ha",
+    "Value": 9723
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 1966,
+    "Unit": "hg/ha",
+    "Value": 8666
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 1967,
+    "Unit": "hg/ha",
+    "Value": 11232
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 1968,
+    "Unit": "hg/ha",
+    "Value": 11562
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 1969,
+    "Unit": "hg/ha",
+    "Value": 11855
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 1970,
+    "Unit": "hg/ha",
+    "Value": 9563
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 1971,
+    "Unit": "hg/ha",
+    "Value": 8149
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 1972,
+    "Unit": "hg/ha",
+    "Value": 8457
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 1973,
+    "Unit": "hg/ha",
+    "Value": 11739
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 1974,
+    "Unit": "hg/ha",
+    "Value": 12074
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 1975,
+    "Unit": "hg/ha",
+    "Value": 12128
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 1976,
+    "Unit": "hg/ha",
+    "Value": 12494
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 1977,
+    "Unit": "hg/ha",
+    "Value": 11309
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 1978,
+    "Unit": "hg/ha",
+    "Value": 11980
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 1979,
+    "Unit": "hg/ha",
+    "Value": 12317
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 1980,
+    "Unit": "hg/ha",
+    "Value": 12549
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 1981,
+    "Unit": "hg/ha",
+    "Value": 12350
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 1982,
+    "Unit": "hg/ha",
+    "Value": 12299
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 1983,
+    "Unit": "hg/ha",
+    "Value": 12580
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 1984,
+    "Unit": "hg/ha",
+    "Value": 12319
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 1985,
+    "Unit": "hg/ha",
+    "Value": 12277
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 1986,
+    "Unit": "hg/ha",
+    "Value": 11890
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 1987,
+    "Unit": "hg/ha",
+    "Value": 12849
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 1988,
+    "Unit": "hg/ha",
+    "Value": 11728
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 1989,
+    "Unit": "hg/ha",
+    "Value": 11180
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 1990,
+    "Unit": "hg/ha",
+    "Value": 10510
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 1991,
+    "Unit": "hg/ha",
+    "Value": 10213
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 1992,
+    "Unit": "hg/ha",
+    "Value": 10313
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 1993,
+    "Unit": "hg/ha",
+    "Value": 10211
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 1994,
+    "Unit": "hg/ha",
+    "Value": 10250
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 1995,
+    "Unit": "hg/ha",
+    "Value": 10895
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 1996,
+    "Unit": "hg/ha",
+    "Value": 11220
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 1997,
+    "Unit": "hg/ha",
+    "Value": 12764
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 1998,
+    "Unit": "hg/ha",
+    "Value": 12964
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 1999,
+    "Unit": "hg/ha",
+    "Value": 12329
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 2000,
+    "Unit": "hg/ha",
+    "Value": 7240
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 2001,
+    "Unit": "hg/ha",
+    "Value": 8977
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 2002,
+    "Unit": "hg/ha",
+    "Value": 15419
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 2003,
+    "Unit": "hg/ha",
+    "Value": 15000
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 2004,
+    "Unit": "hg/ha",
+    "Value": 12659
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 2005,
+    "Unit": "hg/ha",
+    "Value": 18215
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 2006,
+    "Unit": "hg/ha",
+    "Value": 13760
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 2007,
+    "Unit": "hg/ha",
+    "Value": 18183
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 2008,
+    "Unit": "hg/ha",
+    "Value": 12263
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 2009,
+    "Unit": "hg/ha",
+    "Value": 19666
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 2010,
+    "Unit": "hg/ha",
+    "Value": 19252
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 2011,
+    "Unit": "hg/ha",
+    "Value": 15179
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 2012,
+    "Unit": "hg/ha",
+    "Value": 20104
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 2013,
+    "Unit": "hg/ha",
+    "Value": 20248
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 2014,
+    "Unit": "hg/ha",
+    "Value": 20237
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 2015,
+    "Unit": "hg/ha",
+    "Value": 21959
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 2016,
+    "Unit": "hg/ha",
+    "Value": 19803
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 2017,
+    "Unit": "hg/ha",
+    "Value": 20342
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 2018,
+    "Unit": "hg/ha",
+    "Value": 22100
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Afghanistan",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 2019,
+    "Unit": "hg/ha",
+    "Value": 20951
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 1961,
+    "Unit": "hg/ha",
+    "Value": 10224
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 1962,
+    "Unit": "hg/ha",
+    "Value": 8405
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 1963,
+    "Unit": "hg/ha",
+    "Value": 8770
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 1964,
+    "Unit": "hg/ha",
+    "Value": 10258
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 1965,
+    "Unit": "hg/ha",
+    "Value": 9865
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 1966,
+    "Unit": "hg/ha",
+    "Value": 12000
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 1967,
+    "Unit": "hg/ha",
+    "Value": 9905
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 1968,
+    "Unit": "hg/ha",
+    "Value": 8144
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 1969,
+    "Unit": "hg/ha",
+    "Value": 8333
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 1970,
+    "Unit": "hg/ha",
+    "Value": 10778
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 1971,
+    "Unit": "hg/ha",
+    "Value": 8333
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 1972,
+    "Unit": "hg/ha",
+    "Value": 9059
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 1973,
+    "Unit": "hg/ha",
+    "Value": 10112
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 1974,
+    "Unit": "hg/ha",
+    "Value": 10000
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 1975,
+    "Unit": "hg/ha",
+    "Value": 9804
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 1976,
+    "Unit": "hg/ha",
+    "Value": 14286
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 1977,
+    "Unit": "hg/ha",
+    "Value": 16364
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 1978,
+    "Unit": "hg/ha",
+    "Value": 18182
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 1979,
+    "Unit": "hg/ha",
+    "Value": 19167
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 1980,
+    "Unit": "hg/ha",
+    "Value": 20833
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 1981,
+    "Unit": "hg/ha",
+    "Value": 20833
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 1982,
+    "Unit": "hg/ha",
+    "Value": 20992
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 1983,
+    "Unit": "hg/ha",
+    "Value": 23077
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 1984,
+    "Unit": "hg/ha",
+    "Value": 23077
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 1985,
+    "Unit": "hg/ha",
+    "Value": 23077
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 1986,
+    "Unit": "hg/ha",
+    "Value": 27692
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 1987,
+    "Unit": "hg/ha",
+    "Value": 29231
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 1988,
+    "Unit": "hg/ha",
+    "Value": 30769
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 1989,
+    "Unit": "hg/ha",
+    "Value": 30303
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 1990,
+    "Unit": "hg/ha",
+    "Value": 10000
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 1991,
+    "Unit": "hg/ha",
+    "Value": 9231
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 1992,
+    "Unit": "hg/ha",
+    "Value": 13802
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 1993,
+    "Unit": "hg/ha",
+    "Value": 13324
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 1994,
+    "Unit": "hg/ha",
+    "Value": 23523
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 1995,
+    "Unit": "hg/ha",
+    "Value": 22527
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 1996,
+    "Unit": "hg/ha",
+    "Value": 13379
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 1997,
+    "Unit": "hg/ha",
+    "Value": 14573
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 1998,
+    "Unit": "hg/ha",
+    "Value": 19106
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 1999,
+    "Unit": "hg/ha",
+    "Value": 18125
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 2000,
+    "Unit": "hg/ha",
+    "Value": 15000
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 2001,
+    "Unit": "hg/ha",
+    "Value": 25000
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 2002,
+    "Unit": "hg/ha",
+    "Value": 47500
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 2003,
+    "Unit": "hg/ha",
+    "Value": 18710
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 2004,
+    "Unit": "hg/ha",
+    "Value": 24667
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 2005,
+    "Unit": "hg/ha",
+    "Value": 27297
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 2006,
+    "Unit": "hg/ha",
+    "Value": 27586
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 2007,
+    "Unit": "hg/ha",
+    "Value": 25000
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 2008,
+    "Unit": "hg/ha",
+    "Value": 25714
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 2009,
+    "Unit": "hg/ha",
+    "Value": 26471
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 2010,
+    "Unit": "hg/ha",
+    "Value": 29200
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 2011,
+    "Unit": "hg/ha",
+    "Value": 30634
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 2012,
+    "Unit": "hg/ha",
+    "Value": 28000
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 2013,
+    "Unit": "hg/ha",
+    "Value": 27880
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 2014,
+    "Unit": "hg/ha",
+    "Value": 27007
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 2015,
+    "Unit": "hg/ha",
+    "Value": 28000
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 2016,
+    "Unit": "hg/ha",
+    "Value": 28995
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 2017,
+    "Unit": "hg/ha",
+    "Value": 29478
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 2018,
+    "Unit": "hg/ha",
+    "Value": 28422
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Barley",
+    "Year": 2019,
+    "Unit": "hg/ha",
+    "Value": 28964
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Carrots and turnips",
+    "Year": 1990,
+    "Unit": "hg/ha",
+    "Value": 150000
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Carrots and turnips",
+    "Year": 1991,
+    "Unit": "hg/ha",
+    "Value": 150000
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Carrots and turnips",
+    "Year": 1992,
+    "Unit": "hg/ha",
+    "Value": 153333
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Carrots and turnips",
+    "Year": 1993,
+    "Unit": "hg/ha",
+    "Value": 148571
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Carrots and turnips",
+    "Year": 1994,
+    "Unit": "hg/ha",
+    "Value": 159459
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Carrots and turnips",
+    "Year": 1995,
+    "Unit": "hg/ha",
+    "Value": 156757
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Carrots and turnips",
+    "Year": 1996,
+    "Unit": "hg/ha",
+    "Value": 160000
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Carrots and turnips",
+    "Year": 1997,
+    "Unit": "hg/ha",
+    "Value": 157895
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Carrots and turnips",
+    "Year": 1998,
+    "Unit": "hg/ha",
+    "Value": 157895
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Carrots and turnips",
+    "Year": 1999,
+    "Unit": "hg/ha",
+    "Value": 159459
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Carrots and turnips",
+    "Year": 2000,
+    "Unit": "hg/ha",
+    "Value": 167568
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Carrots and turnips",
+    "Year": 2001,
+    "Unit": "hg/ha",
+    "Value": 171053
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Carrots and turnips",
+    "Year": 2002,
+    "Unit": "hg/ha",
+    "Value": 167500
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Carrots and turnips",
+    "Year": 2003,
+    "Unit": "hg/ha",
+    "Value": 175000
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Carrots and turnips",
+    "Year": 2004,
+    "Unit": "hg/ha",
+    "Value": 190000
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Carrots and turnips",
+    "Year": 2005,
+    "Unit": "hg/ha",
+    "Value": 160000
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Carrots and turnips",
+    "Year": 2006,
+    "Unit": "hg/ha",
+    "Value": 222456
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Carrots and turnips",
+    "Year": 2007,
+    "Unit": "hg/ha",
+    "Value": 200000
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Carrots and turnips",
+    "Year": 2008,
+    "Unit": "hg/ha",
+    "Value": 220690
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Carrots and turnips",
+    "Year": 2009,
+    "Unit": "hg/ha",
+    "Value": 333737
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Carrots and turnips",
+    "Year": 2010,
+    "Unit": "hg/ha",
+    "Value": 160791
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Carrots and turnips",
+    "Year": 2011,
+    "Unit": "hg/ha",
+    "Value": 306667
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Carrots and turnips",
+    "Year": 2012,
+    "Unit": "hg/ha",
+    "Value": 316667
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Carrots and turnips",
+    "Year": 2013,
+    "Unit": "hg/ha",
+    "Value": 271654
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Carrots and turnips",
+    "Year": 2014,
+    "Unit": "hg/ha",
+    "Value": 198258
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Carrots and turnips",
+    "Year": 2015,
+    "Unit": "hg/ha",
+    "Value": 267004
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Carrots and turnips",
+    "Year": 2016,
+    "Unit": "hg/ha",
+    "Value": 331652
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Carrots and turnips",
+    "Year": 2017,
+    "Unit": "hg/ha",
+    "Value": 316772
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Carrots and turnips",
+    "Year": 2018,
+    "Unit": "hg/ha",
+    "Value": 314954
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Carrots and turnips",
+    "Year": 2019,
+    "Unit": "hg/ha",
+    "Value": 320827
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Cauliflowers and broccoli",
+    "Year": 1990,
+    "Unit": "hg/ha",
+    "Value": 171429
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Cauliflowers and broccoli",
+    "Year": 1991,
+    "Unit": "hg/ha",
+    "Value": 166667
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Cauliflowers and broccoli",
+    "Year": 1992,
+    "Unit": "hg/ha",
+    "Value": 175000
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Cauliflowers and broccoli",
+    "Year": 1993,
+    "Unit": "hg/ha",
+    "Value": 177778
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Cauliflowers and broccoli",
+    "Year": 1994,
+    "Unit": "hg/ha",
+    "Value": 180000
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Cauliflowers and broccoli",
+    "Year": 1995,
+    "Unit": "hg/ha",
+    "Value": 170000
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Cauliflowers and broccoli",
+    "Year": 1996,
+    "Unit": "hg/ha",
+    "Value": 187500
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Cauliflowers and broccoli",
+    "Year": 1997,
+    "Unit": "hg/ha",
+    "Value": 180000
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Cauliflowers and broccoli",
+    "Year": 1998,
+    "Unit": "hg/ha",
+    "Value": 180000
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Cauliflowers and broccoli",
+    "Year": 1999,
+    "Unit": "hg/ha",
+    "Value": 170000
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Cauliflowers and broccoli",
+    "Year": 2000,
+    "Unit": "hg/ha",
+    "Value": 180000
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Cauliflowers and broccoli",
+    "Year": 2001,
+    "Unit": "hg/ha",
+    "Value": 190000
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Cauliflowers and broccoli",
+    "Year": 2002,
+    "Unit": "hg/ha",
+    "Value": 200000
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Cauliflowers and broccoli",
+    "Year": 2003,
+    "Unit": "hg/ha",
+    "Value": 100000
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Cauliflowers and broccoli",
+    "Year": 2004,
+    "Unit": "hg/ha",
+    "Value": 188235
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Cauliflowers and broccoli",
+    "Year": 2005,
+    "Unit": "hg/ha",
+    "Value": 165000
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Cauliflowers and broccoli",
+    "Year": 2006,
+    "Unit": "hg/ha",
+    "Value": 222917
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Cauliflowers and broccoli",
+    "Year": 2007,
+    "Unit": "hg/ha",
+    "Value": 214286
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Cauliflowers and broccoli",
+    "Year": 2008,
+    "Unit": "hg/ha",
+    "Value": 207661
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Cauliflowers and broccoli",
+    "Year": 2009,
+    "Unit": "hg/ha",
+    "Value": 233033
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Cauliflowers and broccoli",
+    "Year": 2010,
+    "Unit": "hg/ha",
+    "Value": 127806
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Cauliflowers and broccoli",
+    "Year": 2011,
+    "Unit": "hg/ha",
+    "Value": 234694
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Cauliflowers and broccoli",
+    "Year": 2012,
+    "Unit": "hg/ha",
+    "Value": 500000
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Cauliflowers and broccoli",
+    "Year": 2013,
+    "Unit": "hg/ha",
+    "Value": 210667
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Cauliflowers and broccoli",
+    "Year": 2014,
+    "Unit": "hg/ha",
+    "Value": 216250
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Cauliflowers and broccoli",
+    "Year": 2015,
+    "Unit": "hg/ha",
+    "Value": 191625
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Cauliflowers and broccoli",
+    "Year": 2016,
+    "Unit": "hg/ha",
+    "Value": 198350
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Cauliflowers and broccoli",
+    "Year": 2017,
+    "Unit": "hg/ha",
+    "Value": 216082
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Cauliflowers and broccoli",
+    "Year": 2018,
+    "Unit": "hg/ha",
+    "Value": 211273
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Cauliflowers and broccoli",
+    "Year": 2019,
+    "Unit": "hg/ha",
+    "Value": 231228
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Garlic",
+    "Year": 1990,
+    "Unit": "hg/ha",
+    "Value": 65000
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Garlic",
+    "Year": 1991,
+    "Unit": "hg/ha",
+    "Value": 66667
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Garlic",
+    "Year": 1992,
+    "Unit": "hg/ha",
+    "Value": 70769
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Garlic",
+    "Year": 1993,
+    "Unit": "hg/ha",
+    "Value": 69333
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Garlic",
+    "Year": 1994,
+    "Unit": "hg/ha",
+    "Value": 72500
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Garlic",
+    "Year": 1995,
+    "Unit": "hg/ha",
+    "Value": 72500
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Garlic",
+    "Year": 1996,
+    "Unit": "hg/ha",
+    "Value": 64000
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Garlic",
+    "Year": 1997,
+    "Unit": "hg/ha",
+    "Value": 66667
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Garlic",
+    "Year": 1998,
+    "Unit": "hg/ha",
+    "Value": 66667
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Garlic",
+    "Year": 1999,
+    "Unit": "hg/ha",
+    "Value": 65556
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Garlic",
+    "Year": 2000,
+    "Unit": "hg/ha",
+    "Value": 62000
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Garlic",
+    "Year": 2001,
+    "Unit": "hg/ha",
+    "Value": 65000
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Garlic",
+    "Year": 2002,
+    "Unit": "hg/ha",
+    "Value": 67000
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Garlic",
+    "Year": 2003,
+    "Unit": "hg/ha",
+    "Value": 66667
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Garlic",
+    "Year": 2004,
+    "Unit": "hg/ha",
+    "Value": 70000
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Garlic",
+    "Year": 2005,
+    "Unit": "hg/ha",
+    "Value": 70000
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Garlic",
+    "Year": 2006,
+    "Unit": "hg/ha",
+    "Value": 223283
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Garlic",
+    "Year": 2007,
+    "Unit": "hg/ha",
+    "Value": 200000
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Garlic",
+    "Year": 2008,
+    "Unit": "hg/ha",
+    "Value": 79286
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Garlic",
+    "Year": 2009,
+    "Unit": "hg/ha",
+    "Value": 80319
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Garlic",
+    "Year": 2010,
+    "Unit": "hg/ha",
+    "Value": 90155
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Garlic",
+    "Year": 2011,
+    "Unit": "hg/ha",
+    "Value": 96658
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Garlic",
+    "Year": 2012,
+    "Unit": "hg/ha",
+    "Value": 92353
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Garlic",
+    "Year": 2013,
+    "Unit": "hg/ha",
+    "Value": 116952
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Garlic",
+    "Year": 2014,
+    "Unit": "hg/ha",
+    "Value": 133984
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Garlic",
+    "Year": 2015,
+    "Unit": "hg/ha",
+    "Value": 139358
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Garlic",
+    "Year": 2016,
+    "Unit": "hg/ha",
+    "Value": 105107
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Garlic",
+    "Year": 2017,
+    "Unit": "hg/ha",
+    "Value": 150559
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Garlic",
+    "Year": 2018,
+    "Unit": "hg/ha",
+    "Value": 151337
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Garlic",
+    "Year": 2019,
+    "Unit": "hg/ha",
+    "Value": 152235
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Hops",
+    "Year": 1996,
+    "Unit": "hg/ha",
+    "Value": 6667
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Hops",
+    "Year": 1997,
+    "Unit": "hg/ha",
+    "Value": 6617
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Hops",
+    "Year": 1998,
+    "Unit": "hg/ha",
+    "Value": 6583
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Hops",
+    "Year": 1999,
+    "Unit": "hg/ha",
+    "Value": 6667
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Hops",
+    "Year": 2000,
+    "Unit": "hg/ha",
+    "Value": 6667
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Hops",
+    "Year": 2001,
+    "Unit": "hg/ha",
+    "Value": 6667
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Hops",
+    "Year": 2002,
+    "Unit": "hg/ha",
+    "Value": 6667
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Hops",
+    "Year": 2003,
+    "Unit": "hg/ha",
+    "Value": 6731
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Hops",
+    "Year": 2004,
+    "Unit": "hg/ha",
+    "Value": 6667
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Hops",
+    "Year": 2005,
+    "Unit": "hg/ha",
+    "Value": 6667
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Hops",
+    "Year": 2006,
+    "Unit": "hg/ha",
+    "Value": 6667
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Hops",
+    "Year": 2007,
+    "Unit": "hg/ha",
+    "Value": 6853
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Hops",
+    "Year": 2008,
+    "Unit": "hg/ha",
+    "Value": 6907
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Hops",
+    "Year": 2009,
+    "Unit": "hg/ha",
+    "Value": 6818
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Hops",
+    "Year": 2010,
+    "Unit": "hg/ha",
+    "Value": 7381
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Hops",
+    "Year": 2011,
+    "Unit": "hg/ha",
+    "Value": 7273
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Hops",
+    "Year": 2012,
+    "Unit": "hg/ha",
+    "Value": 7500
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Hops",
+    "Year": 2013,
+    "Unit": "hg/ha",
+    "Value": 7727
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Hops",
+    "Year": 2014,
+    "Unit": "hg/ha",
+    "Value": 7535
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Hops",
+    "Year": 2015,
+    "Unit": "hg/ha",
+    "Value": 7490
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Hops",
+    "Year": 2016,
+    "Unit": "hg/ha",
+    "Value": 7558
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Hops",
+    "Year": 2017,
+    "Unit": "hg/ha",
+    "Value": 7614
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Hops",
+    "Year": 2018,
+    "Unit": "hg/ha",
+    "Value": 7670
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Hops",
+    "Year": 2019,
+    "Unit": "hg/ha",
+    "Value": 7729
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 1961,
+    "Unit": "hg/ha",
+    "Value": 9541
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 1962,
+    "Unit": "hg/ha",
+    "Value": 9079
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 1963,
+    "Unit": "hg/ha",
+    "Value": 11924
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 1964,
+    "Unit": "hg/ha",
+    "Value": 11634
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 1965,
+    "Unit": "hg/ha",
+    "Value": 10509
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 1966,
+    "Unit": "hg/ha",
+    "Value": 15051
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 1967,
+    "Unit": "hg/ha",
+    "Value": 17241
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 1968,
+    "Unit": "hg/ha",
+    "Value": 18782
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 1969,
+    "Unit": "hg/ha",
+    "Value": 19485
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 1970,
+    "Unit": "hg/ha",
+    "Value": 20718
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 1971,
+    "Unit": "hg/ha",
+    "Value": 19443
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 1972,
+    "Unit": "hg/ha",
+    "Value": 19667
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 1973,
+    "Unit": "hg/ha",
+    "Value": 20000
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 1974,
+    "Unit": "hg/ha",
+    "Value": 21981
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 1975,
+    "Unit": "hg/ha",
+    "Value": 27000
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 1976,
+    "Unit": "hg/ha",
+    "Value": 31111
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 1977,
+    "Unit": "hg/ha",
+    "Value": 37647
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 1978,
+    "Unit": "hg/ha",
+    "Value": 39535
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 1979,
+    "Unit": "hg/ha",
+    "Value": 37500
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 1980,
+    "Unit": "hg/ha",
+    "Value": 26504
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 1981,
+    "Unit": "hg/ha",
+    "Value": 31585
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 1982,
+    "Unit": "hg/ha",
+    "Value": 37252
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 1983,
+    "Unit": "hg/ha",
+    "Value": 42263
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 1984,
+    "Unit": "hg/ha",
+    "Value": 37209
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 1985,
+    "Unit": "hg/ha",
+    "Value": 35128
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 1986,
+    "Unit": "hg/ha",
+    "Value": 45065
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 1987,
+    "Unit": "hg/ha",
+    "Value": 38148
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 1988,
+    "Unit": "hg/ha",
+    "Value": 32871
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 1989,
+    "Unit": "hg/ha",
+    "Value": 47969
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 1990,
+    "Unit": "hg/ha",
+    "Value": 36613
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 1991,
+    "Unit": "hg/ha",
+    "Value": 29068
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 1992,
+    "Unit": "hg/ha",
+    "Value": 24876
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 1993,
+    "Unit": "hg/ha",
+    "Value": 24185
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 1994,
+    "Unit": "hg/ha",
+    "Value": 25848
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 1995,
+    "Unit": "hg/ha",
+    "Value": 31300
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 1996,
+    "Unit": "hg/ha",
+    "Value": 32604
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 1997,
+    "Unit": "hg/ha",
+    "Value": 31862
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 1998,
+    "Unit": "hg/ha",
+    "Value": 33416
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 1999,
+    "Unit": "hg/ha",
+    "Value": 37455
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 2000,
+    "Unit": "hg/ha",
+    "Value": 38811
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 2001,
+    "Unit": "hg/ha",
+    "Value": 38135
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 2002,
+    "Unit": "hg/ha",
+    "Value": 39460
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 2003,
+    "Unit": "hg/ha",
+    "Value": 42805
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 2004,
+    "Unit": "hg/ha",
+    "Value": 46197
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 2005,
+    "Unit": "hg/ha",
+    "Value": 45442
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 2006,
+    "Unit": "hg/ha",
+    "Value": 50111
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 2007,
+    "Unit": "hg/ha",
+    "Value": 46732
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 2008,
+    "Unit": "hg/ha",
+    "Value": 50000
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 2009,
+    "Unit": "hg/ha",
+    "Value": 55693
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 2010,
+    "Unit": "hg/ha",
+    "Value": 66790
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 2011,
+    "Unit": "hg/ha",
+    "Value": 59869
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 2012,
+    "Unit": "hg/ha",
+    "Value": 67290
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 2013,
+    "Unit": "hg/ha",
+    "Value": 69533
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 2014,
+    "Unit": "hg/ha",
+    "Value": 69091
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 2015,
+    "Unit": "hg/ha",
+    "Value": 69597
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 2016,
+    "Unit": "hg/ha",
+    "Value": 64877
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 2017,
+    "Unit": "hg/ha",
+    "Value": 65632
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 2018,
+    "Unit": "hg/ha",
+    "Value": 72273
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Maize",
+    "Year": 2019,
+    "Unit": "hg/ha",
+    "Value": 70529
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Oats",
+    "Year": 1961,
+    "Unit": "hg/ha",
+    "Value": 6045
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Oats",
+    "Year": 1962,
+    "Unit": "hg/ha",
+    "Value": 7735
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Oats",
+    "Year": 1963,
+    "Unit": "hg/ha",
+    "Value": 5467
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Oats",
+    "Year": 1964,
+    "Unit": "hg/ha",
+    "Value": 6878
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Oats",
+    "Year": 1965,
+    "Unit": "hg/ha",
+    "Value": 6880
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Oats",
+    "Year": 1966,
+    "Unit": "hg/ha",
+    "Value": 9500
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Oats",
+    "Year": 1967,
+    "Unit": "hg/ha",
+    "Value": 10054
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Oats",
+    "Year": 1968,
+    "Unit": "hg/ha",
+    "Value": 10000
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Oats",
+    "Year": 1969,
+    "Unit": "hg/ha",
+    "Value": 10263
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Oats",
+    "Year": 1970,
+    "Unit": "hg/ha",
+    "Value": 10263
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Oats",
+    "Year": 1971,
+    "Unit": "hg/ha",
+    "Value": 10500
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Oats",
+    "Year": 1972,
+    "Unit": "hg/ha",
+    "Value": 9500
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Oats",
+    "Year": 1973,
+    "Unit": "hg/ha",
+    "Value": 10628
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Oats",
+    "Year": 1974,
+    "Unit": "hg/ha",
+    "Value": 12207
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Oats",
+    "Year": 1975,
+    "Unit": "hg/ha",
+    "Value": 12676
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Oats",
+    "Year": 1976,
+    "Unit": "hg/ha",
+    "Value": 12857
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Oats",
+    "Year": 1977,
+    "Unit": "hg/ha",
+    "Value": 13333
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Oats",
+    "Year": 1978,
+    "Unit": "hg/ha",
+    "Value": 14000
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Oats",
+    "Year": 1979,
+    "Unit": "hg/ha",
+    "Value": 14000
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Oats",
+    "Year": 1980,
+    "Unit": "hg/ha",
+    "Value": 15000
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Oats",
+    "Year": 1981,
+    "Unit": "hg/ha",
+    "Value": 15000
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Oats",
+    "Year": 1982,
+    "Unit": "hg/ha",
+    "Value": 15000
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Oats",
+    "Year": 1983,
+    "Unit": "hg/ha",
+    "Value": 15000
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Oats",
+    "Year": 1984,
+    "Unit": "hg/ha",
+    "Value": 15000
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Oats",
+    "Year": 1985,
+    "Unit": "hg/ha",
+    "Value": 15000
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Oats",
+    "Year": 1986,
+    "Unit": "hg/ha",
+    "Value": 15000
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Oats",
+    "Year": 1987,
+    "Unit": "hg/ha",
+    "Value": 15000
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Oats",
+    "Year": 1988,
+    "Unit": "hg/ha",
+    "Value": 15000
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Oats",
+    "Year": 1989,
+    "Unit": "hg/ha",
+    "Value": 10000
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Oats",
+    "Year": 1990,
+    "Unit": "hg/ha",
+    "Value": 7500
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Oats",
+    "Year": 1991,
+    "Unit": "hg/ha",
+    "Value": 7500
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Oats",
+    "Year": 1992,
+    "Unit": "hg/ha",
+    "Value": 9404
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Oats",
+    "Year": 1993,
+    "Unit": "hg/ha",
+    "Value": 12252
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Oats",
+    "Year": 1994,
+    "Unit": "hg/ha",
+    "Value": 17354
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Oats",
+    "Year": 1995,
+    "Unit": "hg/ha",
+    "Value": 12090
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Oats",
+    "Year": 1996,
+    "Unit": "hg/ha",
+    "Value": 12089
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Oats",
+    "Year": 1997,
+    "Unit": "hg/ha",
+    "Value": 11713
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Oats",
+    "Year": 1998,
+    "Unit": "hg/ha",
+    "Value": 15962
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Oats",
+    "Year": 1999,
+    "Unit": "hg/ha",
+    "Value": 13200
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Oats",
+    "Year": 2000,
+    "Unit": "hg/ha",
+    "Value": 14673
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Oats",
+    "Year": 2001,
+    "Unit": "hg/ha",
+    "Value": 14299
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Oats",
+    "Year": 2002,
+    "Unit": "hg/ha",
+    "Value": 16555
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Oats",
+    "Year": 2003,
+    "Unit": "hg/ha",
+    "Value": 14803
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Oats",
+    "Year": 2004,
+    "Unit": "hg/ha",
+    "Value": 18189
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Oats",
+    "Year": 2005,
+    "Unit": "hg/ha",
+    "Value": 17381
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Oats",
+    "Year": 2006,
+    "Unit": "hg/ha",
+    "Value": 16897
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Oats",
+    "Year": 2007,
+    "Unit": "hg/ha",
+    "Value": 16212
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Oats",
+    "Year": 2008,
+    "Unit": "hg/ha",
+    "Value": 15683
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Oats",
+    "Year": 2009,
+    "Unit": "hg/ha",
+    "Value": 19231
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Oats",
+    "Year": 2010,
+    "Unit": "hg/ha",
+    "Value": 19500
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Oats",
+    "Year": 2011,
+    "Unit": "hg/ha",
+    "Value": 23107
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Oats",
+    "Year": 2012,
+    "Unit": "hg/ha",
+    "Value": 21600
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Oats",
+    "Year": 2013,
+    "Unit": "hg/ha",
+    "Value": 19853
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Oats",
+    "Year": 2014,
+    "Unit": "hg/ha",
+    "Value": 21317
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Oats",
+    "Year": 2015,
+    "Unit": "hg/ha",
+    "Value": 20548
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Oats",
+    "Year": 2016,
+    "Unit": "hg/ha",
+    "Value": 21718
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Oats",
+    "Year": 2017,
+    "Unit": "hg/ha",
+    "Value": 22136
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Oats",
+    "Year": 2018,
+    "Unit": "hg/ha",
+    "Value": 21083
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Oats",
+    "Year": 2019,
+    "Unit": "hg/ha",
+    "Value": 21128
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Onions, shallots, green",
+    "Year": 1990,
+    "Unit": "hg/ha",
+    "Value": 111429
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Onions, shallots, green",
+    "Year": 1991,
+    "Unit": "hg/ha",
+    "Value": 109091
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Onions, shallots, green",
+    "Year": 1992,
+    "Unit": "hg/ha",
+    "Value": 116250
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Onions, shallots, green",
+    "Year": 1993,
+    "Unit": "hg/ha",
+    "Value": 110526
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Onions, shallots, green",
+    "Year": 1994,
+    "Unit": "hg/ha",
+    "Value": 123158
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Onions, shallots, green",
+    "Year": 1995,
+    "Unit": "hg/ha",
+    "Value": 122105
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Onions, shallots, green",
+    "Year": 1996,
+    "Unit": "hg/ha",
+    "Value": 120000
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Onions, shallots, green",
+    "Year": 1997,
+    "Unit": "hg/ha",
+    "Value": 120000
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Onions, shallots, green",
+    "Year": 1998,
+    "Unit": "hg/ha",
+    "Value": 120000
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Onions, shallots, green",
+    "Year": 1999,
+    "Unit": "hg/ha",
+    "Value": 124211
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Onions, shallots, green",
+    "Year": 2000,
+    "Unit": "hg/ha",
+    "Value": 125000
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Onions, shallots, green",
+    "Year": 2001,
+    "Unit": "hg/ha",
+    "Value": 130000
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Onions, shallots, green",
+    "Year": 2002,
+    "Unit": "hg/ha",
+    "Value": 130000
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Onions, shallots, green",
+    "Year": 2003,
+    "Unit": "hg/ha",
+    "Value": 109091
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Onions, shallots, green",
+    "Year": 2004,
+    "Unit": "hg/ha",
+    "Value": 130000
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Onions, shallots, green",
+    "Year": 2005,
+    "Unit": "hg/ha",
+    "Value": 125455
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Onions, shallots, green",
+    "Year": 2006,
+    "Unit": "hg/ha",
+    "Value": 223138
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Onions, shallots, green",
+    "Year": 2007,
+    "Unit": "hg/ha",
+    "Value": 216667
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Onions, shallots, green",
+    "Year": 2008,
+    "Unit": "hg/ha",
+    "Value": 188175
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Onions, shallots, green",
+    "Year": 2009,
+    "Unit": "hg/ha",
+    "Value": 192295
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Onions, shallots, green",
+    "Year": 2010,
+    "Unit": "hg/ha",
+    "Value": 145472
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Onions, shallots, green",
+    "Year": 2011,
+    "Unit": "hg/ha",
+    "Value": 162463
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Onions, shallots, green",
+    "Year": 2012,
+    "Unit": "hg/ha",
+    "Value": 167220
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Onions, shallots, green",
+    "Year": 2013,
+    "Unit": "hg/ha",
+    "Value": 161957
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Onions, shallots, green",
+    "Year": 2014,
+    "Unit": "hg/ha",
+    "Value": 173718
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Onions, shallots, green",
+    "Year": 2015,
+    "Unit": "hg/ha",
+    "Value": 188727
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Onions, shallots, green",
+    "Year": 2016,
+    "Unit": "hg/ha",
+    "Value": 199487
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Onions, shallots, green",
+    "Year": 2017,
+    "Unit": "hg/ha",
+    "Value": 208534
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Onions, shallots, green",
+    "Year": 2018,
+    "Unit": "hg/ha",
+    "Value": 212967
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Onions, shallots, green",
+    "Year": 2019,
+    "Unit": "hg/ha",
+    "Value": 209257
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 1961,
+    "Unit": "hg/ha",
+    "Value": 72134
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 1962,
+    "Unit": "hg/ha",
+    "Value": 54341
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 1963,
+    "Unit": "hg/ha",
+    "Value": 76758
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 1964,
+    "Unit": "hg/ha",
+    "Value": 90389
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 1965,
+    "Unit": "hg/ha",
+    "Value": 57544
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 1966,
+    "Unit": "hg/ha",
+    "Value": 87322
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 1967,
+    "Unit": "hg/ha",
+    "Value": 72367
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 1968,
+    "Unit": "hg/ha",
+    "Value": 72483
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 1969,
+    "Unit": "hg/ha",
+    "Value": 55738
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 1970,
+    "Unit": "hg/ha",
+    "Value": 54693
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 1971,
+    "Unit": "hg/ha",
+    "Value": 63302
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 1972,
+    "Unit": "hg/ha",
+    "Value": 53203
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 1973,
+    "Unit": "hg/ha",
+    "Value": 60902
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 1974,
+    "Unit": "hg/ha",
+    "Value": 67097
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 1975,
+    "Unit": "hg/ha",
+    "Value": 69677
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 1976,
+    "Unit": "hg/ha",
+    "Value": 74194
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 1977,
+    "Unit": "hg/ha",
+    "Value": 75484
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 1978,
+    "Unit": "hg/ha",
+    "Value": 76774
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 1979,
+    "Unit": "hg/ha",
+    "Value": 76645
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 1980,
+    "Unit": "hg/ha",
+    "Value": 60613
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 1981,
+    "Unit": "hg/ha",
+    "Value": 71747
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 1982,
+    "Unit": "hg/ha",
+    "Value": 64872
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 1983,
+    "Unit": "hg/ha",
+    "Value": 87742
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 1984,
+    "Unit": "hg/ha",
+    "Value": 62937
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 1985,
+    "Unit": "hg/ha",
+    "Value": 56667
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 1986,
+    "Unit": "hg/ha",
+    "Value": 78571
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 1987,
+    "Unit": "hg/ha",
+    "Value": 63571
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 1988,
+    "Unit": "hg/ha",
+    "Value": 50000
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 1989,
+    "Unit": "hg/ha",
+    "Value": 107778
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 1990,
+    "Unit": "hg/ha",
+    "Value": 66667
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 1991,
+    "Unit": "hg/ha",
+    "Value": 77818
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 1992,
+    "Unit": "hg/ha",
+    "Value": 82920
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 1993,
+    "Unit": "hg/ha",
+    "Value": 98446
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 1994,
+    "Unit": "hg/ha",
+    "Value": 81404
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 1995,
+    "Unit": "hg/ha",
+    "Value": 111323
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 1996,
+    "Unit": "hg/ha",
+    "Value": 106138
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 1997,
+    "Unit": "hg/ha",
+    "Value": 109874
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 1998,
+    "Unit": "hg/ha",
+    "Value": 127212
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 1999,
+    "Unit": "hg/ha",
+    "Value": 142018
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 2000,
+    "Unit": "hg/ha",
+    "Value": 141228
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 2001,
+    "Unit": "hg/ha",
+    "Value": 148818
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 2002,
+    "Unit": "hg/ha",
+    "Value": 153868
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 2003,
+    "Unit": "hg/ha",
+    "Value": 151301
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 2004,
+    "Unit": "hg/ha",
+    "Value": 149346
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 2005,
+    "Unit": "hg/ha",
+    "Value": 167061
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 2006,
+    "Unit": "hg/ha",
+    "Value": 170745
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 2007,
+    "Unit": "hg/ha",
+    "Value": 188902
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 2008,
+    "Unit": "hg/ha",
+    "Value": 193878
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 2009,
+    "Unit": "hg/ha",
+    "Value": 219780
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 2010,
+    "Unit": "hg/ha",
+    "Value": 231111
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 2011,
+    "Unit": "hg/ha",
+    "Value": 242211
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 2012,
+    "Unit": "hg/ha",
+    "Value": 250538
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 2013,
+    "Unit": "hg/ha",
+    "Value": 260110
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 2014,
+    "Unit": "hg/ha",
+    "Value": 250000
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 2015,
+    "Unit": "hg/ha",
+    "Value": 242574
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 2016,
+    "Unit": "hg/ha",
+    "Value": 245894
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 2017,
+    "Unit": "hg/ha",
+    "Value": 251110
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 2018,
+    "Unit": "hg/ha",
+    "Value": 261714
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Potatoes",
+    "Year": 2019,
+    "Unit": "hg/ha",
+    "Value": 256455
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Rye",
+    "Year": 1961,
+    "Unit": "hg/ha",
+    "Value": 6626
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Rye",
+    "Year": 1962,
+    "Unit": "hg/ha",
+    "Value": 6329
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Rye",
+    "Year": 1963,
+    "Unit": "hg/ha",
+    "Value": 5834
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Rye",
+    "Year": 1964,
+    "Unit": "hg/ha",
+    "Value": 6747
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Rye",
+    "Year": 1965,
+    "Unit": "hg/ha",
+    "Value": 5021
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Rye",
+    "Year": 1966,
+    "Unit": "hg/ha",
+    "Value": 6709
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Rye",
+    "Year": 1967,
+    "Unit": "hg/ha",
+    "Value": 7725
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Rye",
+    "Year": 1968,
+    "Unit": "hg/ha",
+    "Value": 6729
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Rye",
+    "Year": 1969,
+    "Unit": "hg/ha",
+    "Value": 8363
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Rye",
+    "Year": 1970,
+    "Unit": "hg/ha",
+    "Value": 9215
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Rye",
+    "Year": 1971,
+    "Unit": "hg/ha",
+    "Value": 8633
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Rye",
+    "Year": 1972,
+    "Unit": "hg/ha",
+    "Value": 9323
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Rye",
+    "Year": 1973,
+    "Unit": "hg/ha",
+    "Value": 8768
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Rye",
+    "Year": 1974,
+    "Unit": "hg/ha",
+    "Value": 9382
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Rye",
+    "Year": 1975,
+    "Unit": "hg/ha",
+    "Value": 8889
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Rye",
+    "Year": 1976,
+    "Unit": "hg/ha",
+    "Value": 11111
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Rye",
+    "Year": 1977,
+    "Unit": "hg/ha",
+    "Value": 10000
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Rye",
+    "Year": 1978,
+    "Unit": "hg/ha",
+    "Value": 10000
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Rye",
+    "Year": 1979,
+    "Unit": "hg/ha",
+    "Value": 10000
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Rye",
+    "Year": 1980,
+    "Unit": "hg/ha",
+    "Value": 9709
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Rye",
+    "Year": 1981,
+    "Unit": "hg/ha",
+    "Value": 6304
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Rye",
+    "Year": 1982,
+    "Unit": "hg/ha",
+    "Value": 7732
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Rye",
+    "Year": 1983,
+    "Unit": "hg/ha",
+    "Value": 8850
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Rye",
+    "Year": 1984,
+    "Unit": "hg/ha",
+    "Value": 10926
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Rye",
+    "Year": 1985,
+    "Unit": "hg/ha",
+    "Value": 10900
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Rye",
+    "Year": 1986,
+    "Unit": "hg/ha",
+    "Value": 10000
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Rye",
+    "Year": 1987,
+    "Unit": "hg/ha",
+    "Value": 10000
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Rye",
+    "Year": 1988,
+    "Unit": "hg/ha",
+    "Value": 7833
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Rye",
+    "Year": 1989,
+    "Unit": "hg/ha",
+    "Value": 7750
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Rye",
+    "Year": 1990,
+    "Unit": "hg/ha",
+    "Value": 6667
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Rye",
+    "Year": 1991,
+    "Unit": "hg/ha",
+    "Value": 3587
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Rye",
+    "Year": 1992,
+    "Unit": "hg/ha",
+    "Value": 12466
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Rye",
+    "Year": 1993,
+    "Unit": "hg/ha",
+    "Value": 11586
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Rye",
+    "Year": 1994,
+    "Unit": "hg/ha",
+    "Value": 14106
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Rye",
+    "Year": 1995,
+    "Unit": "hg/ha",
+    "Value": 13753
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Rye",
+    "Year": 1996,
+    "Unit": "hg/ha",
+    "Value": 11556
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Rye",
+    "Year": 1997,
+    "Unit": "hg/ha",
+    "Value": 13308
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Rye",
+    "Year": 1998,
+    "Unit": "hg/ha",
+    "Value": 14158
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Rye",
+    "Year": 1999,
+    "Unit": "hg/ha",
+    "Value": 15455
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Rye",
+    "Year": 2000,
+    "Unit": "hg/ha",
+    "Value": 11538
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Rye",
+    "Year": 2001,
+    "Unit": "hg/ha",
+    "Value": 19474
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Rye",
+    "Year": 2002,
+    "Unit": "hg/ha",
+    "Value": 18000
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Rye",
+    "Year": 2003,
+    "Unit": "hg/ha",
+    "Value": 15066
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Rye",
+    "Year": 2004,
+    "Unit": "hg/ha",
+    "Value": 16000
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Rye",
+    "Year": 2005,
+    "Unit": "hg/ha",
+    "Value": 19815
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Rye",
+    "Year": 2006,
+    "Unit": "hg/ha",
+    "Value": 19274
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Rye",
+    "Year": 2007,
+    "Unit": "hg/ha",
+    "Value": 25385
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Rye",
+    "Year": 2008,
+    "Unit": "hg/ha",
+    "Value": 22143
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Rye",
+    "Year": 2009,
+    "Unit": "hg/ha",
+    "Value": 29091
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Rye",
+    "Year": 2010,
+    "Unit": "hg/ha",
+    "Value": 20909
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Rye",
+    "Year": 2011,
+    "Unit": "hg/ha",
+    "Value": 24286
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Rye",
+    "Year": 2012,
+    "Unit": "hg/ha",
+    "Value": 26154
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Rye",
+    "Year": 2013,
+    "Unit": "hg/ha",
+    "Value": 24167
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Rye",
+    "Year": 2014,
+    "Unit": "hg/ha",
+    "Value": 22327
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Rye",
+    "Year": 2015,
+    "Unit": "hg/ha",
+    "Value": 23077
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Rye",
+    "Year": 2016,
+    "Unit": "hg/ha",
+    "Value": 22533
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Rye",
+    "Year": 2017,
+    "Unit": "hg/ha",
+    "Value": 22666
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Rye",
+    "Year": 2018,
+    "Unit": "hg/ha",
+    "Value": 23053
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Rye",
+    "Year": 2019,
+    "Unit": "hg/ha",
+    "Value": 21741
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 1961,
+    "Unit": "hg/ha",
+    "Value": 7731
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 1962,
+    "Unit": "hg/ha",
+    "Value": 10522
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 1963,
+    "Unit": "hg/ha",
+    "Value": 7127
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 1964,
+    "Unit": "hg/ha",
+    "Value": 9625
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 1965,
+    "Unit": "hg/ha",
+    "Value": 11344
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 1966,
+    "Unit": "hg/ha",
+    "Value": 12398
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 1967,
+    "Unit": "hg/ha",
+    "Value": 13550
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 1968,
+    "Unit": "hg/ha",
+    "Value": 14124
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 1969,
+    "Unit": "hg/ha",
+    "Value": 16389
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 1970,
+    "Unit": "hg/ha",
+    "Value": 15377
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 1971,
+    "Unit": "hg/ha",
+    "Value": 18735
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 1972,
+    "Unit": "hg/ha",
+    "Value": 19000
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 1973,
+    "Unit": "hg/ha",
+    "Value": 20097
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 1974,
+    "Unit": "hg/ha",
+    "Value": 20625
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 1975,
+    "Unit": "hg/ha",
+    "Value": 19375
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 1976,
+    "Unit": "hg/ha",
+    "Value": 25526
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 1977,
+    "Unit": "hg/ha",
+    "Value": 24500
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 1978,
+    "Unit": "hg/ha",
+    "Value": 24500
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 1979,
+    "Unit": "hg/ha",
+    "Value": 24900
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 1980,
+    "Unit": "hg/ha",
+    "Value": 25198
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 1981,
+    "Unit": "hg/ha",
+    "Value": 25321
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 1982,
+    "Unit": "hg/ha",
+    "Value": 26886
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 1983,
+    "Unit": "hg/ha",
+    "Value": 30879
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 1984,
+    "Unit": "hg/ha",
+    "Value": 31579
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 1985,
+    "Unit": "hg/ha",
+    "Value": 31406
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 1986,
+    "Unit": "hg/ha",
+    "Value": 28945
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 1987,
+    "Unit": "hg/ha",
+    "Value": 31031
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 1988,
+    "Unit": "hg/ha",
+    "Value": 32010
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 1989,
+    "Unit": "hg/ha",
+    "Value": 29302
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 1990,
+    "Unit": "hg/ha",
+    "Value": 30197
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 1991,
+    "Unit": "hg/ha",
+    "Value": 20698
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 1992,
+    "Unit": "hg/ha",
+    "Value": 24388
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 1993,
+    "Unit": "hg/ha",
+    "Value": 29976
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 1994,
+    "Unit": "hg/ha",
+    "Value": 24745
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 1995,
+    "Unit": "hg/ha",
+    "Value": 28703
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 1996,
+    "Unit": "hg/ha",
+    "Value": 21741
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 1997,
+    "Unit": "hg/ha",
+    "Value": 28516
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 1998,
+    "Unit": "hg/ha",
+    "Value": 28037
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 1999,
+    "Unit": "hg/ha",
+    "Value": 24954
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 2000,
+    "Unit": "hg/ha",
+    "Value": 30455
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 2001,
+    "Unit": "hg/ha",
+    "Value": 28220
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 2002,
+    "Unit": "hg/ha",
+    "Value": 31617
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 2003,
+    "Unit": "hg/ha",
+    "Value": 28629
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 2004,
+    "Unit": "hg/ha",
+    "Value": 31130
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 2005,
+    "Unit": "hg/ha",
+    "Value": 31582
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 2006,
+    "Unit": "hg/ha",
+    "Value": 30787
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 2007,
+    "Unit": "hg/ha",
+    "Value": 35496
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 2008,
+    "Unit": "hg/ha",
+    "Value": 40168
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 2009,
+    "Unit": "hg/ha",
+    "Value": 40229
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 2010,
+    "Unit": "hg/ha",
+    "Value": 39905
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 2011,
+    "Unit": "hg/ha",
+    "Value": 42301
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 2012,
+    "Unit": "hg/ha",
+    "Value": 41096
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 2013,
+    "Unit": "hg/ha",
+    "Value": 41292
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 2014,
+    "Unit": "hg/ha",
+    "Value": 40001
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 2015,
+    "Unit": "hg/ha",
+    "Value": 39511
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 2016,
+    "Unit": "hg/ha",
+    "Value": 39000
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 2017,
+    "Unit": "hg/ha",
+    "Value": 40367
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 2018,
+    "Unit": "hg/ha",
+    "Value": 36927
+  },
+  {
+    "Domain": "Crops",
+    "Area": "Albania",
+    "Element": "Yield",
+    "Item": "Wheat",
+    "Year": 2019,
+    "Unit": "hg/ha",
+    "Value": 40680
+  }
+]
