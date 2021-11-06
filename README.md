@@ -48,7 +48,7 @@ wasp-cli set wasp.0.peering 127.0.0.1:4000
 
 ```Shell
 # Trust node
-wasp-cli peering info -i 0
+wasp-cli peering info
 wasp-cli peering trust {PubKey} 127.0.0.1:4000
 wasp-cli peering list-trusted
 

@@ -86,8 +86,17 @@ func funcSetOwner(ctx wasmlib.ScFuncContext, f *SetOwnerContext) {
 	f.State.Owner().SetValue(f.Params.Owner().Value())
 }
 
-func viewGetOwner(ctx wasmlib.ScViewContext, f *GetOwnerContext) {
-	f.Results.Owner().SetValue(f.State.Owner().Value())
+func viewGetCrop(ctx wasmlib.ScViewContext, f *GetCropContext) {
+	cropID := f.Params.CropID().Value()
+	stateCrops := f.State.Crops()
+	stateCropsLen := stateCrops.Length()
+	for i := int32(0); i < stateCropsLen; i++ {
+		stateCrop := stateCrops.GetCrop(i).Value()
+		if stateCrop.Id == cropID {
+			f.Results.Crop().SetValue(stateCrop)
+			return
+		}
+	}
 }
 
 func viewGetCrops(ctx wasmlib.ScViewContext, f *GetCropsContext) {
@@ -105,18 +114,6 @@ func viewGetMyPositions(ctx wasmlib.ScViewContext, f *GetMyPositionsContext) {
 func viewGetOrders(ctx wasmlib.ScViewContext, f *GetOrdersContext) {
 }
 
-func viewGetCrop(ctx wasmlib.ScViewContext, f *GetCropContext) {
-	stateCrops := f.State.Crops()
-	stateCrop := stateCrops.GetCrop(0).Value()
-	f.Results.Crop().SetValue(stateCrop)
-	// cropID := f.Params.CropID().Value()
-	// stateCrops := f.State.Crops()
-	// stateCropsLen := stateCrops.Length()
-	// for i := int32(0); i < stateCropsLen; i++ {
-	// 	stateCrop := stateCrops.GetCrop(i).Value()
-	// 	if stateCrop.Id == cropID {
-	// 		f.Results.Crop().SetValue(stateCrop)
-	// 		return
-	// 	}
-	// }
+func viewGetOwner(ctx wasmlib.ScViewContext, f *GetOwnerContext) {
+	f.Results.Owner().SetValue(f.State.Owner().Value())
 }
