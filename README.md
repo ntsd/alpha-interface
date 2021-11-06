@@ -8,6 +8,11 @@ A Hackathon project created by Alpha Interface team for Agri-D Food Hack
 
 <https://wiki.iota.org/wasp/guide/chains_and_nodes/running-a-node#download-wasp>
 
+```SHELL
+brew install rocksdb
+make install
+```
+
 ### Run A Wasp node
 
 Run A Wasp node will connecting to goshimmer using TXStream.
@@ -50,7 +55,7 @@ wasp-cli peering list-trusted
 # Deploy The Chain
 # `committee` will correspond to wasp.0, wasp.1 in `wasp-cli.json`
 # `quorum` is minimum amount node
-wasp-cli chain deploy --committee=0 --quorum=1 --chain=alpha-interface --description="Alpha Interface Chain"
+wasp-cli chain deploy --committee=0 --quorum=1 --chain=alpha-interface-chain --description="Alpha Interface Chain"
 
 # Deposit money to the chain
 wasp-cli chain deposit IOTA:20000
@@ -76,7 +81,7 @@ make deploy-wasm
 
 ```Shell
 wasp-cli chain post-request alphainterface <funcname> [params] --transfer=IOTA:10
-wasp-cli chain post-request alphainterface setOwner string owner string A/ePvxhin2thgGQvyUCmurGFnCp4E6DQvcXpty2479X69Z::00000000
+wasp-cli chain post-request alphainterface setOwner string owner string {actorID}
 wasp-cli chain call-view alphainterface getOwner
 wasp-cli chain post-request alphainterface setCrop string name string potato string country string germany string yield int 10000
 wasp-cli chain call-view alphainterface getCrop string cropID string potato_germany
