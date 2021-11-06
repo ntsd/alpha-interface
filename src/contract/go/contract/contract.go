@@ -7,7 +7,7 @@
 
 package alphainterfacecontract
 
-import "github.com/iotaledger/wasp/packages/vm/wasmlib"
+import "github.com/iotaledger/wasp/packages/vm/wasmlib/go/wasmlib"
 
 type CloseOrderCall struct {
 	Func   *wasmlib.ScFunc
@@ -41,6 +41,7 @@ type SetOwnerCall struct {
 
 type GetCropCall struct {
 	Func    *wasmlib.ScView
+	Params  MutableGetCropParams
 	Results ImmutableGetCropResults
 }
 
@@ -106,7 +107,7 @@ func (sc Funcs) SetOwner(ctx wasmlib.ScFuncCallContext) *SetOwnerCall {
 
 func (sc Funcs) GetCrop(ctx wasmlib.ScViewCallContext) *GetCropCall {
 	f := &GetCropCall{Func: wasmlib.NewScView(ctx, HScName, HViewGetCrop)}
-	f.Func.SetPtrs(nil, &f.Results.id)
+	f.Func.SetPtrs(&f.Params.id, &f.Results.id)
 	return f
 }
 

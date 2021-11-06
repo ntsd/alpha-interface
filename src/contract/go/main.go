@@ -10,13 +10,14 @@
 package main
 
 import "github.com/iotaledger/wasp/packages/vm/wasmclient"
-import "github.com/iotaledger/wasp/alpha-interface/src/contract"
+
+import "github.com/ntsd/alpha-interface/src/contract/go/alphainterfacecontract"
 
 func main() {
 }
 
 //export on_load
-func OnLoad() {
+func onLoad() {
 	h := &wasmclient.WasmVMHost{}
 	h.ConnectWasmHost()
 	alphainterfacecontract.OnLoad()

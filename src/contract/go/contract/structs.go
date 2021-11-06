@@ -7,7 +7,7 @@
 
 package alphainterfacecontract
 
-import "github.com/iotaledger/wasp/packages/vm/wasmlib"
+import "github.com/iotaledger/wasp/packages/vm/wasmlib/go/wasmlib"
 
 type Crop struct {
 	Country   string // the country name

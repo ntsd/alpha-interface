@@ -6,8 +6,7 @@
 // Change the json schema instead
 
 package alphainterfacecontract
-
-import "github.com/iotaledger/wasp/packages/vm/wasmlib"
+import "github.com/iotaledger/wasp/packages/vm/wasmlib/go/wasmlib"
 
 type ImmutableGetCropResults struct {
 	id int32

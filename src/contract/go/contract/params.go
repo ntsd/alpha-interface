@@ -6,8 +6,7 @@
 // Change the json schema instead
 
 package alphainterfacecontract
-
-import "github.com/iotaledger/wasp/packages/vm/wasmlib"
+import "github.com/iotaledger/wasp/packages/vm/wasmlib/go/wasmlib"
 
 type ImmutableCloseOrderParams struct {
 	id int32
@@ -143,4 +142,20 @@ type MutableSetOwnerParams struct {
 
 func (s MutableSetOwnerParams) Owner() wasmlib.ScMutableAgentID {
 	return wasmlib.NewScMutableAgentID(s.id, idxMap[IdxParamOwner])
+}
+
+type ImmutableGetCropParams struct {
+	id int32
+}
+
+func (s ImmutableGetCropParams) CropID() wasmlib.ScImmutableString {
+	return wasmlib.NewScImmutableString(s.id, idxMap[IdxParamCropID])
+}
+
+type MutableGetCropParams struct {
+	id int32
+}
+
+func (s MutableGetCropParams) CropID() wasmlib.ScMutableString {
+	return wasmlib.NewScMutableString(s.id, idxMap[IdxParamCropID])
 }

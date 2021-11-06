@@ -8,7 +8,7 @@
 //nolint:dupl
 package alphainterfacecontract
 
-import "github.com/iotaledger/wasp/packages/vm/wasmlib"
+import "github.com/iotaledger/wasp/packages/vm/wasmlib/go/wasmlib"
 
 func OnLoad() {
 	exports := wasmlib.NewScExports()
@@ -118,6 +118,11 @@ type SetCropContext struct {
 
 func funcSetCropThunk(ctx wasmlib.ScFuncContext) {
 	ctx.Log("alphainterfacecontract.funcSetCrop")
+	// current owner of this smart contract
+	access := ctx.State().GetAgentID(wasmlib.Key("owner"))
+	ctx.Require(access.Exists(), "access not set: owner")
+	ctx.Require(ctx.Caller() == access.Value(), "no permission")
+
 	f := &SetCropContext{
 		Params: ImmutableSetCropParams{
 			id: wasmlib.OBJ_ID_PARAMS,
@@ -159,6 +164,7 @@ func funcSetOwnerThunk(ctx wasmlib.ScFuncContext) {
 }
 
 type GetCropContext struct {
+	Params  ImmutableGetCropParams
 	Results MutableGetCropResults
 	State   ImmutableAlphaInterfaceContractState
 }
@@ -166,6 +172,9 @@ type GetCropContext struct {
 func viewGetCropThunk(ctx wasmlib.ScViewContext) {
 	ctx.Log("alphainterfacecontract.viewGetCrop")
 	f := &GetCropContext{
+		Params: ImmutableGetCropParams{
+			id: wasmlib.OBJ_ID_PARAMS,
+		},
 		Results: MutableGetCropResults{
 			id: wasmlib.OBJ_ID_RESULTS,
 		},
@@ -173,6 +182,7 @@ func viewGetCropThunk(ctx wasmlib.ScViewContext) {
 			id: wasmlib.OBJ_ID_STATE,
 		},
 	}
+	ctx.Require(f.Params.CropID().Exists(), "missing mandatory cropID")
 	viewGetCrop(ctx, f)
 	ctx.Log("alphainterfacecontract.viewGetCrop ok")
 }
