@@ -9,6 +9,78 @@ package alphainterfacecontract
 
 import "github.com/iotaledger/wasp/packages/vm/wasmlib"
 
+type ImmutableCloseOrderParams struct {
+	id int32
+}
+
+func (s ImmutableCloseOrderParams) OrderID() wasmlib.ScImmutableString {
+	return wasmlib.NewScImmutableString(s.id, idxMap[IdxParamOrderID])
+}
+
+type MutableCloseOrderParams struct {
+	id int32
+}
+
+func (s MutableCloseOrderParams) OrderID() wasmlib.ScMutableString {
+	return wasmlib.NewScMutableString(s.id, idxMap[IdxParamOrderID])
+}
+
+type ImmutableClosePositionParams struct {
+	id int32
+}
+
+func (s ImmutableClosePositionParams) Amount() wasmlib.ScImmutableInt64 {
+	return wasmlib.NewScImmutableInt64(s.id, idxMap[IdxParamAmount])
+}
+
+func (s ImmutableClosePositionParams) PositionID() wasmlib.ScImmutableString {
+	return wasmlib.NewScImmutableString(s.id, idxMap[IdxParamPositionID])
+}
+
+type MutableClosePositionParams struct {
+	id int32
+}
+
+func (s MutableClosePositionParams) Amount() wasmlib.ScMutableInt64 {
+	return wasmlib.NewScMutableInt64(s.id, idxMap[IdxParamAmount])
+}
+
+func (s MutableClosePositionParams) PositionID() wasmlib.ScMutableString {
+	return wasmlib.NewScMutableString(s.id, idxMap[IdxParamPositionID])
+}
+
+type ImmutableCreateOrderParams struct {
+	id int32
+}
+
+func (s ImmutableCreateOrderParams) CropID() wasmlib.ScImmutableString {
+	return wasmlib.NewScImmutableString(s.id, idxMap[IdxParamCropID])
+}
+
+func (s ImmutableCreateOrderParams) Leverage() wasmlib.ScImmutableInt64 {
+	return wasmlib.NewScImmutableInt64(s.id, idxMap[IdxParamLeverage])
+}
+
+func (s ImmutableCreateOrderParams) Type() wasmlib.ScImmutableString {
+	return wasmlib.NewScImmutableString(s.id, idxMap[IdxParamType])
+}
+
+type MutableCreateOrderParams struct {
+	id int32
+}
+
+func (s MutableCreateOrderParams) CropID() wasmlib.ScMutableString {
+	return wasmlib.NewScMutableString(s.id, idxMap[IdxParamCropID])
+}
+
+func (s MutableCreateOrderParams) Leverage() wasmlib.ScMutableInt64 {
+	return wasmlib.NewScMutableInt64(s.id, idxMap[IdxParamLeverage])
+}
+
+func (s MutableCreateOrderParams) Type() wasmlib.ScMutableString {
+	return wasmlib.NewScMutableString(s.id, idxMap[IdxParamType])
+}
+
 type ImmutableInitParams struct {
 	id int32
 }
@@ -25,6 +97,38 @@ func (s MutableInitParams) Owner() wasmlib.ScMutableAgentID {
 	return wasmlib.NewScMutableAgentID(s.id, idxMap[IdxParamOwner])
 }
 
+type ImmutableSetCropParams struct {
+	id int32
+}
+
+func (s ImmutableSetCropParams) Country() wasmlib.ScImmutableString {
+	return wasmlib.NewScImmutableString(s.id, idxMap[IdxParamCountry])
+}
+
+func (s ImmutableSetCropParams) Name() wasmlib.ScImmutableString {
+	return wasmlib.NewScImmutableString(s.id, idxMap[IdxParamName])
+}
+
+func (s ImmutableSetCropParams) Yield() wasmlib.ScImmutableInt64 {
+	return wasmlib.NewScImmutableInt64(s.id, idxMap[IdxParamYield])
+}
+
+type MutableSetCropParams struct {
+	id int32
+}
+
+func (s MutableSetCropParams) Country() wasmlib.ScMutableString {
+	return wasmlib.NewScMutableString(s.id, idxMap[IdxParamCountry])
+}
+
+func (s MutableSetCropParams) Name() wasmlib.ScMutableString {
+	return wasmlib.NewScMutableString(s.id, idxMap[IdxParamName])
+}
+
+func (s MutableSetCropParams) Yield() wasmlib.ScMutableInt64 {
+	return wasmlib.NewScMutableInt64(s.id, idxMap[IdxParamYield])
+}
+
 type ImmutableSetOwnerParams struct {
 	id int32
 }
@@ -39,28 +143,4 @@ type MutableSetOwnerParams struct {
 
 func (s MutableSetOwnerParams) Owner() wasmlib.ScMutableAgentID {
 	return wasmlib.NewScMutableAgentID(s.id, idxMap[IdxParamOwner])
-}
-
-type ImmutableTransferParams struct {
-	id int32
-}
-
-func (s ImmutableTransferParams) Number() wasmlib.ScImmutableInt64 {
-	return wasmlib.NewScImmutableInt64(s.id, idxMap[IdxParamNumber])
-}
-
-func (s ImmutableTransferParams) Receiver() wasmlib.ScImmutableAgentID {
-	return wasmlib.NewScImmutableAgentID(s.id, idxMap[IdxParamReceiver])
-}
-
-type MutableTransferParams struct {
-	id int32
-}
-
-func (s MutableTransferParams) Number() wasmlib.ScMutableInt64 {
-	return wasmlib.NewScMutableInt64(s.id, idxMap[IdxParamNumber])
-}
-
-func (s MutableTransferParams) Receiver() wasmlib.ScMutableAgentID {
-	return wasmlib.NewScMutableAgentID(s.id, idxMap[IdxParamReceiver])
 }

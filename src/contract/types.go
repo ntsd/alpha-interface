@@ -10,18 +10,20 @@ package alphainterfacecontract
 import "github.com/iotaledger/wasp/packages/vm/wasmlib"
 
 type Crop struct {
-	Country string // the country name
-	Name    string // name of the crop
-	Year    int64  // year of the report
-	Yield   int64  // yield value of the crop per hg/ha
+	Country   string // the country name
+	Id        string // crop id `name_country`
+	Name      string // name of the crop
+	UpdatedAt int64  // unix timestamp
+	Yield     int64  // yield value of the crop unit hectogram (100 grammes) per hectare
 }
 
 func NewCropFromBytes(bytes []byte) *Crop {
 	decode := wasmlib.NewBytesDecoder(bytes)
 	data := &Crop{}
 	data.Country = decode.String()
+	data.Id = decode.String()
 	data.Name = decode.String()
-	data.Year = decode.Int64()
+	data.UpdatedAt = decode.Int64()
 	data.Yield = decode.Int64()
 	decode.Close()
 	return data
@@ -30,8 +32,9 @@ func NewCropFromBytes(bytes []byte) *Crop {
 func (o *Crop) Bytes() []byte {
 	return wasmlib.NewBytesEncoder().
 		String(o.Country).
+		String(o.Id).
 		String(o.Name).
-		Int64(o.Year).
+		Int64(o.UpdatedAt).
 		Int64(o.Yield).
 		Data()
 }
@@ -66,56 +69,140 @@ func (o MutableCrop) Value() *Crop {
 	return NewCropFromBytes(wasmlib.GetBytes(o.objID, o.keyID, wasmlib.TYPE_BYTES))
 }
 
-type Transaction struct {
-	Amount   int64             // amount to transfer
-	Receiver wasmlib.ScAgentID // agent id of receiver
-	Sender   wasmlib.ScAgentID // agent id of sender
+type Order struct {
+	CropID     string            // crop id
+	CurAmount  int64             // cur order amount of the order in IOTA
+	FullAmount int64             // amount with leverage
+	Leverage   int64             // 2, 4, 8
+	OrderID    string            // order id
+	Owner      wasmlib.ScAgentID // agent id of the owner
+	PositionID string            // position id
+	Type       string            // short, long
 }
 
-func NewTransactionFromBytes(bytes []byte) *Transaction {
+func NewOrderFromBytes(bytes []byte) *Order {
 	decode := wasmlib.NewBytesDecoder(bytes)
-	data := &Transaction{}
-	data.Amount = decode.Int64()
-	data.Receiver = decode.AgentID()
-	data.Sender = decode.AgentID()
+	data := &Order{}
+	data.CropID = decode.String()
+	data.CurAmount = decode.Int64()
+	data.FullAmount = decode.Int64()
+	data.Leverage = decode.Int64()
+	data.OrderID = decode.String()
+	data.Owner = decode.AgentID()
+	data.PositionID = decode.String()
+	data.Type = decode.String()
 	decode.Close()
 	return data
 }
 
-func (o *Transaction) Bytes() []byte {
+func (o *Order) Bytes() []byte {
 	return wasmlib.NewBytesEncoder().
-		Int64(o.Amount).
-		AgentID(o.Receiver).
-		AgentID(o.Sender).
+		String(o.CropID).
+		Int64(o.CurAmount).
+		Int64(o.FullAmount).
+		Int64(o.Leverage).
+		String(o.OrderID).
+		AgentID(o.Owner).
+		String(o.PositionID).
+		String(o.Type).
 		Data()
 }
 
-type ImmutableTransaction struct {
+type ImmutableOrder struct {
 	objID int32
 	keyID wasmlib.Key32
 }
 
-func (o ImmutableTransaction) Exists() bool {
+func (o ImmutableOrder) Exists() bool {
 	return wasmlib.Exists(o.objID, o.keyID, wasmlib.TYPE_BYTES)
 }
 
-func (o ImmutableTransaction) Value() *Transaction {
-	return NewTransactionFromBytes(wasmlib.GetBytes(o.objID, o.keyID, wasmlib.TYPE_BYTES))
+func (o ImmutableOrder) Value() *Order {
+	return NewOrderFromBytes(wasmlib.GetBytes(o.objID, o.keyID, wasmlib.TYPE_BYTES))
 }
 
-type MutableTransaction struct {
+type MutableOrder struct {
 	objID int32
 	keyID wasmlib.Key32
 }
 
-func (o MutableTransaction) Exists() bool {
+func (o MutableOrder) Exists() bool {
 	return wasmlib.Exists(o.objID, o.keyID, wasmlib.TYPE_BYTES)
 }
 
-func (o MutableTransaction) SetValue(value *Transaction) {
+func (o MutableOrder) SetValue(value *Order) {
 	wasmlib.SetBytes(o.objID, o.keyID, wasmlib.TYPE_BYTES, value.Bytes())
 }
 
-func (o MutableTransaction) Value() *Transaction {
-	return NewTransactionFromBytes(wasmlib.GetBytes(o.objID, o.keyID, wasmlib.TYPE_BYTES))
+func (o MutableOrder) Value() *Order {
+	return NewOrderFromBytes(wasmlib.GetBytes(o.objID, o.keyID, wasmlib.TYPE_BYTES))
+}
+
+type Position struct {
+	Amount       int64             // amount in IOTA
+	AveragePrice int64             // price of the position
+	CropID       string            // crop id
+	Id           string            // position id
+	Leverage     int64             // 2, 4, 8
+	Owner        wasmlib.ScAgentID // agent id of the owner
+	Status       string            // opening, closed, liquidated
+	Type         string            // short, long
+}
+
+func NewPositionFromBytes(bytes []byte) *Position {
+	decode := wasmlib.NewBytesDecoder(bytes)
+	data := &Position{}
+	data.Amount = decode.Int64()
+	data.AveragePrice = decode.Int64()
+	data.CropID = decode.String()
+	data.Id = decode.String()
+	data.Leverage = decode.Int64()
+	data.Owner = decode.AgentID()
+	data.Status = decode.String()
+	data.Type = decode.String()
+	decode.Close()
+	return data
+}
+
+func (o *Position) Bytes() []byte {
+	return wasmlib.NewBytesEncoder().
+		Int64(o.Amount).
+		Int64(o.AveragePrice).
+		String(o.CropID).
+		String(o.Id).
+		Int64(o.Leverage).
+		AgentID(o.Owner).
+		String(o.Status).
+		String(o.Type).
+		Data()
+}
+
+type ImmutablePosition struct {
+	objID int32
+	keyID wasmlib.Key32
+}
+
+func (o ImmutablePosition) Exists() bool {
+	return wasmlib.Exists(o.objID, o.keyID, wasmlib.TYPE_BYTES)
+}
+
+func (o ImmutablePosition) Value() *Position {
+	return NewPositionFromBytes(wasmlib.GetBytes(o.objID, o.keyID, wasmlib.TYPE_BYTES))
+}
+
+type MutablePosition struct {
+	objID int32
+	keyID wasmlib.Key32
+}
+
+func (o MutablePosition) Exists() bool {
+	return wasmlib.Exists(o.objID, o.keyID, wasmlib.TYPE_BYTES)
+}
+
+func (o MutablePosition) SetValue(value *Position) {
+	wasmlib.SetBytes(o.objID, o.keyID, wasmlib.TYPE_BYTES, value.Bytes())
+}
+
+func (o MutablePosition) Value() *Position {
+	return NewPositionFromBytes(wasmlib.GetBytes(o.objID, o.keyID, wasmlib.TYPE_BYTES))
 }

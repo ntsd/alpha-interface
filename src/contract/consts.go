@@ -16,33 +16,57 @@ const (
 )
 
 const (
-	ParamNumber   = wasmlib.Key("number")
-	ParamOwner    = wasmlib.Key("owner")
-	ParamReceiver = wasmlib.Key("receiver")
+	ParamAmount     = wasmlib.Key("amount")
+	ParamCountry    = wasmlib.Key("country")
+	ParamCropID     = wasmlib.Key("cropID")
+	ParamLeverage   = wasmlib.Key("leverage")
+	ParamName       = wasmlib.Key("name")
+	ParamOrderID    = wasmlib.Key("orderID")
+	ParamOwner      = wasmlib.Key("owner")
+	ParamPositionID = wasmlib.Key("positionID")
+	ParamType       = wasmlib.Key("type")
+	ParamYield      = wasmlib.Key("yield")
 )
 
 const (
-	ResultOwner        = wasmlib.Key("owner")
-	ResultTransactions = wasmlib.Key("transactions")
+	ResultCrop      = wasmlib.Key("crop")
+	ResultCrops     = wasmlib.Key("crops")
+	ResultOrders    = wasmlib.Key("orders")
+	ResultOwner     = wasmlib.Key("owner")
+	ResultPositions = wasmlib.Key("positions")
 )
 
 const (
-	StateOwner        = wasmlib.Key("owner")
-	StateTransactions = wasmlib.Key("transactions")
+	StateCrops     = wasmlib.Key("crops")
+	StateOrders    = wasmlib.Key("orders")
+	StateOwner     = wasmlib.Key("owner")
+	StatePositions = wasmlib.Key("positions")
 )
 
 const (
-	FuncInit             = "init"
-	FuncSetOwner         = "setOwner"
-	FuncTransfer         = "transfer"
-	ViewGetOwner         = "getOwner"
-	ViewViewTransactions = "viewTransactions"
+	FuncCloseOrder     = "closeOrder"
+	FuncClosePosition  = "closePosition"
+	FuncCreateOrder    = "createOrder"
+	FuncInit           = "init"
+	FuncSetCrop        = "setCrop"
+	FuncSetOwner       = "setOwner"
+	ViewGetCrop        = "getCrop"
+	ViewGetCrops       = "getCrops"
+	ViewGetMyPositions = "getMyPositions"
+	ViewGetOrders      = "getOrders"
+	ViewGetOwner       = "getOwner"
 )
 
 const (
-	HFuncInit             = wasmlib.ScHname(0x1f44d644)
-	HFuncSetOwner         = wasmlib.ScHname(0x2a15fe7b)
-	HFuncTransfer         = wasmlib.ScHname(0xa15da184)
-	HViewGetOwner         = wasmlib.ScHname(0x137107a6)
-	HViewViewTransactions = wasmlib.ScHname(0xfe6197b5)
+	HFuncCloseOrder     = wasmlib.ScHname(0xfc422a52)
+	HFuncClosePosition  = wasmlib.ScHname(0x90e90210)
+	HFuncCreateOrder    = wasmlib.ScHname(0xe3c7ac26)
+	HFuncInit           = wasmlib.ScHname(0x1f44d644)
+	HFuncSetCrop        = wasmlib.ScHname(0x321b14e9)
+	HFuncSetOwner       = wasmlib.ScHname(0x2a15fe7b)
+	HViewGetCrop        = wasmlib.ScHname(0x59d6b0d1)
+	HViewGetCrops       = wasmlib.ScHname(0x0f16dbb7)
+	HViewGetMyPositions = wasmlib.ScHname(0x658bee0e)
+	HViewGetOrders      = wasmlib.ScHname(0x53738744)
+	HViewGetOwner       = wasmlib.ScHname(0x137107a6)
 )

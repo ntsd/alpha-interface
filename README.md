@@ -72,6 +72,16 @@ make build-wasm
 make deploy-wasm
 ```
 
+### Post smart contract request
+
+```Shell
+wasp-cli chain post-request alphainterface <funcname> [params] --transfer=IOTA:10
+wasp-cli chain post-request alphainterface setOwner string owner string A/ePvxhin2thgGQvyUCmurGFnCp4E6DQvcXpty2479X69Z::00000000
+wasp-cli chain call-view alphainterface getOwner
+wasp-cli chain post-request alphainterface setCrop string name string potato string country string germany string yield int 10000
+wasp-cli chain call-view alphainterface getCrop string cropID string potato_germany
+```
+
 ## Resources
 
 <https://wiki.iota.org/wasp/overview>

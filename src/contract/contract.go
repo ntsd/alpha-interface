@@ -9,9 +9,29 @@ package alphainterfacecontract
 
 import "github.com/iotaledger/wasp/packages/vm/wasmlib"
 
+type CloseOrderCall struct {
+	Func   *wasmlib.ScFunc
+	Params MutableCloseOrderParams
+}
+
+type ClosePositionCall struct {
+	Func   *wasmlib.ScFunc
+	Params MutableClosePositionParams
+}
+
+type CreateOrderCall struct {
+	Func   *wasmlib.ScFunc
+	Params MutableCreateOrderParams
+}
+
 type InitCall struct {
 	Func   *wasmlib.ScInitFunc
 	Params MutableInitParams
+}
+
+type SetCropCall struct {
+	Func   *wasmlib.ScFunc
+	Params MutableSetCropParams
 }
 
 type SetOwnerCall struct {
@@ -19,9 +39,24 @@ type SetOwnerCall struct {
 	Params MutableSetOwnerParams
 }
 
-type TransferCall struct {
-	Func   *wasmlib.ScFunc
-	Params MutableTransferParams
+type GetCropCall struct {
+	Func    *wasmlib.ScView
+	Results ImmutableGetCropResults
+}
+
+type GetCropsCall struct {
+	Func    *wasmlib.ScView
+	Results ImmutableGetCropsResults
+}
+
+type GetMyPositionsCall struct {
+	Func    *wasmlib.ScView
+	Results ImmutableGetMyPositionsResults
+}
+
+type GetOrdersCall struct {
+	Func    *wasmlib.ScView
+	Results ImmutableGetOrdersResults
 }
 
 type GetOwnerCall struct {
@@ -29,17 +64,36 @@ type GetOwnerCall struct {
 	Results ImmutableGetOwnerResults
 }
 
-type ViewTransactionsCall struct {
-	Func    *wasmlib.ScView
-	Results ImmutableViewTransactionsResults
-}
-
 type Funcs struct{}
 
 var ScFuncs Funcs
 
+func (sc Funcs) CloseOrder(ctx wasmlib.ScFuncCallContext) *CloseOrderCall {
+	f := &CloseOrderCall{Func: wasmlib.NewScFunc(ctx, HScName, HFuncCloseOrder)}
+	f.Func.SetPtrs(&f.Params.id, nil)
+	return f
+}
+
+func (sc Funcs) ClosePosition(ctx wasmlib.ScFuncCallContext) *ClosePositionCall {
+	f := &ClosePositionCall{Func: wasmlib.NewScFunc(ctx, HScName, HFuncClosePosition)}
+	f.Func.SetPtrs(&f.Params.id, nil)
+	return f
+}
+
+func (sc Funcs) CreateOrder(ctx wasmlib.ScFuncCallContext) *CreateOrderCall {
+	f := &CreateOrderCall{Func: wasmlib.NewScFunc(ctx, HScName, HFuncCreateOrder)}
+	f.Func.SetPtrs(&f.Params.id, nil)
+	return f
+}
+
 func (sc Funcs) Init(ctx wasmlib.ScFuncCallContext) *InitCall {
 	f := &InitCall{Func: wasmlib.NewScInitFunc(ctx, HScName, HFuncInit, keyMap[:], idxMap[:])}
+	f.Func.SetPtrs(&f.Params.id, nil)
+	return f
+}
+
+func (sc Funcs) SetCrop(ctx wasmlib.ScFuncCallContext) *SetCropCall {
+	f := &SetCropCall{Func: wasmlib.NewScFunc(ctx, HScName, HFuncSetCrop)}
 	f.Func.SetPtrs(&f.Params.id, nil)
 	return f
 }
@@ -50,20 +104,32 @@ func (sc Funcs) SetOwner(ctx wasmlib.ScFuncCallContext) *SetOwnerCall {
 	return f
 }
 
-func (sc Funcs) Transfer(ctx wasmlib.ScFuncCallContext) *TransferCall {
-	f := &TransferCall{Func: wasmlib.NewScFunc(ctx, HScName, HFuncTransfer)}
-	f.Func.SetPtrs(&f.Params.id, nil)
+func (sc Funcs) GetCrop(ctx wasmlib.ScViewCallContext) *GetCropCall {
+	f := &GetCropCall{Func: wasmlib.NewScView(ctx, HScName, HViewGetCrop)}
+	f.Func.SetPtrs(nil, &f.Results.id)
+	return f
+}
+
+func (sc Funcs) GetCrops(ctx wasmlib.ScViewCallContext) *GetCropsCall {
+	f := &GetCropsCall{Func: wasmlib.NewScView(ctx, HScName, HViewGetCrops)}
+	f.Func.SetPtrs(nil, &f.Results.id)
+	return f
+}
+
+func (sc Funcs) GetMyPositions(ctx wasmlib.ScViewCallContext) *GetMyPositionsCall {
+	f := &GetMyPositionsCall{Func: wasmlib.NewScView(ctx, HScName, HViewGetMyPositions)}
+	f.Func.SetPtrs(nil, &f.Results.id)
+	return f
+}
+
+func (sc Funcs) GetOrders(ctx wasmlib.ScViewCallContext) *GetOrdersCall {
+	f := &GetOrdersCall{Func: wasmlib.NewScView(ctx, HScName, HViewGetOrders)}
+	f.Func.SetPtrs(nil, &f.Results.id)
 	return f
 }
 
 func (sc Funcs) GetOwner(ctx wasmlib.ScViewCallContext) *GetOwnerCall {
 	f := &GetOwnerCall{Func: wasmlib.NewScView(ctx, HScName, HViewGetOwner)}
-	f.Func.SetPtrs(nil, &f.Results.id)
-	return f
-}
-
-func (sc Funcs) ViewTransactions(ctx wasmlib.ScViewCallContext) *ViewTransactionsCall {
-	f := &ViewTransactionsCall{Func: wasmlib.NewScView(ctx, HScName, HViewViewTransactions)}
 	f.Func.SetPtrs(nil, &f.Results.id)
 	return f
 }

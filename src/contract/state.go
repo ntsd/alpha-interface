@@ -13,24 +13,44 @@ type ImmutableAlphaInterfaceContractState struct {
 	id int32
 }
 
+func (s ImmutableAlphaInterfaceContractState) Crops() ArrayOfImmutableCrop {
+	arrID := wasmlib.GetObjectID(s.id, idxMap[IdxStateCrops], wasmlib.TYPE_ARRAY|wasmlib.TYPE_BYTES)
+	return ArrayOfImmutableCrop{objID: arrID}
+}
+
+func (s ImmutableAlphaInterfaceContractState) Orders() ArrayOfImmutableOrder {
+	arrID := wasmlib.GetObjectID(s.id, idxMap[IdxStateOrders], wasmlib.TYPE_ARRAY|wasmlib.TYPE_BYTES)
+	return ArrayOfImmutableOrder{objID: arrID}
+}
+
 func (s ImmutableAlphaInterfaceContractState) Owner() wasmlib.ScImmutableAgentID {
 	return wasmlib.NewScImmutableAgentID(s.id, idxMap[IdxStateOwner])
 }
 
-func (s ImmutableAlphaInterfaceContractState) Transactions() ArrayOfImmutableTransaction {
-	arrID := wasmlib.GetObjectID(s.id, idxMap[IdxStateTransactions], wasmlib.TYPE_ARRAY|wasmlib.TYPE_BYTES)
-	return ArrayOfImmutableTransaction{objID: arrID}
+func (s ImmutableAlphaInterfaceContractState) Positions() ArrayOfImmutablePosition {
+	arrID := wasmlib.GetObjectID(s.id, idxMap[IdxStatePositions], wasmlib.TYPE_ARRAY|wasmlib.TYPE_BYTES)
+	return ArrayOfImmutablePosition{objID: arrID}
 }
 
 type MutableAlphaInterfaceContractState struct {
 	id int32
 }
 
+func (s MutableAlphaInterfaceContractState) Crops() ArrayOfMutableCrop {
+	arrID := wasmlib.GetObjectID(s.id, idxMap[IdxStateCrops], wasmlib.TYPE_ARRAY|wasmlib.TYPE_BYTES)
+	return ArrayOfMutableCrop{objID: arrID}
+}
+
+func (s MutableAlphaInterfaceContractState) Orders() ArrayOfMutableOrder {
+	arrID := wasmlib.GetObjectID(s.id, idxMap[IdxStateOrders], wasmlib.TYPE_ARRAY|wasmlib.TYPE_BYTES)
+	return ArrayOfMutableOrder{objID: arrID}
+}
+
 func (s MutableAlphaInterfaceContractState) Owner() wasmlib.ScMutableAgentID {
 	return wasmlib.NewScMutableAgentID(s.id, idxMap[IdxStateOwner])
 }
 
-func (s MutableAlphaInterfaceContractState) Transactions() ArrayOfMutableTransaction {
-	arrID := wasmlib.GetObjectID(s.id, idxMap[IdxStateTransactions], wasmlib.TYPE_ARRAY|wasmlib.TYPE_BYTES)
-	return ArrayOfMutableTransaction{objID: arrID}
+func (s MutableAlphaInterfaceContractState) Positions() ArrayOfMutablePosition {
+	arrID := wasmlib.GetObjectID(s.id, idxMap[IdxStatePositions], wasmlib.TYPE_ARRAY|wasmlib.TYPE_BYTES)
+	return ArrayOfMutablePosition{objID: arrID}
 }
