@@ -9,6 +9,18 @@ package alphainterfacecontract
 
 import "github.com/iotaledger/wasp/packages/vm/wasmlib"
 
+type ArrayOfImmutableTransaction struct {
+	objID int32
+}
+
+func (a ArrayOfImmutableTransaction) Length() int32 {
+	return wasmlib.GetLength(a.objID)
+}
+
+func (a ArrayOfImmutableTransaction) GetTransaction(index int32) ImmutableTransaction {
+	return ImmutableTransaction{objID: a.objID, keyID: wasmlib.Key32(index)}
+}
+
 type ImmutableAlphaInterfaceContractState struct {
 	id int32
 }
@@ -17,10 +29,36 @@ func (s ImmutableAlphaInterfaceContractState) Owner() wasmlib.ScImmutableAgentID
 	return wasmlib.NewScImmutableAgentID(s.id, idxMap[IdxStateOwner])
 }
 
+func (s ImmutableAlphaInterfaceContractState) Transactions() ArrayOfImmutableTransaction {
+	arrID := wasmlib.GetObjectID(s.id, idxMap[IdxStateTransactions], wasmlib.TYPE_ARRAY|wasmlib.TYPE_BYTES)
+	return ArrayOfImmutableTransaction{objID: arrID}
+}
+
+type ArrayOfMutableTransaction struct {
+	objID int32
+}
+
+func (a ArrayOfMutableTransaction) Clear() {
+	wasmlib.Clear(a.objID)
+}
+
+func (a ArrayOfMutableTransaction) Length() int32 {
+	return wasmlib.GetLength(a.objID)
+}
+
+func (a ArrayOfMutableTransaction) GetTransaction(index int32) MutableTransaction {
+	return MutableTransaction{objID: a.objID, keyID: wasmlib.Key32(index)}
+}
+
 type MutableAlphaInterfaceContractState struct {
 	id int32
 }
 
 func (s MutableAlphaInterfaceContractState) Owner() wasmlib.ScMutableAgentID {
 	return wasmlib.NewScMutableAgentID(s.id, idxMap[IdxStateOwner])
+}
+
+func (s MutableAlphaInterfaceContractState) Transactions() ArrayOfMutableTransaction {
+	arrID := wasmlib.GetObjectID(s.id, idxMap[IdxStateTransactions], wasmlib.TYPE_ARRAY|wasmlib.TYPE_BYTES)
+	return ArrayOfMutableTransaction{objID: arrID}
 }

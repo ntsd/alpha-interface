@@ -19,6 +19,11 @@ type SetOwnerCall struct {
 	Params MutableSetOwnerParams
 }
 
+type TransferCall struct {
+	Func   *wasmlib.ScFunc
+	Params MutableTransferParams
+}
+
 type GetOwnerCall struct {
 	Func    *wasmlib.ScView
 	Results ImmutableGetOwnerResults
@@ -36,6 +41,12 @@ func (sc Funcs) Init(ctx wasmlib.ScFuncCallContext) *InitCall {
 
 func (sc Funcs) SetOwner(ctx wasmlib.ScFuncCallContext) *SetOwnerCall {
 	f := &SetOwnerCall{Func: wasmlib.NewScFunc(ctx, HScName, HFuncSetOwner)}
+	f.Func.SetPtrs(&f.Params.id, nil)
+	return f
+}
+
+func (sc Funcs) Transfer(ctx wasmlib.ScFuncCallContext) *TransferCall {
+	f := &TransferCall{Func: wasmlib.NewScFunc(ctx, HScName, HFuncTransfer)}
 	f.Func.SetPtrs(&f.Params.id, nil)
 	return f
 }

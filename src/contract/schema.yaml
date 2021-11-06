@@ -1,9 +1,19 @@
 name: AlphaInterfaceContract
 description: AlphaInterfaceContract description
-structs: {}
+structs:
+  Transaction:
+    amount: Int64 // amount to transfer
+    sender: AgentID // agent id of sender
+    receiver: AgentID // agent id of receiver
+  Crop:
+    name: String // name of the crop
+    country: String // the country name
+    yield: Int64 // yield value of the crop per hg/ha
+    year: Int64 // year of the report
 typedefs: {}
 state:
   owner: AgentID // current owner of this smart contract
+  transactions: Transaction[]
 funcs:
   init:
     params:
@@ -12,6 +22,10 @@ funcs:
     access: owner // current owner of this smart contract
     params:
       owner: AgentID // new owner of this smart contract
+  transfer:
+    params:
+      number: Int64 // the number IOTAs to transfer
+      receiver: AgentID // the receiver agent id
 views:
   getOwner:
     results:

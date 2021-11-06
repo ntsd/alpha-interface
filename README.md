@@ -17,8 +17,11 @@ you can find testnet endpoint here <https://wiki.iota.org/wasp/guide/chains_and_
 for now we using `goshimmer.sc.iota.org:5000`
 
 ```Shell
-cd wasp-node
-wasp
+wasp -c ./wasp-nodes/config.json
+
+# or
+
+make run-wasp
 ```
 
 ### Configuring wasp-cli
@@ -42,7 +45,6 @@ wasp-cli set wasp.0.peering 127.0.0.1:4000
 # Trust node
 wasp-cli peering info -i 0
 wasp-cli peering trust {PubKey} 127.0.0.1:4000
-wasp-cli peering trust {PubKey} 127.0.0.1:4001
 wasp-cli peering list-trusted
 
 # Deploy The Chain
@@ -50,12 +52,24 @@ wasp-cli peering list-trusted
 # `quorum` is minimum amount node
 wasp-cli chain deploy --committee=0 --quorum=1 --chain=alpha-interface --description="Alpha Interface Chain"
 
-# trust chain you can find chain id from `http://127.0.0.1:7000/chains`
-wasp-cli set chains.testchain {chain-id}
-wasp-cli set chain testchain
-
 # Deposit money to the chain
 wasp-cli chain deposit IOTA:20000
+
+# Set test chain you can find chain id from `http://127.0.0.1:7000/chains`
+wasp-cli set chains.testchain {chain-id}
+wasp-cli set chain testchain
+```
+
+### Build the smart contract
+
+```shell
+make build-wasm
+```
+
+### Deploy the smart contract
+
+```Shell
+make deploy-wasm
 ```
 
 ## Resources

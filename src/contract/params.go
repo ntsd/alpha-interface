@@ -40,3 +40,27 @@ type MutableSetOwnerParams struct {
 func (s MutableSetOwnerParams) Owner() wasmlib.ScMutableAgentID {
 	return wasmlib.NewScMutableAgentID(s.id, idxMap[IdxParamOwner])
 }
+
+type ImmutableTransferParams struct {
+	id int32
+}
+
+func (s ImmutableTransferParams) Number() wasmlib.ScImmutableInt64 {
+	return wasmlib.NewScImmutableInt64(s.id, idxMap[IdxParamNumber])
+}
+
+func (s ImmutableTransferParams) Receiver() wasmlib.ScImmutableAgentID {
+	return wasmlib.NewScImmutableAgentID(s.id, idxMap[IdxParamReceiver])
+}
+
+type MutableTransferParams struct {
+	id int32
+}
+
+func (s MutableTransferParams) Number() wasmlib.ScMutableInt64 {
+	return wasmlib.NewScMutableInt64(s.id, idxMap[IdxParamNumber])
+}
+
+func (s MutableTransferParams) Receiver() wasmlib.ScMutableAgentID {
+	return wasmlib.NewScMutableAgentID(s.id, idxMap[IdxParamReceiver])
+}

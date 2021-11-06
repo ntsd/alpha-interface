@@ -14,6 +14,7 @@ func OnLoad() {
 	exports := wasmlib.NewScExports()
 	exports.AddFunc(FuncInit, funcInitThunk)
 	exports.AddFunc(FuncSetOwner, funcSetOwnerThunk)
+	exports.AddFunc(FuncTransfer, funcTransferThunk)
 	exports.AddView(ViewGetOwner, viewGetOwnerThunk)
 
 	for i, key := range keyMap {
@@ -63,6 +64,27 @@ func funcSetOwnerThunk(ctx wasmlib.ScFuncContext) {
 	ctx.Require(f.Params.Owner().Exists(), "missing mandatory owner")
 	funcSetOwner(ctx, f)
 	ctx.Log("alphainterfacecontract.funcSetOwner ok")
+}
+
+type TransferContext struct {
+	Params ImmutableTransferParams
+	State  MutableAlphaInterfaceContractState
+}
+
+func funcTransferThunk(ctx wasmlib.ScFuncContext) {
+	ctx.Log("alphainterfacecontract.funcTransfer")
+	f := &TransferContext{
+		Params: ImmutableTransferParams{
+			id: wasmlib.OBJ_ID_PARAMS,
+		},
+		State: MutableAlphaInterfaceContractState{
+			id: wasmlib.OBJ_ID_STATE,
+		},
+	}
+	ctx.Require(f.Params.Number().Exists(), "missing mandatory number")
+	ctx.Require(f.Params.Receiver().Exists(), "missing mandatory receiver")
+	funcTransfer(ctx, f)
+	ctx.Log("alphainterfacecontract.funcTransfer ok")
 }
 
 type GetOwnerContext struct {
