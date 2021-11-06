@@ -9,9 +9,10 @@
 
 package main
 
-import "github.com/iotaledger/wasp/packages/vm/wasmclient"
-
-import "github.com/ntsd/alpha-interface/src/contract/go/alphainterfacecontract"
+import (
+	alphainterfacecontract "github.com/iotaledger/wasp/alphainterface/src/contract/go/contract"
+	"github.com/iotaledger/wasp/packages/vm/wasmclient"
+)
 
 func main() {
 }

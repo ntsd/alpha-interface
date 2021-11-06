@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/iotaledger/wasp/packages/vm/wasmlib"
+	"github.com/iotaledger/wasp/packages/vm/wasmlib/go/wasmlib"
 )
 
 func funcCloseOrder(ctx wasmlib.ScFuncContext, f *CloseOrderContext) {
