@@ -4,9 +4,6 @@
 package alphainterfacecontract
 
 import (
-	"fmt"
-	"time"
-
 	"github.com/iotaledger/wasp/packages/vm/wasmlib/go/wasmlib"
 )
 
@@ -63,7 +60,7 @@ func funcSetCrop(ctx wasmlib.ScFuncContext, f *SetCropContext) {
 		}
 
 		crop.Yield = cropYield
-		crop.UpdatedAt = time.Now().Unix()
+		crop.UpdatedAt = ctx.Timestamp()
 		crops.GetCrop(i).SetValue(crop)
 
 		// TOTO liquidated positions
@@ -73,11 +70,11 @@ func funcSetCrop(ctx wasmlib.ScFuncContext, f *SetCropContext) {
 
 	// if not found create a new crop
 	newCrop := &Crop{
-		Id:        fmt.Sprintf("%s_%s", cropName, cropCountry),
+		Id:        cropName + "_" + cropCountry,
 		Name:      cropName,
 		Country:   cropCountry,
 		Yield:     cropYield,
-		UpdatedAt: time.Now().Unix(),
+		UpdatedAt: ctx.Timestamp(),
 	}
 	crops.GetCrop(cropsLen).SetValue(newCrop)
 }
