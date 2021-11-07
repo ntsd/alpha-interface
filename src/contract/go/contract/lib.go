@@ -44,7 +44,7 @@ func funcCloseOrderThunk(ctx wasmlib.ScFuncContext) {
 			id: wasmlib.OBJ_ID_STATE,
 		},
 	}
-	ctx.Require(f.Params.OrderID().Exists(), "missing mandatory orderID")
+	ctx.Require(f.Params.OrderIdx().Exists(), "missing mandatory orderIdx")
 	funcCloseOrder(ctx, f)
 	ctx.Log("alphainterfacecontract.funcCloseOrder ok")
 }
@@ -65,7 +65,7 @@ func funcClosePositionThunk(ctx wasmlib.ScFuncContext) {
 		},
 	}
 	ctx.Require(f.Params.Amount().Exists(), "missing mandatory amount")
-	ctx.Require(f.Params.PositionID().Exists(), "missing mandatory positionID")
+	ctx.Require(f.Params.PositionIdx().Exists(), "missing mandatory positionIdx")
 	funcClosePosition(ctx, f)
 	ctx.Log("alphainterfacecontract.funcClosePosition ok")
 }
@@ -85,7 +85,7 @@ func funcCreateOrderThunk(ctx wasmlib.ScFuncContext) {
 			id: wasmlib.OBJ_ID_STATE,
 		},
 	}
-	ctx.Require(f.Params.CropID().Exists(), "missing mandatory cropID")
+	ctx.Require(f.Params.CropIdx().Exists(), "missing mandatory cropIdx")
 	ctx.Require(f.Params.Leverage().Exists(), "missing mandatory leverage")
 	ctx.Require(f.Params.Type().Exists(), "missing mandatory type")
 	funcCreateOrder(ctx, f)
@@ -182,7 +182,7 @@ func viewGetCropThunk(ctx wasmlib.ScViewContext) {
 			id: wasmlib.OBJ_ID_STATE,
 		},
 	}
-	ctx.Require(f.Params.CropID().Exists(), "missing mandatory cropID")
+	ctx.Require(f.Params.CropIdx().Exists(), "missing mandatory cropIdx")
 	viewGetCrop(ctx, f)
 	ctx.Log("alphainterfacecontract.viewGetCrop ok")
 }

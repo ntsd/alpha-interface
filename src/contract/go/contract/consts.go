@@ -16,16 +16,16 @@ const (
 )
 
 const (
-	ParamAmount     = wasmlib.Key("amount")
-	ParamCountry    = wasmlib.Key("country")
-	ParamCropID     = wasmlib.Key("cropID")
-	ParamLeverage   = wasmlib.Key("leverage")
-	ParamName       = wasmlib.Key("name")
-	ParamOrderID    = wasmlib.Key("orderID")
-	ParamOwner      = wasmlib.Key("owner")
-	ParamPositionID = wasmlib.Key("positionID")
-	ParamType       = wasmlib.Key("type")
-	ParamYield      = wasmlib.Key("yield")
+	ParamAmount      = wasmlib.Key("amount")
+	ParamCountry     = wasmlib.Key("country")
+	ParamCropIdx     = wasmlib.Key("cropIdx")
+	ParamLeverage    = wasmlib.Key("leverage")
+	ParamName        = wasmlib.Key("name")
+	ParamOrderIdx    = wasmlib.Key("orderIdx")
+	ParamOwner       = wasmlib.Key("owner")
+	ParamPositionIdx = wasmlib.Key("positionIdx")
+	ParamType        = wasmlib.Key("type")
+	ParamYield       = wasmlib.Key("yield")
 )
 
 const (

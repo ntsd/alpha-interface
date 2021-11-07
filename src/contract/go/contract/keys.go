@@ -10,25 +10,25 @@ package alphainterfacecontract
 import "github.com/iotaledger/wasp/packages/vm/wasmlib/go/wasmlib"
 
 const (
-	IdxParamAmount     = 0
-	IdxParamCountry    = 1
-	IdxParamCropID     = 2
-	IdxParamLeverage   = 3
-	IdxParamName       = 4
-	IdxParamOrderID    = 5
-	IdxParamOwner      = 6
-	IdxParamPositionID = 7
-	IdxParamType       = 8
-	IdxParamYield      = 9
-	IdxResultCrop      = 10
-	IdxResultCrops     = 11
-	IdxResultOrders    = 12
-	IdxResultOwner     = 13
-	IdxResultPositions = 14
-	IdxStateCrops      = 15
-	IdxStateOrders     = 16
-	IdxStateOwner      = 17
-	IdxStatePositions  = 18
+	IdxParamAmount      = 0
+	IdxParamCountry     = 1
+	IdxParamCropIdx     = 2
+	IdxParamLeverage    = 3
+	IdxParamName        = 4
+	IdxParamOrderIdx    = 5
+	IdxParamOwner       = 6
+	IdxParamPositionIdx = 7
+	IdxParamType        = 8
+	IdxParamYield       = 9
+	IdxResultCrop       = 10
+	IdxResultCrops      = 11
+	IdxResultOrders     = 12
+	IdxResultOwner      = 13
+	IdxResultPositions  = 14
+	IdxStateCrops       = 15
+	IdxStateOrders      = 16
+	IdxStateOwner       = 17
+	IdxStatePositions   = 18
 )
 
 const keyMapLen = 19
@@ -36,12 +36,12 @@ const keyMapLen = 19
 var keyMap = [keyMapLen]wasmlib.Key{
 	ParamAmount,
 	ParamCountry,
-	ParamCropID,
+	ParamCropIdx,
 	ParamLeverage,
 	ParamName,
-	ParamOrderID,
+	ParamOrderIdx,
 	ParamOwner,
-	ParamPositionID,
+	ParamPositionIdx,
 	ParamType,
 	ParamYield,
 	ResultCrop,

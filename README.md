@@ -48,7 +48,7 @@ wasp-cli set wasp.0.peering 127.0.0.1:4000
 
 ```Shell
 # Trust node
-wasp-cli peering info -i 0
+wasp-cli peering info
 wasp-cli peering trust {PubKey} 127.0.0.1:4000
 wasp-cli peering list-trusted
 
@@ -58,7 +58,7 @@ wasp-cli peering list-trusted
 wasp-cli chain deploy --committee=0 --quorum=1 --chain=alpha-interface-chain --description="Alpha Interface Chain"
 
 # Deposit money to the chain
-wasp-cli chain deposit IOTA:20000
+wasp-cli chain deposit IOTA:10000
 
 # Set test chain you can find chain id from `http://127.0.0.1:7000/chains`
 wasp-cli set chains.testchain {chain-id}
