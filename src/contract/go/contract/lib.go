@@ -20,9 +20,12 @@ func OnLoad() {
 	exports.AddFunc(FuncSetOwner, funcSetOwnerThunk)
 	exports.AddView(ViewGetCrop, viewGetCropThunk)
 	exports.AddView(ViewGetCrops, viewGetCropsThunk)
-	exports.AddView(ViewGetMyPositions, viewGetMyPositionsThunk)
+	exports.AddView(ViewGetCropsString, viewGetCropsStringThunk)
 	exports.AddView(ViewGetOrders, viewGetOrdersThunk)
+	exports.AddView(ViewGetOrdersString, viewGetOrdersStringThunk)
 	exports.AddView(ViewGetOwner, viewGetOwnerThunk)
+	exports.AddView(ViewGetPositions, viewGetPositionsThunk)
+	exports.AddView(ViewGetPositionsString, viewGetPositionsStringThunk)
 
 	for i, key := range keyMap {
 		idxMap[i] = key.KeyID()
@@ -64,7 +67,6 @@ func funcClosePositionThunk(ctx wasmlib.ScFuncContext) {
 			id: wasmlib.OBJ_ID_STATE,
 		},
 	}
-	ctx.Require(f.Params.Amount().Exists(), "missing mandatory amount")
 	ctx.Require(f.Params.PositionIdx().Exists(), "missing mandatory positionIdx")
 	funcClosePosition(ctx, f)
 	ctx.Log("alphainterfacecontract.funcClosePosition ok")
@@ -205,23 +207,23 @@ func viewGetCropsThunk(ctx wasmlib.ScViewContext) {
 	ctx.Log("alphainterfacecontract.viewGetCrops ok")
 }
 
-type GetMyPositionsContext struct {
-	Results MutableGetMyPositionsResults
+type GetCropsStringContext struct {
+	Results MutableGetCropsStringResults
 	State   ImmutableAlphaInterfaceContractState
 }
 
-func viewGetMyPositionsThunk(ctx wasmlib.ScViewContext) {
-	ctx.Log("alphainterfacecontract.viewGetMyPositions")
-	f := &GetMyPositionsContext{
-		Results: MutableGetMyPositionsResults{
+func viewGetCropsStringThunk(ctx wasmlib.ScViewContext) {
+	ctx.Log("alphainterfacecontract.viewGetCropsString")
+	f := &GetCropsStringContext{
+		Results: MutableGetCropsStringResults{
 			id: wasmlib.OBJ_ID_RESULTS,
 		},
 		State: ImmutableAlphaInterfaceContractState{
 			id: wasmlib.OBJ_ID_STATE,
 		},
 	}
-	viewGetMyPositions(ctx, f)
-	ctx.Log("alphainterfacecontract.viewGetMyPositions ok")
+	viewGetCropsString(ctx, f)
+	ctx.Log("alphainterfacecontract.viewGetCropsString ok")
 }
 
 type GetOrdersContext struct {
@@ -243,6 +245,25 @@ func viewGetOrdersThunk(ctx wasmlib.ScViewContext) {
 	ctx.Log("alphainterfacecontract.viewGetOrders ok")
 }
 
+type GetOrdersStringContext struct {
+	Results MutableGetOrdersStringResults
+	State   ImmutableAlphaInterfaceContractState
+}
+
+func viewGetOrdersStringThunk(ctx wasmlib.ScViewContext) {
+	ctx.Log("alphainterfacecontract.viewGetOrdersString")
+	f := &GetOrdersStringContext{
+		Results: MutableGetOrdersStringResults{
+			id: wasmlib.OBJ_ID_RESULTS,
+		},
+		State: ImmutableAlphaInterfaceContractState{
+			id: wasmlib.OBJ_ID_STATE,
+		},
+	}
+	viewGetOrdersString(ctx, f)
+	ctx.Log("alphainterfacecontract.viewGetOrdersString ok")
+}
+
 type GetOwnerContext struct {
 	Results MutableGetOwnerResults
 	State   ImmutableAlphaInterfaceContractState
@@ -260,4 +281,42 @@ func viewGetOwnerThunk(ctx wasmlib.ScViewContext) {
 	}
 	viewGetOwner(ctx, f)
 	ctx.Log("alphainterfacecontract.viewGetOwner ok")
+}
+
+type GetPositionsContext struct {
+	Results MutableGetPositionsResults
+	State   ImmutableAlphaInterfaceContractState
+}
+
+func viewGetPositionsThunk(ctx wasmlib.ScViewContext) {
+	ctx.Log("alphainterfacecontract.viewGetPositions")
+	f := &GetPositionsContext{
+		Results: MutableGetPositionsResults{
+			id: wasmlib.OBJ_ID_RESULTS,
+		},
+		State: ImmutableAlphaInterfaceContractState{
+			id: wasmlib.OBJ_ID_STATE,
+		},
+	}
+	viewGetPositions(ctx, f)
+	ctx.Log("alphainterfacecontract.viewGetPositions ok")
+}
+
+type GetPositionsStringContext struct {
+	Results MutableGetPositionsStringResults
+	State   ImmutableAlphaInterfaceContractState
+}
+
+func viewGetPositionsStringThunk(ctx wasmlib.ScViewContext) {
+	ctx.Log("alphainterfacecontract.viewGetPositionsString")
+	f := &GetPositionsStringContext{
+		Results: MutableGetPositionsStringResults{
+			id: wasmlib.OBJ_ID_RESULTS,
+		},
+		State: ImmutableAlphaInterfaceContractState{
+			id: wasmlib.OBJ_ID_STATE,
+		},
+	}
+	viewGetPositionsString(ctx, f)
+	ctx.Log("alphainterfacecontract.viewGetPositionsString ok")
 }

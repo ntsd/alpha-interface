@@ -54,20 +54,28 @@ funcs:
   closePosition:
     params:
       positionIdx: Int32 // position id
-      amount: Int64 // iota amount
 views:
   getOwner:
     results:
       owner: AgentID // current owner of this smart contract
-  getMyPositions:
+  getPositions:
     results:
       positions: Position[]
+  getPositionsString:
+    results:
+      positionsString: String
   getOrders:
     results:
       orders: Order[]
+  getOrdersString:
+    results:
+      ordersString: String
   getCrops:
     results:
       crops: Crop[]
+  getCropsString:
+    results:
+      cropsString: String
   getCrop:
     params:
       cropIdx: Int32

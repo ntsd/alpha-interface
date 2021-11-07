@@ -28,20 +28,12 @@ type ImmutableClosePositionParams struct {
 	id int32
 }
 
-func (s ImmutableClosePositionParams) Amount() wasmlib.ScImmutableInt64 {
-	return wasmlib.NewScImmutableInt64(s.id, idxMap[IdxParamAmount])
-}
-
 func (s ImmutableClosePositionParams) PositionIdx() wasmlib.ScImmutableInt32 {
 	return wasmlib.NewScImmutableInt32(s.id, idxMap[IdxParamPositionIdx])
 }
 
 type MutableClosePositionParams struct {
 	id int32
-}
-
-func (s MutableClosePositionParams) Amount() wasmlib.ScMutableInt64 {
-	return wasmlib.NewScMutableInt64(s.id, idxMap[IdxParamAmount])
 }
 
 func (s MutableClosePositionParams) PositionIdx() wasmlib.ScMutableInt32 {
