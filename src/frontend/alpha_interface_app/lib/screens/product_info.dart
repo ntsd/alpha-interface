@@ -231,7 +231,7 @@ class _ProductInfoState extends State<ProductInfo> {
                         decoration:
                             const InputDecoration(border: OutlineInputBorder()),
                         onChanged: (value) {
-                          buyAmount = int.parse(value);
+                          sellAmount = int.parse(value);
                         },
                       ),
                     ),
@@ -257,7 +257,7 @@ class _ProductInfoState extends State<ProductInfo> {
                                     TextButton(
                                         onPressed: () {
                                           availableAmount =
-                                              availableAmount + buyAmount;
+                                              availableAmount + sellAmount;
                                           setState(() {});
                                           Navigator.pop(context);
                                         },
