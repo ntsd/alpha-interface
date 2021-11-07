@@ -20,7 +20,9 @@ class _ProductInfoState extends State<ProductInfo> {
   List<_SalesData> data = [];
   int avaiableAmount = 1000;
   final TextEditingController _controller = TextEditingController();
+  final TextEditingController _sellController = TextEditingController();
   int buyAmount = 0;
+  int sellAmount = 0;
 
   @override
   void initState() {
@@ -28,6 +30,7 @@ class _ProductInfoState extends State<ProductInfo> {
     super.initState();
     loadJson();
     _controller.text = "0";
+    _sellController.text = "0";
   }
 
   loadJson() async {
@@ -170,12 +173,13 @@ class _ProductInfoState extends State<ProductInfo> {
                     flex: 1,
                     child: Container(
                       child: TextFormField(
+                        keyboardType: TextInputType.number,
                         controller: _controller,
                         decoration:
                             const InputDecoration(border: OutlineInputBorder()),
-                            onChanged: (value) {
-                              buyAmount = int.parse(value);
-                            },
+                        onChanged: (value) {
+                          buyAmount = int.parse(value);
+                        },
                       ),
                     ),
                   ),
@@ -201,6 +205,59 @@ class _ProductInfoState extends State<ProductInfo> {
                                         onPressed: () {
                                           avaiableAmount =
                                               avaiableAmount - buyAmount;
+                                          setState(() {});
+                                          Navigator.pop(context);
+                                        },
+                                        child: Text("Close"))
+                                  ],
+                                );
+                              });
+                        },
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+              SizedBox(height: 10),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  Flexible(
+                    flex: 1,
+                    child: Container(
+                      child: TextFormField(
+                        keyboardType: TextInputType.number,
+                        controller: _sellController,
+                        decoration:
+                            const InputDecoration(border: OutlineInputBorder()),
+                        onChanged: (value) {
+                          buyAmount = int.parse(value);
+                        },
+                      ),
+                    ),
+                  ),
+                  Flexible(
+                    flex: 1,
+                    child: Container(
+                      height: 50,
+                      child: RaisedButton(
+                        color: Colors.red,
+                        child: Text(
+                          "Sell",
+                          style: TextStyle(color: Colors.white),
+                        ),
+                        onPressed: () {
+                          showDialog(
+                              context: context,
+                              builder: (context) {
+                                return AlertDialog(
+                                  title: Text("Success"),
+                                  content: Text("Order Completed."),
+                                  actions: [
+                                    TextButton(
+                                        onPressed: () {
+                                          avaiableAmount =
+                                              avaiableAmount + buyAmount;
                                           setState(() {});
                                           Navigator.pop(context);
                                         },
