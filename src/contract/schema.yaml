@@ -2,28 +2,27 @@ name: AlphaInterfaceContract
 description: AlphaInterfaceContract description
 structs:
   Crop:
-    id: String // crop id `name_country`
+    idx: Int32 // crop index
     name: String // name of the crop
     country: String // the country name
     yield: Int64 // yield value of the crop unit hectogram (100 grammes) per hectare
     updatedAt: Int64 // unix timestamp
   Position:
-    id: String // position id
-    cropID: String // crop id
+    idx: Int32 // position index
+    cropIdx: Int32 // crop index
     type: String // short, long
     averagePrice: Int64 // price of the position
-    amount: Int64 // amount in IOTA
-    leverage: Int64 // 2, 4, 8
-    status: String // opening, closed, liquidated
+    amount: Int64 // amount of position
+    status: String // position status (opening, closing, closed, liquidated)
     owner: AgentID // agent id of the owner
   Order:
-    orderID: String // order id
-    cropID: String // crop id
+    idx: Int32 // order index
+    positionIdx: Int32 // position index
+    cropIdx: Int32 // crop index
     type: String // short, long
-    positionID: String // position id
     curAmount: Int64 // cur order amount of the order in IOTA
-    fullAmount: Int64 // amount with leverage
-    leverage: Int64 // 2, 4, 8
+    fullAmount: Int64 // full amount
+    status: String // order status (opening, matched, canceled)
     owner: AgentID // agent id of the owner
 typedefs: {}
 state:
@@ -47,15 +46,15 @@ funcs:
       yield: Int64 // yield value of the crop unit hectogram (100 grammes) per hectare
   createOrder:
     params:
-      cropID: String // crop id `name_country`
+      cropIdx: Int32 // crop index
       leverage: Int64 // 2, 4, 8
       type: String // short, long
   closeOrder:
     params:
-      orderID: String // order id
+      orderIdx: Int32 // order idx
   closePosition:
     params:
-      positionID: String // position id
+      positionIdx: Int32 // position id
       amount: Int64 // iota amount
 views:
   getOwner:
@@ -72,6 +71,6 @@ views:
       crops: Crop[]
   getCrop:
     params:
-      cropID: String
+      cropIdx: Int32
     results:
       crop: Crop

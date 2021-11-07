@@ -12,16 +12,16 @@ type ImmutableCloseOrderParams struct {
 	id int32
 }
 
-func (s ImmutableCloseOrderParams) OrderID() wasmlib.ScImmutableString {
-	return wasmlib.NewScImmutableString(s.id, idxMap[IdxParamOrderID])
+func (s ImmutableCloseOrderParams) OrderIdx() wasmlib.ScImmutableInt32 {
+	return wasmlib.NewScImmutableInt32(s.id, idxMap[IdxParamOrderIdx])
 }
 
 type MutableCloseOrderParams struct {
 	id int32
 }
 
-func (s MutableCloseOrderParams) OrderID() wasmlib.ScMutableString {
-	return wasmlib.NewScMutableString(s.id, idxMap[IdxParamOrderID])
+func (s MutableCloseOrderParams) OrderIdx() wasmlib.ScMutableInt32 {
+	return wasmlib.NewScMutableInt32(s.id, idxMap[IdxParamOrderIdx])
 }
 
 type ImmutableClosePositionParams struct {
@@ -32,8 +32,8 @@ func (s ImmutableClosePositionParams) Amount() wasmlib.ScImmutableInt64 {
 	return wasmlib.NewScImmutableInt64(s.id, idxMap[IdxParamAmount])
 }
 
-func (s ImmutableClosePositionParams) PositionID() wasmlib.ScImmutableString {
-	return wasmlib.NewScImmutableString(s.id, idxMap[IdxParamPositionID])
+func (s ImmutableClosePositionParams) PositionIdx() wasmlib.ScImmutableInt32 {
+	return wasmlib.NewScImmutableInt32(s.id, idxMap[IdxParamPositionIdx])
 }
 
 type MutableClosePositionParams struct {
@@ -44,16 +44,16 @@ func (s MutableClosePositionParams) Amount() wasmlib.ScMutableInt64 {
 	return wasmlib.NewScMutableInt64(s.id, idxMap[IdxParamAmount])
 }
 
-func (s MutableClosePositionParams) PositionID() wasmlib.ScMutableString {
-	return wasmlib.NewScMutableString(s.id, idxMap[IdxParamPositionID])
+func (s MutableClosePositionParams) PositionIdx() wasmlib.ScMutableInt32 {
+	return wasmlib.NewScMutableInt32(s.id, idxMap[IdxParamPositionIdx])
 }
 
 type ImmutableCreateOrderParams struct {
 	id int32
 }
 
-func (s ImmutableCreateOrderParams) CropID() wasmlib.ScImmutableString {
-	return wasmlib.NewScImmutableString(s.id, idxMap[IdxParamCropID])
+func (s ImmutableCreateOrderParams) CropIdx() wasmlib.ScImmutableInt32 {
+	return wasmlib.NewScImmutableInt32(s.id, idxMap[IdxParamCropIdx])
 }
 
 func (s ImmutableCreateOrderParams) Leverage() wasmlib.ScImmutableInt64 {
@@ -68,8 +68,8 @@ type MutableCreateOrderParams struct {
 	id int32
 }
 
-func (s MutableCreateOrderParams) CropID() wasmlib.ScMutableString {
-	return wasmlib.NewScMutableString(s.id, idxMap[IdxParamCropID])
+func (s MutableCreateOrderParams) CropIdx() wasmlib.ScMutableInt32 {
+	return wasmlib.NewScMutableInt32(s.id, idxMap[IdxParamCropIdx])
 }
 
 func (s MutableCreateOrderParams) Leverage() wasmlib.ScMutableInt64 {
@@ -148,14 +148,14 @@ type ImmutableGetCropParams struct {
 	id int32
 }
 
-func (s ImmutableGetCropParams) CropID() wasmlib.ScImmutableString {
-	return wasmlib.NewScImmutableString(s.id, idxMap[IdxParamCropID])
+func (s ImmutableGetCropParams) CropIdx() wasmlib.ScImmutableInt32 {
+	return wasmlib.NewScImmutableInt32(s.id, idxMap[IdxParamCropIdx])
 }
 
 type MutableGetCropParams struct {
 	id int32
 }
 
-func (s MutableGetCropParams) CropID() wasmlib.ScMutableString {
-	return wasmlib.NewScMutableString(s.id, idxMap[IdxParamCropID])
+func (s MutableGetCropParams) CropIdx() wasmlib.ScMutableInt32 {
+	return wasmlib.NewScMutableInt32(s.id, idxMap[IdxParamCropIdx])
 }

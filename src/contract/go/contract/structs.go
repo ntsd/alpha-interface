@@ -11,7 +11,7 @@ import "github.com/iotaledger/wasp/packages/vm/wasmlib/go/wasmlib"
 
 type Crop struct {
 	Country   string // the country name
-	Id        string // crop id `name_country`
+	Idx       int32  // crop index
 	Name      string // name of the crop
 	UpdatedAt int64  // unix timestamp
 	Yield     int64  // yield value of the crop unit hectogram (100 grammes) per hectare
@@ -21,7 +21,7 @@ func NewCropFromBytes(bytes []byte) *Crop {
 	decode := wasmlib.NewBytesDecoder(bytes)
 	data := &Crop{}
 	data.Country = decode.String()
-	data.Id = decode.String()
+	data.Idx = decode.Int32()
 	data.Name = decode.String()
 	data.UpdatedAt = decode.Int64()
 	data.Yield = decode.Int64()
@@ -32,7 +32,7 @@ func NewCropFromBytes(bytes []byte) *Crop {
 func (o *Crop) Bytes() []byte {
 	return wasmlib.NewBytesEncoder().
 		String(o.Country).
-		String(o.Id).
+		Int32(o.Idx).
 		String(o.Name).
 		Int64(o.UpdatedAt).
 		Int64(o.Yield).
@@ -70,26 +70,28 @@ func (o MutableCrop) Value() *Crop {
 }
 
 type Order struct {
-	CropID     string            // crop id
-	CurAmount  int64             // cur order amount of the order in IOTA
-	FullAmount int64             // amount with leverage
-	Leverage   int64             // 2, 4, 8
-	OrderID    string            // order id
-	Owner      wasmlib.ScAgentID // agent id of the owner
-	PositionID string            // position id
-	Type       string            // short, long
+	CropIdx     int32             // crop index
+	CurAmount   int64             // cur order amount of the order in IOTA
+	FullAmount  int64             // amount with leverage
+	Idx         int32             // order index
+	Leverage    int64             // 2, 4, 8
+	Owner       wasmlib.ScAgentID // agent id of the owner
+	PositionIdx int32             // position index
+	Status      string            // order status (opening, matched, cancel)
+	Type        string            // short, long
 }
 
 func NewOrderFromBytes(bytes []byte) *Order {
 	decode := wasmlib.NewBytesDecoder(bytes)
 	data := &Order{}
-	data.CropID = decode.String()
+	data.CropIdx = decode.Int32()
 	data.CurAmount = decode.Int64()
 	data.FullAmount = decode.Int64()
+	data.Idx = decode.Int32()
 	data.Leverage = decode.Int64()
-	data.OrderID = decode.String()
 	data.Owner = decode.AgentID()
-	data.PositionID = decode.String()
+	data.PositionIdx = decode.Int32()
+	data.Status = decode.String()
 	data.Type = decode.String()
 	decode.Close()
 	return data
@@ -97,13 +99,14 @@ func NewOrderFromBytes(bytes []byte) *Order {
 
 func (o *Order) Bytes() []byte {
 	return wasmlib.NewBytesEncoder().
-		String(o.CropID).
+		Int32(o.CropIdx).
 		Int64(o.CurAmount).
 		Int64(o.FullAmount).
+		Int32(o.Idx).
 		Int64(o.Leverage).
-		String(o.OrderID).
 		AgentID(o.Owner).
-		String(o.PositionID).
+		Int32(o.PositionIdx).
+		String(o.Status).
 		String(o.Type).
 		Data()
 }
@@ -141,11 +144,11 @@ func (o MutableOrder) Value() *Order {
 type Position struct {
 	Amount       int64             // amount in IOTA
 	AveragePrice int64             // price of the position
-	CropID       string            // crop id
-	Id           string            // position id
+	CropIdx      int32             // crop index
+	Idx          int32             // position index
 	Leverage     int64             // 2, 4, 8
 	Owner        wasmlib.ScAgentID // agent id of the owner
-	Status       string            // opening, closed, liquidated
+	Status       string            // position status (opening, closed, liquidated)
 	Type         string            // short, long
 }
 
@@ -154,8 +157,8 @@ func NewPositionFromBytes(bytes []byte) *Position {
 	data := &Position{}
 	data.Amount = decode.Int64()
 	data.AveragePrice = decode.Int64()
-	data.CropID = decode.String()
-	data.Id = decode.String()
+	data.CropIdx = decode.Int32()
+	data.Idx = decode.Int32()
 	data.Leverage = decode.Int64()
 	data.Owner = decode.AgentID()
 	data.Status = decode.String()
@@ -168,8 +171,8 @@ func (o *Position) Bytes() []byte {
 	return wasmlib.NewBytesEncoder().
 		Int64(o.Amount).
 		Int64(o.AveragePrice).
-		String(o.CropID).
-		String(o.Id).
+		Int32(o.CropIdx).
+		Int32(o.Idx).
 		Int64(o.Leverage).
 		AgentID(o.Owner).
 		String(o.Status).
