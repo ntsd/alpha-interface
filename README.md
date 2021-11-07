@@ -83,8 +83,10 @@ make deploy-wasm
 wasp-cli chain post-request alphainterface <funcname> [params] --transfer=IOTA:10
 wasp-cli chain post-request alphainterface setOwner string owner string {actorID}
 wasp-cli chain call-view alphainterface getOwner
-wasp-cli chain post-request alphainterface setCrop string name string potato string country string germany string yield int 10000
-wasp-cli chain call-view alphainterface getCrop string cropID string potato_germany
+wasp-cli chain post-request alphainterface setCrop string name string potato string country string germany string yield int 10000 --off-ledger
+wasp-cli chain post-request alphainterface setCrop string name string rice string country string germany string yield int 20000 --off-ledger
+wasp-cli chain call-view alphainterface getCrops
+wasp-cli chain call-view alphainterface getCrop string cropIdx int32 0
 ```
 
 ## Resources
