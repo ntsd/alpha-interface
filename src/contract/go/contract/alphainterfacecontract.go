@@ -4,6 +4,8 @@
 package alphainterfacecontract
 
 import (
+	"strconv"
+
 	"github.com/iotaledger/wasp/packages/vm/wasmlib/go/wasmlib"
 )
 
@@ -296,20 +298,6 @@ func viewGetCrops(ctx wasmlib.ScViewContext, f *GetCropsContext) {
 	}
 }
 
-func viewGetMyPositions(ctx wasmlib.ScViewContext, f *GetMyPositionsContext) {
-	resultPositions := f.Results.Positions()
-	statePositions := f.State.Positions()
-	statePositionsLen := statePositions.Length()
-	var n int32
-	for i := int32(0); i < statePositionsLen; i++ {
-		position := statePositions.GetPosition(i).Value()
-		if ctx.Caller().Address() == position.Owner.Address() {
-			resultPositions.GetPosition(n).SetValue(position)
-			n++
-		}
-	}
-}
-
 func viewGetOrders(ctx wasmlib.ScViewContext, f *GetOrdersContext) {
 	resultOrders := f.Results.Orders()
 	stateOrders := f.State.Orders()
@@ -321,4 +309,67 @@ func viewGetOrders(ctx wasmlib.ScViewContext, f *GetOrdersContext) {
 
 func viewGetOwner(ctx wasmlib.ScViewContext, f *GetOwnerContext) {
 	f.Results.Owner().SetValue(f.State.Owner().Value())
+}
+
+func viewGetPositions(ctx wasmlib.ScViewContext, f *GetPositionsContext) {
+	resultPositions := f.Results.Positions()
+	statePositions := f.State.Positions()
+	statePositionsLen := statePositions.Length()
+	for i := int32(0); i < statePositionsLen; i++ {
+		position := statePositions.GetPosition(i).Value()
+		resultPositions.GetPosition(i).SetValue(position)
+	}
+}
+
+func viewGetCropsString(ctx wasmlib.ScViewContext, f *GetCropsStringContext) {
+	stateCrops := f.State.Crops()
+	stateCropsLen := stateCrops.Length()
+	cropsString := "["
+	for i := int32(0); i < stateCropsLen; i++ {
+		stateCrop := stateCrops.GetCrop(i).Value()
+		cropsString += "{Idx:" + strconv.FormatInt(int64(stateCrop.Idx), 10) + "," +
+			"Name:" + stateCrop.Name + "," +
+			"Country:" + stateCrop.Country + "," +
+			"Yield:" + strconv.FormatInt(stateCrop.Yield, 10) + "," +
+			"UpdatedAt:" + string(stateCrop.UpdatedAt) + "},"
+	}
+	cropsString += "]"
+	f.Results.CropsString().SetValue(cropsString)
+}
+
+func viewGetOrdersString(ctx wasmlib.ScViewContext, f *GetOrdersStringContext) {
+	stateOrders := f.State.Orders()
+	stateOrdersLen := stateOrders.Length()
+	ordersString := "["
+	for i := int32(0); i < stateOrdersLen; i++ {
+		stateOrder := stateOrders.GetOrder(i).Value()
+		ordersString += "{Status:" + stateOrder.Status + "," +
+			"Idx:" + strconv.FormatInt(int64(stateOrder.Idx), 10) + "," +
+			"PositionIdx:" + strconv.FormatInt(int64(stateOrder.PositionIdx), 10) + "," +
+			"CropIdx:" + strconv.FormatInt(int64(stateOrder.CropIdx), 10) + "," +
+			"Type:" + stateOrder.Type + "," +
+			"CurAmount:" + strconv.FormatInt(stateOrder.CurAmount, 10) + "," +
+			"FullAmount:" + strconv.FormatInt(stateOrder.FullAmount, 10) + "," +
+			"Owner.Address:" + stateOrder.Owner.Address().String() + "},"
+	}
+	ordersString += "]"
+	f.Results.OrdersString().SetValue(ordersString)
+}
+
+func viewGetPositionsString(ctx wasmlib.ScViewContext, f *GetPositionsStringContext) {
+	statePositions := f.State.Positions()
+	statePositionsLen := statePositions.Length()
+	positionsString := "["
+	for i := int32(0); i < statePositionsLen; i++ {
+		statePosition := statePositions.GetPosition(i).Value()
+		positionsString += "{Status:" + statePosition.Status + "," +
+			"Idx:" + strconv.FormatInt(int64(statePosition.Idx), 10) + "," +
+			"CropIdx:" + strconv.FormatInt(int64(statePosition.CropIdx), 10) + "," +
+			"Type:" + statePosition.Type + "," +
+			"Amount:" + strconv.FormatInt(statePosition.Amount, 10) + "," +
+			"AveragePrice:" + strconv.FormatInt(statePosition.AveragePrice, 10) + "," +
+			"Owner.Address:" + statePosition.Owner.Address().String() + "},"
+	}
+	positionsString += "]"
+	f.Results.PositionsString().SetValue(positionsString)
 }

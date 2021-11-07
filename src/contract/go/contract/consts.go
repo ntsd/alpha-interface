@@ -27,11 +27,14 @@ const (
 )
 
 const (
-	ResultCrop      = wasmlib.Key("crop")
-	ResultCrops     = wasmlib.Key("crops")
-	ResultOrders    = wasmlib.Key("orders")
-	ResultOwner     = wasmlib.Key("owner")
-	ResultPositions = wasmlib.Key("positions")
+	ResultCrop            = wasmlib.Key("crop")
+	ResultCrops           = wasmlib.Key("crops")
+	ResultCropsString     = wasmlib.Key("cropsString")
+	ResultOrders          = wasmlib.Key("orders")
+	ResultOrdersString    = wasmlib.Key("ordersString")
+	ResultOwner           = wasmlib.Key("owner")
+	ResultPositions       = wasmlib.Key("positions")
+	ResultPositionsString = wasmlib.Key("positionsString")
 )
 
 const (
@@ -42,29 +45,35 @@ const (
 )
 
 const (
-	FuncCloseOrder     = "closeOrder"
-	FuncClosePosition  = "closePosition"
-	FuncCreateOrder    = "createOrder"
-	FuncInit           = "init"
-	FuncSetCrop        = "setCrop"
-	FuncSetOwner       = "setOwner"
-	ViewGetCrop        = "getCrop"
-	ViewGetCrops       = "getCrops"
-	ViewGetMyPositions = "getMyPositions"
-	ViewGetOrders      = "getOrders"
-	ViewGetOwner       = "getOwner"
+	FuncCloseOrder         = "closeOrder"
+	FuncClosePosition      = "closePosition"
+	FuncCreateOrder        = "createOrder"
+	FuncInit               = "init"
+	FuncSetCrop            = "setCrop"
+	FuncSetOwner           = "setOwner"
+	ViewGetCrop            = "getCrop"
+	ViewGetCrops           = "getCrops"
+	ViewGetCropsString     = "getCropsString"
+	ViewGetOrders          = "getOrders"
+	ViewGetOrdersString    = "getOrdersString"
+	ViewGetOwner           = "getOwner"
+	ViewGetPositions       = "getPositions"
+	ViewGetPositionsString = "getPositionsString"
 )
 
 const (
-	HFuncCloseOrder     = wasmlib.ScHname(0xfc422a52)
-	HFuncClosePosition  = wasmlib.ScHname(0x90e90210)
-	HFuncCreateOrder    = wasmlib.ScHname(0xe3c7ac26)
-	HFuncInit           = wasmlib.ScHname(0x1f44d644)
-	HFuncSetCrop        = wasmlib.ScHname(0x321b14e9)
-	HFuncSetOwner       = wasmlib.ScHname(0x2a15fe7b)
-	HViewGetCrop        = wasmlib.ScHname(0x59d6b0d1)
-	HViewGetCrops       = wasmlib.ScHname(0x0f16dbb7)
-	HViewGetMyPositions = wasmlib.ScHname(0x658bee0e)
-	HViewGetOrders      = wasmlib.ScHname(0x53738744)
-	HViewGetOwner       = wasmlib.ScHname(0x137107a6)
+	HFuncCloseOrder         = wasmlib.ScHname(0xfc422a52)
+	HFuncClosePosition      = wasmlib.ScHname(0x90e90210)
+	HFuncCreateOrder        = wasmlib.ScHname(0xe3c7ac26)
+	HFuncInit               = wasmlib.ScHname(0x1f44d644)
+	HFuncSetCrop            = wasmlib.ScHname(0x321b14e9)
+	HFuncSetOwner           = wasmlib.ScHname(0x2a15fe7b)
+	HViewGetCrop            = wasmlib.ScHname(0x59d6b0d1)
+	HViewGetCrops           = wasmlib.ScHname(0x0f16dbb7)
+	HViewGetCropsString     = wasmlib.ScHname(0xb9ae6a38)
+	HViewGetOrders          = wasmlib.ScHname(0x53738744)
+	HViewGetOrdersString    = wasmlib.ScHname(0x622a0440)
+	HViewGetOwner           = wasmlib.ScHname(0x137107a6)
+	HViewGetPositions       = wasmlib.ScHname(0x0a766ffb)
+	HViewGetPositionsString = wasmlib.ScHname(0xbb02feef)
 )

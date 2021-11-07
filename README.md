@@ -114,15 +114,16 @@ wasp-cli chain post-request alphainterface setCrop string name string potato str
 wasp-cli chain post-request alphainterface setCrop string name string rice string country string germany string yield int 200 --off-ledger
 
 wasp-cli chain call-view alphainterface getCrops
+wasp-cli chain call-view alphainterface getCropsString
 wasp-cli chain call-view alphainterface getCrop string cropIdx int32 0
 
 wasp-cli chain post-request alphainterface createOrder string cropIdx int32 0 string type string short --transfer=IOTA:1000
 wasp-cli chain call-view alphainterface getOrders
-wasp-cli chain call-view alphainterface getMyPositions
+wasp-cli chain call-view alphainterface getOrdersString
+wasp-cli chain call-view alphainterface getPositions
+wasp-cli chain call-view alphainterface getPositionsString
 
 wasp-cli chain post-request alphainterface createOrder string cropIdx int32 0 string type string long --transfer=IOTA:2000
-wasp-cli chain call-view alphainterface getOrders
-wasp-cli chain call-view alphainterface getMyPositions
 
 wasp-cli chain post-request alphainterface closePosition string positionIdx int32 0
 wasp-cli chain post-request alphainterface closePosition string positionIdx int32 1

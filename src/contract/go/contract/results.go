@@ -70,50 +70,20 @@ func (s MutableGetCropsResults) Crops() ArrayOfMutableCrop {
 	return ArrayOfMutableCrop{objID: arrID}
 }
 
-type ArrayOfImmutablePosition struct {
-	objID int32
-}
-
-func (a ArrayOfImmutablePosition) Length() int32 {
-	return wasmlib.GetLength(a.objID)
-}
-
-func (a ArrayOfImmutablePosition) GetPosition(index int32) ImmutablePosition {
-	return ImmutablePosition{objID: a.objID, keyID: wasmlib.Key32(index)}
-}
-
-type ImmutableGetMyPositionsResults struct {
+type ImmutableGetCropsStringResults struct {
 	id int32
 }
 
-func (s ImmutableGetMyPositionsResults) Positions() ArrayOfImmutablePosition {
-	arrID := wasmlib.GetObjectID(s.id, idxMap[IdxResultPositions], wasmlib.TYPE_ARRAY|wasmlib.TYPE_BYTES)
-	return ArrayOfImmutablePosition{objID: arrID}
+func (s ImmutableGetCropsStringResults) CropsString() wasmlib.ScImmutableString {
+	return wasmlib.NewScImmutableString(s.id, idxMap[IdxResultCropsString])
 }
 
-type ArrayOfMutablePosition struct {
-	objID int32
-}
-
-func (a ArrayOfMutablePosition) Clear() {
-	wasmlib.Clear(a.objID)
-}
-
-func (a ArrayOfMutablePosition) Length() int32 {
-	return wasmlib.GetLength(a.objID)
-}
-
-func (a ArrayOfMutablePosition) GetPosition(index int32) MutablePosition {
-	return MutablePosition{objID: a.objID, keyID: wasmlib.Key32(index)}
-}
-
-type MutableGetMyPositionsResults struct {
+type MutableGetCropsStringResults struct {
 	id int32
 }
 
-func (s MutableGetMyPositionsResults) Positions() ArrayOfMutablePosition {
-	arrID := wasmlib.GetObjectID(s.id, idxMap[IdxResultPositions], wasmlib.TYPE_ARRAY|wasmlib.TYPE_BYTES)
-	return ArrayOfMutablePosition{objID: arrID}
+func (s MutableGetCropsStringResults) CropsString() wasmlib.ScMutableString {
+	return wasmlib.NewScMutableString(s.id, idxMap[IdxResultCropsString])
 }
 
 type ArrayOfImmutableOrder struct {
@@ -162,6 +132,22 @@ func (s MutableGetOrdersResults) Orders() ArrayOfMutableOrder {
 	return ArrayOfMutableOrder{objID: arrID}
 }
 
+type ImmutableGetOrdersStringResults struct {
+	id int32
+}
+
+func (s ImmutableGetOrdersStringResults) OrdersString() wasmlib.ScImmutableString {
+	return wasmlib.NewScImmutableString(s.id, idxMap[IdxResultOrdersString])
+}
+
+type MutableGetOrdersStringResults struct {
+	id int32
+}
+
+func (s MutableGetOrdersStringResults) OrdersString() wasmlib.ScMutableString {
+	return wasmlib.NewScMutableString(s.id, idxMap[IdxResultOrdersString])
+}
+
 type ImmutableGetOwnerResults struct {
 	id int32
 }
@@ -176,4 +162,66 @@ type MutableGetOwnerResults struct {
 
 func (s MutableGetOwnerResults) Owner() wasmlib.ScMutableAgentID {
 	return wasmlib.NewScMutableAgentID(s.id, idxMap[IdxResultOwner])
+}
+
+type ArrayOfImmutablePosition struct {
+	objID int32
+}
+
+func (a ArrayOfImmutablePosition) Length() int32 {
+	return wasmlib.GetLength(a.objID)
+}
+
+func (a ArrayOfImmutablePosition) GetPosition(index int32) ImmutablePosition {
+	return ImmutablePosition{objID: a.objID, keyID: wasmlib.Key32(index)}
+}
+
+type ImmutableGetPositionsResults struct {
+	id int32
+}
+
+func (s ImmutableGetPositionsResults) Positions() ArrayOfImmutablePosition {
+	arrID := wasmlib.GetObjectID(s.id, idxMap[IdxResultPositions], wasmlib.TYPE_ARRAY|wasmlib.TYPE_BYTES)
+	return ArrayOfImmutablePosition{objID: arrID}
+}
+
+type ArrayOfMutablePosition struct {
+	objID int32
+}
+
+func (a ArrayOfMutablePosition) Clear() {
+	wasmlib.Clear(a.objID)
+}
+
+func (a ArrayOfMutablePosition) Length() int32 {
+	return wasmlib.GetLength(a.objID)
+}
+
+func (a ArrayOfMutablePosition) GetPosition(index int32) MutablePosition {
+	return MutablePosition{objID: a.objID, keyID: wasmlib.Key32(index)}
+}
+
+type MutableGetPositionsResults struct {
+	id int32
+}
+
+func (s MutableGetPositionsResults) Positions() ArrayOfMutablePosition {
+	arrID := wasmlib.GetObjectID(s.id, idxMap[IdxResultPositions], wasmlib.TYPE_ARRAY|wasmlib.TYPE_BYTES)
+	return ArrayOfMutablePosition{objID: arrID}
+}
+
+type ImmutableGetPositionsStringResults struct {
+	id int32
+}
+
+func (s ImmutableGetPositionsStringResults) PositionsString() wasmlib.ScImmutableString {
+	return wasmlib.NewScImmutableString(s.id, idxMap[IdxResultPositionsString])
+}
+
+type MutableGetPositionsStringResults struct {
+	id int32
+}
+
+func (s MutableGetPositionsStringResults) PositionsString() wasmlib.ScMutableString {
+	return wasmlib.NewScMutableString(s.id, idxMap[IdxResultPositionsString])
 }

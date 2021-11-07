@@ -50,9 +50,9 @@ type GetCropsCall struct {
 	Results ImmutableGetCropsResults
 }
 
-type GetMyPositionsCall struct {
+type GetCropsStringCall struct {
 	Func    *wasmlib.ScView
-	Results ImmutableGetMyPositionsResults
+	Results ImmutableGetCropsStringResults
 }
 
 type GetOrdersCall struct {
@@ -60,9 +60,24 @@ type GetOrdersCall struct {
 	Results ImmutableGetOrdersResults
 }
 
+type GetOrdersStringCall struct {
+	Func    *wasmlib.ScView
+	Results ImmutableGetOrdersStringResults
+}
+
 type GetOwnerCall struct {
 	Func    *wasmlib.ScView
 	Results ImmutableGetOwnerResults
+}
+
+type GetPositionsCall struct {
+	Func    *wasmlib.ScView
+	Results ImmutableGetPositionsResults
+}
+
+type GetPositionsStringCall struct {
+	Func    *wasmlib.ScView
+	Results ImmutableGetPositionsStringResults
 }
 
 type Funcs struct{}
@@ -117,8 +132,8 @@ func (sc Funcs) GetCrops(ctx wasmlib.ScViewCallContext) *GetCropsCall {
 	return f
 }
 
-func (sc Funcs) GetMyPositions(ctx wasmlib.ScViewCallContext) *GetMyPositionsCall {
-	f := &GetMyPositionsCall{Func: wasmlib.NewScView(ctx, HScName, HViewGetMyPositions)}
+func (sc Funcs) GetCropsString(ctx wasmlib.ScViewCallContext) *GetCropsStringCall {
+	f := &GetCropsStringCall{Func: wasmlib.NewScView(ctx, HScName, HViewGetCropsString)}
 	f.Func.SetPtrs(nil, &f.Results.id)
 	return f
 }
@@ -129,8 +144,26 @@ func (sc Funcs) GetOrders(ctx wasmlib.ScViewCallContext) *GetOrdersCall {
 	return f
 }
 
+func (sc Funcs) GetOrdersString(ctx wasmlib.ScViewCallContext) *GetOrdersStringCall {
+	f := &GetOrdersStringCall{Func: wasmlib.NewScView(ctx, HScName, HViewGetOrdersString)}
+	f.Func.SetPtrs(nil, &f.Results.id)
+	return f
+}
+
 func (sc Funcs) GetOwner(ctx wasmlib.ScViewCallContext) *GetOwnerCall {
 	f := &GetOwnerCall{Func: wasmlib.NewScView(ctx, HScName, HViewGetOwner)}
+	f.Func.SetPtrs(nil, &f.Results.id)
+	return f
+}
+
+func (sc Funcs) GetPositions(ctx wasmlib.ScViewCallContext) *GetPositionsCall {
+	f := &GetPositionsCall{Func: wasmlib.NewScView(ctx, HScName, HViewGetPositions)}
+	f.Func.SetPtrs(nil, &f.Results.id)
+	return f
+}
+
+func (sc Funcs) GetPositionsString(ctx wasmlib.ScViewCallContext) *GetPositionsStringCall {
+	f := &GetPositionsStringCall{Func: wasmlib.NewScView(ctx, HScName, HViewGetPositionsString)}
 	f.Func.SetPtrs(nil, &f.Results.id)
 	return f
 }

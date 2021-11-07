@@ -10,26 +10,29 @@ package alphainterfacecontract
 import "github.com/iotaledger/wasp/packages/vm/wasmlib/go/wasmlib"
 
 const (
-	IdxParamCountry     = 0
-	IdxParamCropIdx     = 1
-	IdxParamName        = 2
-	IdxParamOrderIdx    = 3
-	IdxParamOwner       = 4
-	IdxParamPositionIdx = 5
-	IdxParamType        = 6
-	IdxParamYield       = 7
-	IdxResultCrop       = 8
-	IdxResultCrops      = 9
-	IdxResultOrders     = 10
-	IdxResultOwner      = 11
-	IdxResultPositions  = 12
-	IdxStateCrops       = 13
-	IdxStateOrders      = 14
-	IdxStateOwner       = 15
-	IdxStatePositions   = 16
+	IdxParamCountry          = 0
+	IdxParamCropIdx          = 1
+	IdxParamName             = 2
+	IdxParamOrderIdx         = 3
+	IdxParamOwner            = 4
+	IdxParamPositionIdx      = 5
+	IdxParamType             = 6
+	IdxParamYield            = 7
+	IdxResultCrop            = 8
+	IdxResultCrops           = 9
+	IdxResultCropsString     = 10
+	IdxResultOrders          = 11
+	IdxResultOrdersString    = 12
+	IdxResultOwner           = 13
+	IdxResultPositions       = 14
+	IdxResultPositionsString = 15
+	IdxStateCrops            = 16
+	IdxStateOrders           = 17
+	IdxStateOwner            = 18
+	IdxStatePositions        = 19
 )
 
-const keyMapLen = 17
+const keyMapLen = 20
 
 var keyMap = [keyMapLen]wasmlib.Key{
 	ParamCountry,
@@ -42,9 +45,12 @@ var keyMap = [keyMapLen]wasmlib.Key{
 	ParamYield,
 	ResultCrop,
 	ResultCrops,
+	ResultCropsString,
 	ResultOrders,
+	ResultOrdersString,
 	ResultOwner,
 	ResultPositions,
+	ResultPositionsString,
 	StateCrops,
 	StateOrders,
 	StateOwner,
