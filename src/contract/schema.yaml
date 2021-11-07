@@ -54,7 +54,6 @@ funcs:
   closePosition:
     params:
       positionIdx: Int32 // position id
-      amount: Int64 // iota amount
 views:
   getOwner:
     results:

@@ -16,7 +16,6 @@ const (
 )
 
 const (
-	ParamAmount      = wasmlib.Key("amount")
 	ParamCountry     = wasmlib.Key("country")
 	ParamCropIdx     = wasmlib.Key("cropIdx")
 	ParamName        = wasmlib.Key("name")

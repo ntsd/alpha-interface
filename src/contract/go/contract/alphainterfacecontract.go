@@ -28,7 +28,7 @@ func funcCloseOrder(ctx wasmlib.ScFuncContext, f *CloseOrderContext) {
 }
 
 func funcClosePosition(ctx wasmlib.ScFuncContext, f *ClosePositionContext) {
-	creator := ctx.ContractCreator()
+	caller := ctx.Caller()
 
 	// get params
 	positionIdx := f.Params.PositionIdx().Value()
@@ -38,15 +38,19 @@ func funcClosePosition(ctx wasmlib.ScFuncContext, f *ClosePositionContext) {
 	ordersLen := orders.Length()
 	positions := f.State.Positions()
 	position := positions.GetPosition(positionIdx).Value()
+	crop := f.State.Crops().GetCrop(position.CropIdx).Value()
+
 	defer positions.GetPosition(positionIdx).SetValue(position)
 
 	// check owner position
-	if position.Owner.Address() != creator.Address() {
+	if position.Owner.Address() != caller.Address() {
+		ctx.Log("you're not the owner of this position")
 		return
 	}
 
 	// check status is opening
 	if position.Status != POSITION_STATUS_OPENING {
+		ctx.Log("the status is not opening")
 		return
 	}
 
@@ -63,11 +67,60 @@ func funcClosePosition(ctx wasmlib.ScFuncContext, f *ClosePositionContext) {
 		CropIdx:     position.CropIdx,
 		CurAmount:   position.Amount,
 		FullAmount:  position.Amount,
-		Owner:       creator,
+		Owner:       caller,
 		Status:      ORDER_STATUS_OPENING,
 		Type:        oppositeType,
 	}
 	orders.GetOrder(ordersLen).SetValue(newOrder)
+
+	// find match orders
+	for i := int32(0); i < ordersLen; i++ {
+		adjOrder := orders.GetOrder(i).Value()
+		// check match sell with long opening order in same crop
+		if adjOrder.Status != ORDER_STATUS_OPENING ||
+			adjOrder.CropIdx != newOrder.CropIdx ||
+			adjOrder.Type == newOrder.Type {
+			continue
+		}
+
+		adjPosition := positions.GetPosition(adjOrder.PositionIdx).Value()
+
+		// adjust order amount more than new order
+		if adjOrder.CurAmount > newOrder.CurAmount {
+			// update adjust position
+			updatePositionAmount(ctx, adjPosition, newOrder.CurAmount, crop.Yield)
+			positions.GetPosition(adjOrder.PositionIdx).SetValue(adjPosition)
+
+			// update adjust order
+			adjOrder.CurAmount -= newOrder.CurAmount
+			orders.GetOrder(i).SetValue(adjOrder)
+
+			// update new position
+			updatePositionAmount(ctx, position, newOrder.CurAmount, crop.Yield)
+
+			// update new order
+			newOrder.CurAmount = 0
+			newOrder.Status = ORDER_STATUS_MATCHED
+
+			return
+		}
+		// adjust order less or equal than new order
+
+		// update new position
+		updatePositionAmount(ctx, position, adjOrder.CurAmount, crop.Yield)
+
+		// update new order
+		newOrder.CurAmount -= adjOrder.CurAmount
+
+		// update adjust position
+		updatePositionAmount(ctx, adjPosition, adjOrder.CurAmount, crop.Yield)
+		positions.GetPosition(adjOrder.PositionIdx).SetValue(adjPosition)
+
+		// update adjust order
+		adjOrder.CurAmount = 0
+		adjOrder.Status = ORDER_STATUS_MATCHED
+		orders.GetOrder(i).SetValue(adjOrder)
+	}
 }
 
 func updatePositionAmount(ctx wasmlib.ScFuncContext, position *Position, amount int64, price int64) {
@@ -91,7 +144,7 @@ func updatePositionAmount(ctx wasmlib.ScFuncContext, position *Position, amount 
 }
 
 func funcCreateOrder(ctx wasmlib.ScFuncContext, f *CreateOrderContext) {
-	creator := ctx.ContractCreator()
+	caller := ctx.Caller()
 
 	incoming := ctx.Incoming()
 	incomingAmount := incoming.Balance(wasmlib.IOTA)
@@ -116,7 +169,7 @@ func funcCreateOrder(ctx wasmlib.ScFuncContext, f *CreateOrderContext) {
 		CropIdx:      cropIdx,
 		Amount:       0,
 		AveragePrice: crop.Yield,
-		Owner:        creator,
+		Owner:        caller,
 		Status:       POSITION_STATUS_OPENING,
 		Type:         orderType,
 	}
@@ -127,7 +180,7 @@ func funcCreateOrder(ctx wasmlib.ScFuncContext, f *CreateOrderContext) {
 		PositionIdx: positionsLen,
 		CurAmount:   amount,
 		FullAmount:  amount,
-		Owner:       creator,
+		Owner:       caller,
 		Type:        orderType,
 		Status:      ORDER_STATUS_OPENING,
 	}
@@ -250,7 +303,7 @@ func viewGetMyPositions(ctx wasmlib.ScViewContext, f *GetMyPositionsContext) {
 	var n int32
 	for i := int32(0); i < statePositionsLen; i++ {
 		position := statePositions.GetPosition(i).Value()
-		if ctx.ContractCreator().Address() == position.Owner.Address() {
+		if ctx.Caller().Address() == position.Owner.Address() {
 			resultPositions.GetPosition(n).SetValue(position)
 			n++
 		}

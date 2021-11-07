@@ -64,7 +64,6 @@ func funcClosePositionThunk(ctx wasmlib.ScFuncContext) {
 			id: wasmlib.OBJ_ID_STATE,
 		},
 	}
-	ctx.Require(f.Params.Amount().Exists(), "missing mandatory amount")
 	ctx.Require(f.Params.PositionIdx().Exists(), "missing mandatory positionIdx")
 	funcClosePosition(ctx, f)
 	ctx.Log("alphainterfacecontract.funcClosePosition ok")

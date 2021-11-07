@@ -123,6 +123,9 @@ wasp-cli chain call-view alphainterface getMyPositions
 wasp-cli chain post-request alphainterface createOrder string cropIdx int32 0 string type string long --transfer=IOTA:2000
 wasp-cli chain call-view alphainterface getOrders
 wasp-cli chain call-view alphainterface getMyPositions
+
+wasp-cli chain post-request alphainterface closePosition string positionIdx int32 0
+wasp-cli chain post-request alphainterface closePosition string positionIdx int32 1
 ```
 
 ### Deactivate chain
