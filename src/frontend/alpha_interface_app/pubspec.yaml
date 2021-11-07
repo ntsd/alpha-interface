@@ -23,7 +23,6 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  flutter_easyloading: any
   syncfusion_flutter_charts: any
 
 

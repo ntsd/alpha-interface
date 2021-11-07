@@ -18,12 +18,19 @@ class _ProductInfoState extends State<ProductInfo> {
   List<String> countries = [];
   String currentCountry = "";
   List<_SalesData> data = [];
+  int avaiableAmount = 1000;
+  final TextEditingController _controller = TextEditingController();
+  final TextEditingController _sellController = TextEditingController();
+  int buyAmount = 0;
+  int sellAmount = 0;
 
   @override
   void initState() {
     // TODO: implement initState
     super.initState();
     loadJson();
+    _controller.text = "0";
+    _sellController.text = "0";
   }
 
   loadJson() async {
@@ -60,112 +67,212 @@ class _ProductInfoState extends State<ProductInfo> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(),
-      body: Container(
-        width: MediaQuery.of(context).size.width,
-        child: Column(
-          children: [
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                Flexible(
-                  flex: 2,
-                  child: Padding(
-                    padding: const EdgeInsets.all(10.0),
-                    child: Container(
-                      height: 50,
-                      decoration: BoxDecoration(
-                        color: Colors.white,
-                        border: Border.all(width: 1),
-                        borderRadius: BorderRadius.circular(2),
+      body: SingleChildScrollView(
+        child: Container(
+          width: MediaQuery.of(context).size.width,
+          child: Column(
+            children: [
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  Flexible(
+                    flex: 2,
+                    child: Padding(
+                      padding: const EdgeInsets.all(10.0),
+                      child: Container(
+                        height: 50,
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          border: Border.all(width: 1),
+                          borderRadius: BorderRadius.circular(2),
+                        ),
+                        child: Center(
+                            child: Text(
+                          widget.productName,
+                          style: TextStyle(fontSize: 30, color: Colors.black),
+                        )),
                       ),
-                      child: Center(
-                          child: Text(
-                        widget.productName,
-                        style: TextStyle(fontSize: 30, color: Colors.black),
-                      )),
                     ),
                   ),
-                ),
-                Flexible(
-                  flex: 3,
-                  child: Padding(
-                    padding: const EdgeInsets.all(10.0),
-                    child: Container(
-                      decoration: BoxDecoration(
-                        color: Colors.white,
-                        border: Border.all(width: 1),
-                        borderRadius: BorderRadius.circular(2),
-                      ),
-                      child: DropdownButtonHideUnderline(
-                        child: ButtonTheme(
-                          alignedDropdown: true,
-                          child: DropdownButton<String>(
-                            iconEnabledColor: Colors.black,
-                            value: currentCountry,
-                            isExpanded: true,
-                            underline: Container(),
-                            onChanged: (String value) {
-                              setState(() {
-                                currentCountry = value;
-                                createChartDataForCountry();
-                              });
-                            },
-                            items: createDropDownItems(),
+                  Flexible(
+                    flex: 3,
+                    child: Padding(
+                      padding: const EdgeInsets.all(10.0),
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          border: Border.all(width: 1),
+                          borderRadius: BorderRadius.circular(2),
+                        ),
+                        child: DropdownButtonHideUnderline(
+                          child: ButtonTheme(
+                            alignedDropdown: true,
+                            child: DropdownButton<String>(
+                              iconEnabledColor: Colors.black,
+                              value: currentCountry,
+                              isExpanded: true,
+                              underline: Container(),
+                              onChanged: (String value) {
+                                setState(() {
+                                  currentCountry = value;
+                                  createChartDataForCountry();
+                                });
+                              },
+                              items: createDropDownItems(),
+                            ),
                           ),
                         ),
                       ),
                     ),
                   ),
-                ),
-              ],
-            ),
-            Padding(
-              padding: const EdgeInsets.all(10.0),
-              child: SfCartesianChart(
-                  primaryXAxis: CategoryAxis(),
-                  title:
-                      ChartTitle(text: 'Yearly value of ' + widget.productName),
-                  tooltipBehavior: TooltipBehavior(enable: true),
-                  series: <ChartSeries<_SalesData, String>>[
-                    LineSeries<_SalesData, String>(
-                      dataSource: data,
-                      xValueMapper: (_SalesData sales, _) =>
-                          sales.year.toString(),
-                      yValueMapper: (_SalesData sales, _) => sales.value,
-                    )
-                  ]),
-            ),
-            Center(
-              child: Container(
-                height: 50,
-                width: MediaQuery.of(context).size.width / 2,
-                child: RaisedButton(
-                  color: Colors.red,
-                  child: Text(
-                    "Buy",
-                    style: TextStyle(color: Colors.white),
-                  ),
-                  onPressed: () {
-                    showDialog(
-                        context: context,
-                        builder: (context) {
-                          return AlertDialog(
-                            title: Text("Success"),
-                            content: Text("Order Completed."),
-                            actions: [
-                              TextButton(
-                                  onPressed: () {
-                                    Navigator.pop(context);
-                                  },
-                                  child: Text("Close"))
-                            ],
-                          );
-                        });
-                  },
-                ),
+                ],
               ),
-            )
-          ],
+              Padding(
+                padding: const EdgeInsets.all(10.0),
+                child: SfCartesianChart(
+                    primaryXAxis: CategoryAxis(),
+                    title: ChartTitle(
+                        text: 'Yearly value of ' + widget.productName),
+                    tooltipBehavior: TooltipBehavior(enable: true),
+                    series: <ChartSeries<_SalesData, String>>[
+                      LineSeries<_SalesData, String>(
+                        dataSource: data,
+                        xValueMapper: (_SalesData sales, _) =>
+                            sales.year.toString(),
+                        yValueMapper: (_SalesData sales, _) => sales.value,
+                      )
+                    ]),
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  Flexible(
+                      flex: 1,
+                      child: Container(
+                        height: 50,
+                        child: Text(
+                          "Avaiable Amount: " + avaiableAmount.toString(),
+                          style: TextStyle(fontSize: 24),
+                        ),
+                      )),
+                  Flexible(
+                      flex: 1,
+                      child: Container(
+                        height: 50,
+                        child: Text(
+                          "Price: 100€",
+                          style: TextStyle(fontSize: 24),
+                        ),
+                      )),
+                ],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  Flexible(
+                    flex: 1,
+                    child: Container(
+                      child: TextFormField(
+                        keyboardType: TextInputType.number,
+                        controller: _controller,
+                        decoration:
+                            const InputDecoration(border: OutlineInputBorder()),
+                        onChanged: (value) {
+                          buyAmount = int.parse(value);
+                        },
+                      ),
+                    ),
+                  ),
+                  Flexible(
+                    flex: 1,
+                    child: Container(
+                      height: 50,
+                      child: RaisedButton(
+                        color: Colors.red,
+                        child: Text(
+                          "Buy",
+                          style: TextStyle(color: Colors.white),
+                        ),
+                        onPressed: () {
+                          showDialog(
+                              context: context,
+                              builder: (context) {
+                                return AlertDialog(
+                                  title: Text("Success"),
+                                  content: Text("Order Completed."),
+                                  actions: [
+                                    TextButton(
+                                        onPressed: () {
+                                          avaiableAmount =
+                                              avaiableAmount - buyAmount;
+                                          setState(() {});
+                                          Navigator.pop(context);
+                                        },
+                                        child: Text("Close"))
+                                  ],
+                                );
+                              });
+                        },
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+              SizedBox(height: 10),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  Flexible(
+                    flex: 1,
+                    child: Container(
+                      child: TextFormField(
+                        keyboardType: TextInputType.number,
+                        controller: _sellController,
+                        decoration:
+                            const InputDecoration(border: OutlineInputBorder()),
+                        onChanged: (value) {
+                          buyAmount = int.parse(value);
+                        },
+                      ),
+                    ),
+                  ),
+                  Flexible(
+                    flex: 1,
+                    child: Container(
+                      height: 50,
+                      child: RaisedButton(
+                        color: Colors.red,
+                        child: Text(
+                          "Sell",
+                          style: TextStyle(color: Colors.white),
+                        ),
+                        onPressed: () {
+                          showDialog(
+                              context: context,
+                              builder: (context) {
+                                return AlertDialog(
+                                  title: Text("Success"),
+                                  content: Text("Order Completed."),
+                                  actions: [
+                                    TextButton(
+                                        onPressed: () {
+                                          avaiableAmount =
+                                              avaiableAmount + buyAmount;
+                                          setState(() {});
+                                          Navigator.pop(context);
+                                        },
+                                        child: Text("Close"))
+                                  ],
+                                );
+                              });
+                        },
+                      ),
+                    ),
+                  ),
+                ],
+              )
+            ],
+          ),
         ),
       ),
     );
