@@ -72,12 +72,11 @@ func (o MutableCrop) Value() *Crop {
 type Order struct {
 	CropIdx     int32             // crop index
 	CurAmount   int64             // cur order amount of the order in IOTA
-	FullAmount  int64             // amount with leverage
+	FullAmount  int64             // full amount
 	Idx         int32             // order index
-	Leverage    int64             // 2, 4, 8
 	Owner       wasmlib.ScAgentID // agent id of the owner
 	PositionIdx int32             // position index
-	Status      string            // order status (opening, matched, cancel)
+	Status      string            // order status (opening, matched, canceled)
 	Type        string            // short, long
 }
 
@@ -88,7 +87,6 @@ func NewOrderFromBytes(bytes []byte) *Order {
 	data.CurAmount = decode.Int64()
 	data.FullAmount = decode.Int64()
 	data.Idx = decode.Int32()
-	data.Leverage = decode.Int64()
 	data.Owner = decode.AgentID()
 	data.PositionIdx = decode.Int32()
 	data.Status = decode.String()
@@ -103,7 +101,6 @@ func (o *Order) Bytes() []byte {
 		Int64(o.CurAmount).
 		Int64(o.FullAmount).
 		Int32(o.Idx).
-		Int64(o.Leverage).
 		AgentID(o.Owner).
 		Int32(o.PositionIdx).
 		String(o.Status).
@@ -142,13 +139,12 @@ func (o MutableOrder) Value() *Order {
 }
 
 type Position struct {
-	Amount       int64             // amount in IOTA
+	Amount       int64             // amount of position
 	AveragePrice int64             // price of the position
 	CropIdx      int32             // crop index
 	Idx          int32             // position index
-	Leverage     int64             // 2, 4, 8
 	Owner        wasmlib.ScAgentID // agent id of the owner
-	Status       string            // position status (opening, closed, liquidated)
+	Status       string            // position status (opening, closing, closed, liquidated)
 	Type         string            // short, long
 }
 
@@ -159,7 +155,6 @@ func NewPositionFromBytes(bytes []byte) *Position {
 	data.AveragePrice = decode.Int64()
 	data.CropIdx = decode.Int32()
 	data.Idx = decode.Int32()
-	data.Leverage = decode.Int64()
 	data.Owner = decode.AgentID()
 	data.Status = decode.String()
 	data.Type = decode.String()
@@ -173,7 +168,6 @@ func (o *Position) Bytes() []byte {
 		Int64(o.AveragePrice).
 		Int32(o.CropIdx).
 		Int32(o.Idx).
-		Int64(o.Leverage).
 		AgentID(o.Owner).
 		String(o.Status).
 		String(o.Type).

@@ -56,10 +56,6 @@ func (s ImmutableCreateOrderParams) CropIdx() wasmlib.ScImmutableInt32 {
 	return wasmlib.NewScImmutableInt32(s.id, idxMap[IdxParamCropIdx])
 }
 
-func (s ImmutableCreateOrderParams) Leverage() wasmlib.ScImmutableInt64 {
-	return wasmlib.NewScImmutableInt64(s.id, idxMap[IdxParamLeverage])
-}
-
 func (s ImmutableCreateOrderParams) Type() wasmlib.ScImmutableString {
 	return wasmlib.NewScImmutableString(s.id, idxMap[IdxParamType])
 }
@@ -70,10 +66,6 @@ type MutableCreateOrderParams struct {
 
 func (s MutableCreateOrderParams) CropIdx() wasmlib.ScMutableInt32 {
 	return wasmlib.NewScMutableInt32(s.id, idxMap[IdxParamCropIdx])
-}
-
-func (s MutableCreateOrderParams) Leverage() wasmlib.ScMutableInt64 {
-	return wasmlib.NewScMutableInt64(s.id, idxMap[IdxParamLeverage])
 }
 
 func (s MutableCreateOrderParams) Type() wasmlib.ScMutableString {

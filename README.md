@@ -37,6 +37,7 @@ wasp-cli init
 # Set go shimmer api and request fund
 wasp-cli set goshimmer.api https://api.goshimmer.sc.iota.org
 wasp-cli request-funds
+wasp-cli balance
 
 # set wasp address for a local node
 wasp-cli set wasp.0.api 127.0.0.1:9090
@@ -81,10 +82,29 @@ make deploy-wasm
 
 ```Shell
 wasp-cli chain post-request alphainterface <funcname> [params] --transfer=IOTA:10
+
 wasp-cli chain post-request alphainterface setOwner string owner string {actorID}
 wasp-cli chain call-view alphainterface getOwner
-wasp-cli chain post-request alphainterface setCrop string name string potato string country string germany string yield int 10000
-wasp-cli chain call-view alphainterface getCrop string cropID string potato_germany
+
+wasp-cli chain post-request alphainterface setCrop string name string potato string country string germany string yield int 100 --off-ledger
+wasp-cli chain post-request alphainterface setCrop string name string rice string country string germany string yield int 200 --off-ledger
+
+wasp-cli chain call-view alphainterface getCrops
+wasp-cli chain call-view alphainterface getCrop string cropIdx int32 0
+
+wasp-cli chain post-request alphainterface createOrder string cropIdx int32 0 string type string short --transfer=IOTA:1000
+wasp-cli chain call-view alphainterface getOrders
+wasp-cli chain call-view alphainterface getMyPositions
+
+wasp-cli chain post-request alphainterface createOrder string cropIdx int32 0 string type string long --transfer=IOTA:2000
+wasp-cli chain call-view alphainterface getOrders
+wasp-cli chain call-view alphainterface getMyPositions
+```
+
+### Deactivate chain
+
+```SHELL
+wasp-cli chain deactivate
 ```
 
 ## Resources

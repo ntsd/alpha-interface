@@ -19,7 +19,6 @@ const (
 	ParamAmount      = wasmlib.Key("amount")
 	ParamCountry     = wasmlib.Key("country")
 	ParamCropIdx     = wasmlib.Key("cropIdx")
-	ParamLeverage    = wasmlib.Key("leverage")
 	ParamName        = wasmlib.Key("name")
 	ParamOrderIdx    = wasmlib.Key("orderIdx")
 	ParamOwner       = wasmlib.Key("owner")

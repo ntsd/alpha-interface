@@ -47,7 +47,6 @@ funcs:
   createOrder:
     params:
       cropIdx: Int32 // crop index
-      leverage: Int64 // 2, 4, 8
       type: String // short, long
   closeOrder:
     params:

@@ -86,7 +86,6 @@ func funcCreateOrderThunk(ctx wasmlib.ScFuncContext) {
 		},
 	}
 	ctx.Require(f.Params.CropIdx().Exists(), "missing mandatory cropIdx")
-	ctx.Require(f.Params.Leverage().Exists(), "missing mandatory leverage")
 	ctx.Require(f.Params.Type().Exists(), "missing mandatory type")
 	funcCreateOrder(ctx, f)
 	ctx.Log("alphainterfacecontract.funcCreateOrder ok")
