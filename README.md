@@ -2,6 +2,30 @@
 
 A Hackathon project created by Alpha Interface team for Agri-D Food Hack
 
+## Installation WebApp
+
+Install Flutter on your System (this will also install Dart for you).
+
+<https://flutter.dev/docs/get-started/install>
+
+Navigate to the App folder in your IDE via the Terminal
+
+```SHELL
+cd .\src\frontend\alpha_interface_app\ 
+```
+
+Get the Packages
+
+```SHELL
+flutter pub get
+```
+
+Run the app in Chrome
+
+```SHELL
+flutter run -d chrome
+```
+
 ## Installation
 
 ### Downloading Wasp and wasp-cli
