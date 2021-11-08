@@ -1,0 +1,75 @@
+name: alphainterface2
+description: alphainterface2 description
+structs:
+  Crop:
+    idx: Int32 // crop index
+    name: String // name of the crop
+    country: String // the country name
+  Order:
+    idx: Int32 // crop index
+    cropIdx: Int32 // crop index
+    type: String // sell, buy
+    amount: Int64 // amount of crop
+    price: Int64 // price of the crop
+    fullPrice: Int64 // amount * price
+    owner: AgentID // agent id of the owner
+    status: String // order status (opening, matched, canceled)
+  Wallet:
+    owner: AgentID // agent id of the owner
+    cropIdx: Int32 // crop index
+    amount: Int64 // amount of crop
+typedefs: {}
+state:
+  owner: AgentID // current owner of this smart contract
+  crops: Crop[] // crop array
+  orders: Order[] // order array
+  wallets: Wallet[] // position array
+funcs:
+  init:
+    params:
+      owner: AgentID? // optional owner of this smart contract
+  setOwner:
+    access: owner // current owner of this smart contract
+    params:
+      owner: AgentID // new owner of this smart contract
+  setCrop:
+    access: owner // current owner of this smart contract
+    params:
+      name: String // name of the crop
+      country: String // the country name
+  createOrder:
+    params:
+      cropIdx: Int32 // crop index
+      type: String // sell, buy
+      price: Int64 // price
+      amount: Int64 // amount
+  closeOrder:
+    params:
+      orderIdx: Int32 // order index
+  viewMyWallets:
+    results:
+      wallets: Wallet[]
+views:
+  viewWallets:
+    results:
+      wallets: Wallet[]
+  getOwner:
+    results:
+      owner: AgentID // current owner of this smart contract
+  getOrders:
+    results:
+      orders: Order[]
+  getOrdersString:
+    results:
+      ordersString: String
+  getCrops:
+    results:
+      crops: Crop[]
+  getCropsString:
+    results:
+      cropsString: String
+  getCrop:
+    params:
+      cropIdx: Int32
+    results:
+      crop: Crop
