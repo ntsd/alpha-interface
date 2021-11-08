@@ -18,7 +18,7 @@ class _ProductInfoState extends State<ProductInfo> {
   List<String> countries = [];
   String currentCountry = "";
   List<_SalesData> data = [];
-  int avaiableAmount = 1000;
+  int availableAmount = 1000;
   final TextEditingController _controller = TextEditingController();
   final TextEditingController _sellController = TextEditingController();
   int buyAmount = 0;
@@ -151,7 +151,7 @@ class _ProductInfoState extends State<ProductInfo> {
                       child: Container(
                         height: 50,
                         child: Text(
-                          "Avaiable Amount: " + avaiableAmount.toString(),
+                          "Available Amount: " + availableAmount.toString(),
                           style: TextStyle(fontSize: 24),
                         ),
                       )),
@@ -203,8 +203,8 @@ class _ProductInfoState extends State<ProductInfo> {
                                   actions: [
                                     TextButton(
                                         onPressed: () {
-                                          avaiableAmount =
-                                              avaiableAmount - buyAmount;
+                                          availableAmount =
+                                              availableAmount - buyAmount;
                                           setState(() {});
                                           Navigator.pop(context);
                                         },
@@ -231,7 +231,7 @@ class _ProductInfoState extends State<ProductInfo> {
                         decoration:
                             const InputDecoration(border: OutlineInputBorder()),
                         onChanged: (value) {
-                          buyAmount = int.parse(value);
+                          sellAmount = int.parse(value);
                         },
                       ),
                     ),
@@ -256,8 +256,8 @@ class _ProductInfoState extends State<ProductInfo> {
                                   actions: [
                                     TextButton(
                                         onPressed: () {
-                                          avaiableAmount =
-                                              avaiableAmount + buyAmount;
+                                          availableAmount =
+                                              availableAmount + sellAmount;
                                           setState(() {});
                                           Navigator.pop(context);
                                         },
