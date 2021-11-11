@@ -20,11 +20,11 @@ func (a ArrayOfImmutableWallet) GetWallet(index int32) ImmutableWallet {
 	return ImmutableWallet{objID: a.objID, keyID: wasmlib.Key32(index)}
 }
 
-type ImmutableViewMyWalletsResults struct {
+type ImmutableViewGetMyWalletsResults struct {
 	id int32
 }
 
-func (s ImmutableViewMyWalletsResults) Wallets() ArrayOfImmutableWallet {
+func (s ImmutableViewGetMyWalletsResults) Wallets() ArrayOfImmutableWallet {
 	arrID := wasmlib.GetObjectID(s.id, idxMap[IdxResultWallets], wasmlib.TYPE_ARRAY|wasmlib.TYPE_BYTES)
 	return ArrayOfImmutableWallet{objID: arrID}
 }
@@ -45,29 +45,59 @@ func (a ArrayOfMutableWallet) GetWallet(index int32) MutableWallet {
 	return MutableWallet{objID: a.objID, keyID: wasmlib.Key32(index)}
 }
 
-type MutableViewMyWalletsResults struct {
+type MutableViewGetMyWalletsResults struct {
 	id int32
 }
 
-func (s MutableViewMyWalletsResults) Wallets() ArrayOfMutableWallet {
+func (s MutableViewGetMyWalletsResults) Wallets() ArrayOfMutableWallet {
 	arrID := wasmlib.GetObjectID(s.id, idxMap[IdxResultWallets], wasmlib.TYPE_ARRAY|wasmlib.TYPE_BYTES)
 	return ArrayOfMutableWallet{objID: arrID}
 }
 
-type ImmutableGetCropResults struct {
+type ArrayOfImmutableOrder struct {
+	objID int32
+}
+
+func (a ArrayOfImmutableOrder) Length() int32 {
+	return wasmlib.GetLength(a.objID)
+}
+
+func (a ArrayOfImmutableOrder) GetOrder(index int32) ImmutableOrder {
+	return ImmutableOrder{objID: a.objID, keyID: wasmlib.Key32(index)}
+}
+
+type ImmutableViewGetOrdersResults struct {
 	id int32
 }
 
-func (s ImmutableGetCropResults) Crop() ImmutableCrop {
-	return ImmutableCrop{objID: s.id, keyID: idxMap[IdxResultCrop]}
+func (s ImmutableViewGetOrdersResults) Orders() ArrayOfImmutableOrder {
+	arrID := wasmlib.GetObjectID(s.id, idxMap[IdxResultOrders], wasmlib.TYPE_ARRAY|wasmlib.TYPE_BYTES)
+	return ArrayOfImmutableOrder{objID: arrID}
 }
 
-type MutableGetCropResults struct {
+type ArrayOfMutableOrder struct {
+	objID int32
+}
+
+func (a ArrayOfMutableOrder) Clear() {
+	wasmlib.Clear(a.objID)
+}
+
+func (a ArrayOfMutableOrder) Length() int32 {
+	return wasmlib.GetLength(a.objID)
+}
+
+func (a ArrayOfMutableOrder) GetOrder(index int32) MutableOrder {
+	return MutableOrder{objID: a.objID, keyID: wasmlib.Key32(index)}
+}
+
+type MutableViewGetOrdersResults struct {
 	id int32
 }
 
-func (s MutableGetCropResults) Crop() MutableCrop {
-	return MutableCrop{objID: s.id, keyID: idxMap[IdxResultCrop]}
+func (s MutableViewGetOrdersResults) Orders() ArrayOfMutableOrder {
+	arrID := wasmlib.GetObjectID(s.id, idxMap[IdxResultOrders], wasmlib.TYPE_ARRAY|wasmlib.TYPE_BYTES)
+	return ArrayOfMutableOrder{objID: arrID}
 }
 
 type ArrayOfImmutableCrop struct {
@@ -116,34 +146,6 @@ func (s MutableGetCropsResults) Crops() ArrayOfMutableCrop {
 	return ArrayOfMutableCrop{objID: arrID}
 }
 
-type ImmutableGetCropsStringResults struct {
-	id int32
-}
-
-func (s ImmutableGetCropsStringResults) CropsString() wasmlib.ScImmutableString {
-	return wasmlib.NewScImmutableString(s.id, idxMap[IdxResultCropsString])
-}
-
-type MutableGetCropsStringResults struct {
-	id int32
-}
-
-func (s MutableGetCropsStringResults) CropsString() wasmlib.ScMutableString {
-	return wasmlib.NewScMutableString(s.id, idxMap[IdxResultCropsString])
-}
-
-type ArrayOfImmutableOrder struct {
-	objID int32
-}
-
-func (a ArrayOfImmutableOrder) Length() int32 {
-	return wasmlib.GetLength(a.objID)
-}
-
-func (a ArrayOfImmutableOrder) GetOrder(index int32) ImmutableOrder {
-	return ImmutableOrder{objID: a.objID, keyID: wasmlib.Key32(index)}
-}
-
 type ImmutableGetOrdersResults struct {
 	id int32
 }
@@ -153,22 +155,6 @@ func (s ImmutableGetOrdersResults) Orders() ArrayOfImmutableOrder {
 	return ArrayOfImmutableOrder{objID: arrID}
 }
 
-type ArrayOfMutableOrder struct {
-	objID int32
-}
-
-func (a ArrayOfMutableOrder) Clear() {
-	wasmlib.Clear(a.objID)
-}
-
-func (a ArrayOfMutableOrder) Length() int32 {
-	return wasmlib.GetLength(a.objID)
-}
-
-func (a ArrayOfMutableOrder) GetOrder(index int32) MutableOrder {
-	return MutableOrder{objID: a.objID, keyID: wasmlib.Key32(index)}
-}
-
 type MutableGetOrdersResults struct {
 	id int32
 }
@@ -176,22 +162,6 @@ type MutableGetOrdersResults struct {
 func (s MutableGetOrdersResults) Orders() ArrayOfMutableOrder {
 	arrID := wasmlib.GetObjectID(s.id, idxMap[IdxResultOrders], wasmlib.TYPE_ARRAY|wasmlib.TYPE_BYTES)
 	return ArrayOfMutableOrder{objID: arrID}
-}
-
-type ImmutableGetOrdersStringResults struct {
-	id int32
-}
-
-func (s ImmutableGetOrdersStringResults) OrdersString() wasmlib.ScImmutableString {
-	return wasmlib.NewScImmutableString(s.id, idxMap[IdxResultOrdersString])
-}
-
-type MutableGetOrdersStringResults struct {
-	id int32
-}
-
-func (s MutableGetOrdersStringResults) OrdersString() wasmlib.ScMutableString {
-	return wasmlib.NewScMutableString(s.id, idxMap[IdxResultOrdersString])
 }
 
 type ImmutableGetOwnerResults struct {
@@ -210,20 +180,20 @@ func (s MutableGetOwnerResults) Owner() wasmlib.ScMutableAgentID {
 	return wasmlib.NewScMutableAgentID(s.id, idxMap[IdxResultOwner])
 }
 
-type ImmutableViewWalletsResults struct {
+type ImmutableGetWalletsResults struct {
 	id int32
 }
 
-func (s ImmutableViewWalletsResults) Wallets() ArrayOfImmutableWallet {
+func (s ImmutableGetWalletsResults) Wallets() ArrayOfImmutableWallet {
 	arrID := wasmlib.GetObjectID(s.id, idxMap[IdxResultWallets], wasmlib.TYPE_ARRAY|wasmlib.TYPE_BYTES)
 	return ArrayOfImmutableWallet{objID: arrID}
 }
 
-type MutableViewWalletsResults struct {
+type MutableGetWalletsResults struct {
 	id int32
 }
 
-func (s MutableViewWalletsResults) Wallets() ArrayOfMutableWallet {
+func (s MutableGetWalletsResults) Wallets() ArrayOfMutableWallet {
 	arrID := wasmlib.GetObjectID(s.id, idxMap[IdxResultWallets], wasmlib.TYPE_ARRAY|wasmlib.TYPE_BYTES)
 	return ArrayOfMutableWallet{objID: arrID}
 }

@@ -110,6 +110,8 @@ wasp-cli chain post-request alphainterface <funcname> [params] --transfer=IOTA:1
 wasp-cli chain post-request alphainterface setOwner string owner string {actorID}
 wasp-cli chain call-view alphainterface getOwner
 
+wasp-cli chain list-accounts
+
 wasp-cli chain post-request alphainterface setCrop string name string potato string country string germany string yield int 100 --off-ledger
 wasp-cli chain post-request alphainterface setCrop string name string rice string country string germany string yield int 200 --off-ledger
 

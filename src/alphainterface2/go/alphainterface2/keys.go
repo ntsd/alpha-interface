@@ -10,28 +10,25 @@ package alphainterface2
 import "github.com/iotaledger/wasp/packages/vm/wasmlib/go/wasmlib"
 
 const (
-	IdxParamAmount        = 0
-	IdxParamCountry       = 1
-	IdxParamCropIdx       = 2
-	IdxParamName          = 3
-	IdxParamOrderIdx      = 4
-	IdxParamOwner         = 5
-	IdxParamPrice         = 6
-	IdxParamType          = 7
-	IdxResultCrop         = 8
-	IdxResultCrops        = 9
-	IdxResultCropsString  = 10
-	IdxResultOrders       = 11
-	IdxResultOrdersString = 12
-	IdxResultOwner        = 13
-	IdxResultWallets      = 14
-	IdxStateCrops         = 15
-	IdxStateOrders        = 16
-	IdxStateOwner         = 17
-	IdxStateWallets       = 18
+	IdxParamAmount   = 0
+	IdxParamCountry  = 1
+	IdxParamCropIdx  = 2
+	IdxParamName     = 3
+	IdxParamOrderIdx = 4
+	IdxParamOwner    = 5
+	IdxParamPrice    = 6
+	IdxParamType     = 7
+	IdxResultCrops   = 8
+	IdxResultOrders  = 9
+	IdxResultOwner   = 10
+	IdxResultWallets = 11
+	IdxStateCrops    = 12
+	IdxStateOrders   = 13
+	IdxStateOwner    = 14
+	IdxStateWallets  = 15
 )
 
-const keyMapLen = 19
+const keyMapLen = 16
 
 var keyMap = [keyMapLen]wasmlib.Key{
 	ParamAmount,
@@ -42,11 +39,8 @@ var keyMap = [keyMapLen]wasmlib.Key{
 	ParamOwner,
 	ParamPrice,
 	ParamType,
-	ResultCrop,
 	ResultCrops,
-	ResultCropsString,
 	ResultOrders,
-	ResultOrdersString,
 	ResultOwner,
 	ResultWallets,
 	StateCrops,

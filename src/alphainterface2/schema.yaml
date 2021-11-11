@@ -6,15 +6,17 @@ structs:
     name: String // name of the crop
     country: String // the country name
   Order:
-    idx: Int32 // crop index
+    idx: Int32 // order index
     cropIdx: Int32 // crop index
-    type: String // sell, buy
-    amount: Int64 // amount of crop
-    price: Int64 // price of the crop
-    fullPrice: Int64 // amount * price
+    walletIdx: Int32 // wallet index
+    type: String // order type (sell, buy)
+    amount: Int64 // limit amount left of the order
+    price: Int64 // limit price of the order
+    iota: Int64 // for buy order we need to specific iota incoming for reason when buy higher price than the market
     owner: AgentID // agent id of the owner
     status: String // order status (opening, matched, canceled)
   Wallet:
+    idx: Int32 // wallet index
     owner: AgentID // agent id of the owner
     cropIdx: Int32 // crop index
     amount: Int64 // amount of crop
@@ -46,11 +48,14 @@ funcs:
   closeOrder:
     params:
       orderIdx: Int32 // order index
-  viewMyWallets:
+  viewGetMyWallets:
     results:
       wallets: Wallet[]
+  viewGetOrders:
+    results:
+      orders: Order[]
 views:
-  viewWallets:
+  getWallets:
     results:
       wallets: Wallet[]
   getOwner:
@@ -59,17 +64,6 @@ views:
   getOrders:
     results:
       orders: Order[]
-  getOrdersString:
-    results:
-      ordersString: String
   getCrops:
     results:
       crops: Crop[]
-  getCropsString:
-    results:
-      cropsString: String
-  getCrop:
-    params:
-      cropIdx: Int32
-    results:
-      crop: Crop

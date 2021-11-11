@@ -119,19 +119,3 @@ type MutableSetOwnerParams struct {
 func (s MutableSetOwnerParams) Owner() wasmlib.ScMutableAgentID {
 	return wasmlib.NewScMutableAgentID(s.id, idxMap[IdxParamOwner])
 }
-
-type ImmutableGetCropParams struct {
-	id int32
-}
-
-func (s ImmutableGetCropParams) CropIdx() wasmlib.ScImmutableInt32 {
-	return wasmlib.NewScImmutableInt32(s.id, idxMap[IdxParamCropIdx])
-}
-
-type MutableGetCropParams struct {
-	id int32
-}
-
-func (s MutableGetCropParams) CropIdx() wasmlib.ScMutableInt32 {
-	return wasmlib.NewScMutableInt32(s.id, idxMap[IdxParamCropIdx])
-}
