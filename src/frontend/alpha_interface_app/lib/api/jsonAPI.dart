@@ -21,4 +21,15 @@ class JsonAPI {
     });
     return yieldList;
   }
+  loadCountryJson() async {
+    List<Yield> yieldList = [];
+    String data = await rootBundle.loadString("assets/rawDataCountry.json");
+    List<dynamic> jsonResult = jsonDecode(data);
+
+    jsonResult.forEach((v) { 
+    Yield yi = new Yield.fromJson(v);
+      yieldList.add(yi);
+    });
+    return yieldList;
+  }
 }

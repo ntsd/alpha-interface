@@ -4,15 +4,16 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:syncfusion_flutter_charts/charts.dart';
 
-class ProductInfo extends StatefulWidget {
+class FutureTrading extends StatefulWidget {
   final String productName;
-  ProductInfo(this.productName);
+  final String currentPrice;
+  FutureTrading(this.productName, this.currentPrice);
 
   @override
-  _ProductInfoState createState() => _ProductInfoState();
+  _FutureTradingState createState() => _FutureTradingState();
 }
 
-class _ProductInfoState extends State<ProductInfo> {
+class _FutureTradingState extends State<FutureTrading> {
   JsonAPI _jsonAPI = JsonAPI.getInstance();
   List<Yield> yieldList = [];
   List<String> countries = [];
@@ -34,7 +35,7 @@ class _ProductInfoState extends State<ProductInfo> {
   }
 
   loadJson() async {
-    yieldList = await _jsonAPI.loadJson();
+    yieldList = await _jsonAPI.loadCountryJson();
     currentCountry = yieldList.first.area;
     yieldList.forEach((element) {
       if (!countries.contains(element.area)) {
@@ -66,7 +67,6 @@ class _ProductInfoState extends State<ProductInfo> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
       body: SingleChildScrollView(
         child: Container(
           width: MediaQuery.of(context).size.width,
