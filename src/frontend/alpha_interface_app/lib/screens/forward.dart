@@ -26,12 +26,11 @@ class _ForwardTradingState extends State<ForwardTrading> {
   List<Order> orderList = [];
   List<FuturePriceData> priceData = [];
   int id = 0;
-  int _amount = 0;
+  int _amount = 10;
   int _price = 0;
   int avaragePrice = 0;
   int totalPrice = 0;
   Random rand = Random();
-  final TextEditingController _amountController = TextEditingController();
   final TextEditingController _priceController = TextEditingController();
   int buyAmount = 0;
   int sellAmount = 0;
@@ -41,7 +40,6 @@ class _ForwardTradingState extends State<ForwardTrading> {
     // TODO: implement initState
     super.initState();
     loadJson();
-    _amountController.text = "0";
     _priceController.text = "0";
   }
 
@@ -59,16 +57,13 @@ class _ForwardTradingState extends State<ForwardTrading> {
 
   generateOrders() {
     var actionType = "";
-    int amount = 10;
 
     for (var i = 1; i < 10; i++) {
       id = i;
       int priceFlacuation = rand.nextInt(2);
-      int amountFlacuation = rand.nextInt(10);
       DateTime now = DateTime.now().add(Duration(days: -10 + i));
       String convertedDateTime =
           "${now.day.toString().padLeft(2, '0')}-${now.month.toString().padLeft(2, '0')}-${now.year.toString()} ${now.hour.toString().padLeft(2, '0')}-${now.minute.toString().padLeft(2, '0')}";
-      amount += amountFlacuation;
       int price =
           (int.parse(widget.currentPrice) / 10).round() + priceFlacuation;
 
@@ -77,7 +72,7 @@ class _ForwardTradingState extends State<ForwardTrading> {
       totalPrice += price;
       int duration = rand.nextInt(3);
       Order newOrder = Order(id, widget.productName, "Future", actionType,
-          amount, price, convertedDateTime, duration,
+          _amount, price, convertedDateTime, duration,
           traderLocation: currentCountry);
       orderList.add(newOrder);
       orderList.sort((a, b) => a.createdAt.compareTo(b.createdAt));
@@ -446,28 +441,22 @@ class _ForwardTradingState extends State<ForwardTrading> {
                           width: 5,
                         ),
                         Flexible(
-                          child: TextFormField(
-                            style: TextStyle(color: Colors.red),
-                            cursorColor: Colors.red,
-                            decoration: InputDecoration(
-                                focusedBorder: OutlineInputBorder(
-                                  borderSide:
-                                      BorderSide(color: Colors.red, width: 2.0),
-                                ),
-                                enabledBorder: OutlineInputBorder(
-                                  borderSide:
-                                      BorderSide(color: Colors.red, width: 2.0),
-                                ),
-                                hintText: 'Enter amount',
-                                hintStyle: TextStyle(color: Colors.red)),
-                            controller: _amountController,
-                            onChanged: (value) {
-                              setState(() {
-                                _amount = int.parse(value);
-                              });
-                            },
+                            child: TextFormField(
+                              enabled: false,
+                          initialValue: _amount.toString(),
+                          style: TextStyle(color: Colors.red),
+                          cursorColor: Colors.red,
+                          decoration: InputDecoration(
+                            focusedBorder: OutlineInputBorder(
+                              borderSide:
+                                  BorderSide(color: Colors.red, width: 2.0),
+                            ),
+                            enabledBorder: OutlineInputBorder(
+                              borderSide:
+                                  BorderSide(color: Colors.red, width: 2.0),
+                            ),
                           ),
-                        ),
+                        )),
                       ],
                     ),
                   ),
@@ -528,18 +517,12 @@ class _ForwardTradingState extends State<ForwardTrading> {
                       FuturePriceData newPriceData =
                           FuturePriceData(convertedDateTime, _price);
                       priceData.add(newPriceData);
-                      totalPrice += _price - avaragePrice;
+                      totalPrice += _price;
+                      avaragePrice = 0;
                       avaragePrice = (totalPrice / orderList.length).round();
                       int duration = rand.nextInt(3);
-                      Order newOrder = Order(
-                          id,
-                          widget.productName,
-                          "Future",
-                          "Sell",
-                          _amount,
-                          _price,
-                          convertedDateTime,
-                          duration,
+                      Order newOrder = Order(id, widget.productName, "Future",
+                          "Sell", _amount, _price, convertedDateTime, duration,
                           traderLocation: currentCountry);
                       orderList.add(newOrder);
                       Navigator.pop(context);

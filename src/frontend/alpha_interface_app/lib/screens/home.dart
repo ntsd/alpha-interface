@@ -101,136 +101,6 @@ class _HomePageState extends State<HomePage> {
     var sidePadding = MediaQuery.of(context).size.width / 6;
     return Scaffold(
       appBar: AppBar(),
-      drawer: Drawer(
-        child: ListView(
-          // Important: Remove any padding from the ListView.
-          padding: EdgeInsets.zero,
-          children: [
-            DrawerHeader(
-              decoration: BoxDecoration(
-                color: Colors.red,
-              ),
-              child: Padding(
-                padding: const EdgeInsets.only(top: 15.0, bottom: 15),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      children: [
-                        Icon(
-                          Icons.account_circle_outlined,
-                          size: 40,
-                          color: Colors.white,
-                        ),
-                        SizedBox(
-                          width: 20,
-                        ),
-                        Text(
-                          widget.name,
-                          style: TextStyle(
-                            fontSize: 24,
-                            color: Colors.white,
-                          ),
-                        ),
-                      ],
-                    ),
-                    SizedBox(
-                      height: 20,
-                    ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      children: [
-                        Icon(
-                          Icons.account_balance_wallet_outlined,
-                          size: 40,
-                          color: Colors.white,
-                        ),
-                        SizedBox(
-                          width: 20,
-                        ),
-                        Text(
-                          "10000 IOTA",
-                          style: TextStyle(
-                            fontSize: 24,
-                            color: Colors.white,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ],
-                ),
-              ),
-            ),
-            ListTile(
-              title: Container(
-                height: 50,
-                child: Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text(
-                        'My Orders',
-                        style: TextStyle(
-                          fontSize: 24,
-                          color: Colors.white,
-                        ),
-                      ),
-                      SizedBox(
-                        width: 10,
-                      ),
-                      Icon(
-                        Icons.keyboard_arrow_right_outlined,
-                        color: Colors.white,
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-              onTap: () {
-                Navigator.pop(context);
-              },
-            ),
-            ListTile(
-              title: Container(
-                height: 50,
-                child: Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text(
-                        'My Assets',
-                        style: TextStyle(
-                          fontSize: 24,
-                          color: Colors.white,
-                        ),
-                      ),
-                      SizedBox(
-                        width: 10,
-                      ),
-                      Icon(
-                        Icons.keyboard_arrow_right_outlined,
-                        color: Colors.white,
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-              onTap: () {
-                Navigator.pop(context);
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (BuildContext cntx) => MyAssets(),
-                  ),
-                );
-              },
-            ),
-          ],
-        ),
-      ),
       body: SingleChildScrollView(
         child: Padding(
           padding: EdgeInsets.fromLTRB(sidePadding, 50, sidePadding, 50),
@@ -374,7 +244,7 @@ class _HomePageState extends State<HomePage> {
                   color: Colors.grey[300],
                 ),
               ),
-              buildMyPortfolio()
+              //buildMyPortfolio()
             ],
           ),
         ),
