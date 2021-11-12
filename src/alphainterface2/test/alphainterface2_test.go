@@ -3,7 +3,7 @@ package test
 import (
 	"testing"
 
-	"github.com/iotaledger/wasp/alphainterface/src/contract2/go/alphainterface2"
+	"github.com/iotaledger/wasp/alphainterface/src/alphainterface2/go/alphainterface2"
 	"github.com/iotaledger/wasp/packages/vm/wasmsolo"
 	"github.com/stretchr/testify/require"
 )

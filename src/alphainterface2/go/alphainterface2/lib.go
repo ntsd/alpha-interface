@@ -17,14 +17,12 @@ func OnLoad() {
 	exports.AddFunc(FuncInit, funcInitThunk)
 	exports.AddFunc(FuncSetCrop, funcSetCropThunk)
 	exports.AddFunc(FuncSetOwner, funcSetOwnerThunk)
-	exports.AddFunc(FuncViewMyWallets, funcViewMyWalletsThunk)
-	exports.AddView(ViewGetCrop, viewGetCropThunk)
+	exports.AddFunc(FuncViewGetMyWallets, funcViewGetMyWalletsThunk)
+	exports.AddFunc(FuncViewGetOrders, funcViewGetOrdersThunk)
 	exports.AddView(ViewGetCrops, viewGetCropsThunk)
-	exports.AddView(ViewGetCropsString, viewGetCropsStringThunk)
 	exports.AddView(ViewGetOrders, viewGetOrdersThunk)
-	exports.AddView(ViewGetOrdersString, viewGetOrdersStringThunk)
 	exports.AddView(ViewGetOwner, viewGetOwnerThunk)
-	exports.AddView(ViewViewWallets, viewViewWalletsThunk)
+	exports.AddView(ViewGetWallets, viewGetWalletsThunk)
 
 	for i, key := range keyMap {
 		idxMap[i] = key.KeyID()
@@ -144,47 +142,42 @@ func funcSetOwnerThunk(ctx wasmlib.ScFuncContext) {
 	ctx.Log("alphainterface2.funcSetOwner ok")
 }
 
-type ViewMyWalletsContext struct {
-	Results MutableViewMyWalletsResults
+type ViewGetMyWalletsContext struct {
+	Results MutableViewGetMyWalletsResults
 	State   Mutablealphainterface2State
 }
 
-func funcViewMyWalletsThunk(ctx wasmlib.ScFuncContext) {
-	ctx.Log("alphainterface2.funcViewMyWallets")
-	f := &ViewMyWalletsContext{
-		Results: MutableViewMyWalletsResults{
+func funcViewGetMyWalletsThunk(ctx wasmlib.ScFuncContext) {
+	ctx.Log("alphainterface2.funcViewGetMyWallets")
+	f := &ViewGetMyWalletsContext{
+		Results: MutableViewGetMyWalletsResults{
 			id: wasmlib.OBJ_ID_RESULTS,
 		},
 		State: Mutablealphainterface2State{
 			id: wasmlib.OBJ_ID_STATE,
 		},
 	}
-	funcViewMyWallets(ctx, f)
-	ctx.Log("alphainterface2.funcViewMyWallets ok")
+	funcViewGetMyWallets(ctx, f)
+	ctx.Log("alphainterface2.funcViewGetMyWallets ok")
 }
 
-type GetCropContext struct {
-	Params  ImmutableGetCropParams
-	Results MutableGetCropResults
-	State   Immutablealphainterface2State
+type ViewGetOrdersContext struct {
+	Results MutableViewGetOrdersResults
+	State   Mutablealphainterface2State
 }
 
-func viewGetCropThunk(ctx wasmlib.ScViewContext) {
-	ctx.Log("alphainterface2.viewGetCrop")
-	f := &GetCropContext{
-		Params: ImmutableGetCropParams{
-			id: wasmlib.OBJ_ID_PARAMS,
-		},
-		Results: MutableGetCropResults{
+func funcViewGetOrdersThunk(ctx wasmlib.ScFuncContext) {
+	ctx.Log("alphainterface2.funcViewGetOrders")
+	f := &ViewGetOrdersContext{
+		Results: MutableViewGetOrdersResults{
 			id: wasmlib.OBJ_ID_RESULTS,
 		},
-		State: Immutablealphainterface2State{
+		State: Mutablealphainterface2State{
 			id: wasmlib.OBJ_ID_STATE,
 		},
 	}
-	ctx.Require(f.Params.CropIdx().Exists(), "missing mandatory cropIdx")
-	viewGetCrop(ctx, f)
-	ctx.Log("alphainterface2.viewGetCrop ok")
+	funcViewGetOrders(ctx, f)
+	ctx.Log("alphainterface2.funcViewGetOrders ok")
 }
 
 type GetCropsContext struct {
@@ -206,25 +199,6 @@ func viewGetCropsThunk(ctx wasmlib.ScViewContext) {
 	ctx.Log("alphainterface2.viewGetCrops ok")
 }
 
-type GetCropsStringContext struct {
-	Results MutableGetCropsStringResults
-	State   Immutablealphainterface2State
-}
-
-func viewGetCropsStringThunk(ctx wasmlib.ScViewContext) {
-	ctx.Log("alphainterface2.viewGetCropsString")
-	f := &GetCropsStringContext{
-		Results: MutableGetCropsStringResults{
-			id: wasmlib.OBJ_ID_RESULTS,
-		},
-		State: Immutablealphainterface2State{
-			id: wasmlib.OBJ_ID_STATE,
-		},
-	}
-	viewGetCropsString(ctx, f)
-	ctx.Log("alphainterface2.viewGetCropsString ok")
-}
-
 type GetOrdersContext struct {
 	Results MutableGetOrdersResults
 	State   Immutablealphainterface2State
@@ -242,25 +216,6 @@ func viewGetOrdersThunk(ctx wasmlib.ScViewContext) {
 	}
 	viewGetOrders(ctx, f)
 	ctx.Log("alphainterface2.viewGetOrders ok")
-}
-
-type GetOrdersStringContext struct {
-	Results MutableGetOrdersStringResults
-	State   Immutablealphainterface2State
-}
-
-func viewGetOrdersStringThunk(ctx wasmlib.ScViewContext) {
-	ctx.Log("alphainterface2.viewGetOrdersString")
-	f := &GetOrdersStringContext{
-		Results: MutableGetOrdersStringResults{
-			id: wasmlib.OBJ_ID_RESULTS,
-		},
-		State: Immutablealphainterface2State{
-			id: wasmlib.OBJ_ID_STATE,
-		},
-	}
-	viewGetOrdersString(ctx, f)
-	ctx.Log("alphainterface2.viewGetOrdersString ok")
 }
 
 type GetOwnerContext struct {
@@ -282,21 +237,21 @@ func viewGetOwnerThunk(ctx wasmlib.ScViewContext) {
 	ctx.Log("alphainterface2.viewGetOwner ok")
 }
 
-type ViewWalletsContext struct {
-	Results MutableViewWalletsResults
+type GetWalletsContext struct {
+	Results MutableGetWalletsResults
 	State   Immutablealphainterface2State
 }
 
-func viewViewWalletsThunk(ctx wasmlib.ScViewContext) {
-	ctx.Log("alphainterface2.viewViewWallets")
-	f := &ViewWalletsContext{
-		Results: MutableViewWalletsResults{
+func viewGetWalletsThunk(ctx wasmlib.ScViewContext) {
+	ctx.Log("alphainterface2.viewGetWallets")
+	f := &GetWalletsContext{
+		Results: MutableGetWalletsResults{
 			id: wasmlib.OBJ_ID_RESULTS,
 		},
 		State: Immutablealphainterface2State{
 			id: wasmlib.OBJ_ID_STATE,
 		},
 	}
-	viewViewWallets(ctx, f)
-	ctx.Log("alphainterface2.viewViewWallets ok")
+	viewGetWallets(ctx, f)
+	ctx.Log("alphainterface2.viewGetWallets ok")
 }

@@ -27,13 +27,10 @@ const (
 )
 
 const (
-	ResultCrop         = wasmlib.Key("crop")
-	ResultCrops        = wasmlib.Key("crops")
-	ResultCropsString  = wasmlib.Key("cropsString")
-	ResultOrders       = wasmlib.Key("orders")
-	ResultOrdersString = wasmlib.Key("ordersString")
-	ResultOwner        = wasmlib.Key("owner")
-	ResultWallets      = wasmlib.Key("wallets")
+	ResultCrops   = wasmlib.Key("crops")
+	ResultOrders  = wasmlib.Key("orders")
+	ResultOwner   = wasmlib.Key("owner")
+	ResultWallets = wasmlib.Key("wallets")
 )
 
 const (
@@ -44,33 +41,29 @@ const (
 )
 
 const (
-	FuncCloseOrder      = "closeOrder"
-	FuncCreateOrder     = "createOrder"
-	FuncInit            = "init"
-	FuncSetCrop         = "setCrop"
-	FuncSetOwner        = "setOwner"
-	FuncViewMyWallets   = "viewMyWallets"
-	ViewGetCrop         = "getCrop"
-	ViewGetCrops        = "getCrops"
-	ViewGetCropsString  = "getCropsString"
-	ViewGetOrders       = "getOrders"
-	ViewGetOrdersString = "getOrdersString"
-	ViewGetOwner        = "getOwner"
-	ViewViewWallets     = "viewWallets"
+	FuncCloseOrder       = "closeOrder"
+	FuncCreateOrder      = "createOrder"
+	FuncInit             = "init"
+	FuncSetCrop          = "setCrop"
+	FuncSetOwner         = "setOwner"
+	FuncViewGetMyWallets = "viewGetMyWallets"
+	FuncViewGetOrders    = "viewGetOrders"
+	ViewGetCrops         = "getCrops"
+	ViewGetOrders        = "getOrders"
+	ViewGetOwner         = "getOwner"
+	ViewGetWallets       = "getWallets"
 )
 
 const (
-	HFuncCloseOrder      = wasmlib.ScHname(0xfc422a52)
-	HFuncCreateOrder     = wasmlib.ScHname(0xe3c7ac26)
-	HFuncInit            = wasmlib.ScHname(0x1f44d644)
-	HFuncSetCrop         = wasmlib.ScHname(0x321b14e9)
-	HFuncSetOwner        = wasmlib.ScHname(0x2a15fe7b)
-	HFuncViewMyWallets   = wasmlib.ScHname(0x0c2f77f3)
-	HViewGetCrop         = wasmlib.ScHname(0x59d6b0d1)
-	HViewGetCrops        = wasmlib.ScHname(0x0f16dbb7)
-	HViewGetCropsString  = wasmlib.ScHname(0xb9ae6a38)
-	HViewGetOrders       = wasmlib.ScHname(0x53738744)
-	HViewGetOrdersString = wasmlib.ScHname(0x622a0440)
-	HViewGetOwner        = wasmlib.ScHname(0x137107a6)
-	HViewViewWallets     = wasmlib.ScHname(0x8c75313a)
+	HFuncCloseOrder       = wasmlib.ScHname(0xfc422a52)
+	HFuncCreateOrder      = wasmlib.ScHname(0xe3c7ac26)
+	HFuncInit             = wasmlib.ScHname(0x1f44d644)
+	HFuncSetCrop          = wasmlib.ScHname(0x321b14e9)
+	HFuncSetOwner         = wasmlib.ScHname(0x2a15fe7b)
+	HFuncViewGetMyWallets = wasmlib.ScHname(0x03614145)
+	HFuncViewGetOrders    = wasmlib.ScHname(0x91a574be)
+	HViewGetCrops         = wasmlib.ScHname(0x0f16dbb7)
+	HViewGetOrders        = wasmlib.ScHname(0x53738744)
+	HViewGetOwner         = wasmlib.ScHname(0x137107a6)
+	HViewGetWallets       = wasmlib.ScHname(0xbd77d8e8)
 )

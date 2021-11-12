@@ -64,14 +64,15 @@ func (o MutableCrop) Value() *Crop {
 }
 
 type Order struct {
-	Amount    int64             // amount of crop
+	Amount    int64             // limit amount left of the order
 	CropIdx   int32             // crop index
-	FullPrice int64             // amount * price
-	Idx       int32             // crop index
+	Idx       int32             // order index
+	Iota      int64             // for buy order we need to specific iota incoming for reason when buy higher price than the market
 	Owner     wasmlib.ScAgentID // agent id of the owner
-	Price     int64             // price of the crop
+	Price     int64             // limit price of the order
 	Status    string            // order status (opening, matched, canceled)
-	Type      string            // sell, buy
+	Type      string            // order type (sell, buy)
+	WalletIdx int32             // wallet index
 }
 
 func NewOrderFromBytes(bytes []byte) *Order {
@@ -79,12 +80,13 @@ func NewOrderFromBytes(bytes []byte) *Order {
 	data := &Order{}
 	data.Amount = decode.Int64()
 	data.CropIdx = decode.Int32()
-	data.FullPrice = decode.Int64()
 	data.Idx = decode.Int32()
+	data.Iota = decode.Int64()
 	data.Owner = decode.AgentID()
 	data.Price = decode.Int64()
 	data.Status = decode.String()
 	data.Type = decode.String()
+	data.WalletIdx = decode.Int32()
 	decode.Close()
 	return data
 }
@@ -93,12 +95,13 @@ func (o *Order) Bytes() []byte {
 	return wasmlib.NewBytesEncoder().
 		Int64(o.Amount).
 		Int32(o.CropIdx).
-		Int64(o.FullPrice).
 		Int32(o.Idx).
+		Int64(o.Iota).
 		AgentID(o.Owner).
 		Int64(o.Price).
 		String(o.Status).
 		String(o.Type).
+		Int32(o.WalletIdx).
 		Data()
 }
 
@@ -135,6 +138,7 @@ func (o MutableOrder) Value() *Order {
 type Wallet struct {
 	Amount  int64             // amount of crop
 	CropIdx int32             // crop index
+	Idx     int32             // wallet index
 	Owner   wasmlib.ScAgentID // agent id of the owner
 }
 
@@ -143,6 +147,7 @@ func NewWalletFromBytes(bytes []byte) *Wallet {
 	data := &Wallet{}
 	data.Amount = decode.Int64()
 	data.CropIdx = decode.Int32()
+	data.Idx = decode.Int32()
 	data.Owner = decode.AgentID()
 	decode.Close()
 	return data
@@ -152,6 +157,7 @@ func (o *Wallet) Bytes() []byte {
 	return wasmlib.NewBytesEncoder().
 		Int64(o.Amount).
 		Int32(o.CropIdx).
+		Int32(o.Idx).
 		AgentID(o.Owner).
 		Data()
 }

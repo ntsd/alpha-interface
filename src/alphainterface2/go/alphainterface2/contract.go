@@ -34,15 +34,14 @@ type SetOwnerCall struct {
 	Params MutableSetOwnerParams
 }
 
-type ViewMyWalletsCall struct {
+type ViewGetMyWalletsCall struct {
 	Func    *wasmlib.ScFunc
-	Results ImmutableViewMyWalletsResults
+	Results ImmutableViewGetMyWalletsResults
 }
 
-type GetCropCall struct {
-	Func    *wasmlib.ScView
-	Params  MutableGetCropParams
-	Results ImmutableGetCropResults
+type ViewGetOrdersCall struct {
+	Func    *wasmlib.ScFunc
+	Results ImmutableViewGetOrdersResults
 }
 
 type GetCropsCall struct {
@@ -50,19 +49,9 @@ type GetCropsCall struct {
 	Results ImmutableGetCropsResults
 }
 
-type GetCropsStringCall struct {
-	Func    *wasmlib.ScView
-	Results ImmutableGetCropsStringResults
-}
-
 type GetOrdersCall struct {
 	Func    *wasmlib.ScView
 	Results ImmutableGetOrdersResults
-}
-
-type GetOrdersStringCall struct {
-	Func    *wasmlib.ScView
-	Results ImmutableGetOrdersStringResults
 }
 
 type GetOwnerCall struct {
@@ -70,9 +59,9 @@ type GetOwnerCall struct {
 	Results ImmutableGetOwnerResults
 }
 
-type ViewWalletsCall struct {
+type GetWalletsCall struct {
 	Func    *wasmlib.ScView
-	Results ImmutableViewWalletsResults
+	Results ImmutableGetWalletsResults
 }
 
 type Funcs struct{}
@@ -109,26 +98,20 @@ func (sc Funcs) SetOwner(ctx wasmlib.ScFuncCallContext) *SetOwnerCall {
 	return f
 }
 
-func (sc Funcs) ViewMyWallets(ctx wasmlib.ScFuncCallContext) *ViewMyWalletsCall {
-	f := &ViewMyWalletsCall{Func: wasmlib.NewScFunc(ctx, HScName, HFuncViewMyWallets)}
+func (sc Funcs) ViewGetMyWallets(ctx wasmlib.ScFuncCallContext) *ViewGetMyWalletsCall {
+	f := &ViewGetMyWalletsCall{Func: wasmlib.NewScFunc(ctx, HScName, HFuncViewGetMyWallets)}
 	f.Func.SetPtrs(nil, &f.Results.id)
 	return f
 }
 
-func (sc Funcs) GetCrop(ctx wasmlib.ScViewCallContext) *GetCropCall {
-	f := &GetCropCall{Func: wasmlib.NewScView(ctx, HScName, HViewGetCrop)}
-	f.Func.SetPtrs(&f.Params.id, &f.Results.id)
+func (sc Funcs) ViewGetOrders(ctx wasmlib.ScFuncCallContext) *ViewGetOrdersCall {
+	f := &ViewGetOrdersCall{Func: wasmlib.NewScFunc(ctx, HScName, HFuncViewGetOrders)}
+	f.Func.SetPtrs(nil, &f.Results.id)
 	return f
 }
 
 func (sc Funcs) GetCrops(ctx wasmlib.ScViewCallContext) *GetCropsCall {
 	f := &GetCropsCall{Func: wasmlib.NewScView(ctx, HScName, HViewGetCrops)}
-	f.Func.SetPtrs(nil, &f.Results.id)
-	return f
-}
-
-func (sc Funcs) GetCropsString(ctx wasmlib.ScViewCallContext) *GetCropsStringCall {
-	f := &GetCropsStringCall{Func: wasmlib.NewScView(ctx, HScName, HViewGetCropsString)}
 	f.Func.SetPtrs(nil, &f.Results.id)
 	return f
 }
@@ -139,20 +122,14 @@ func (sc Funcs) GetOrders(ctx wasmlib.ScViewCallContext) *GetOrdersCall {
 	return f
 }
 
-func (sc Funcs) GetOrdersString(ctx wasmlib.ScViewCallContext) *GetOrdersStringCall {
-	f := &GetOrdersStringCall{Func: wasmlib.NewScView(ctx, HScName, HViewGetOrdersString)}
-	f.Func.SetPtrs(nil, &f.Results.id)
-	return f
-}
-
 func (sc Funcs) GetOwner(ctx wasmlib.ScViewCallContext) *GetOwnerCall {
 	f := &GetOwnerCall{Func: wasmlib.NewScView(ctx, HScName, HViewGetOwner)}
 	f.Func.SetPtrs(nil, &f.Results.id)
 	return f
 }
 
-func (sc Funcs) ViewWallets(ctx wasmlib.ScViewCallContext) *ViewWalletsCall {
-	f := &ViewWalletsCall{Func: wasmlib.NewScView(ctx, HScName, HViewViewWallets)}
+func (sc Funcs) GetWallets(ctx wasmlib.ScViewCallContext) *GetWalletsCall {
+	f := &GetWalletsCall{Func: wasmlib.NewScView(ctx, HScName, HViewGetWallets)}
 	f.Func.SetPtrs(nil, &f.Results.id)
 	return f
 }
