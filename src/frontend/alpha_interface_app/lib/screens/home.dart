@@ -55,8 +55,7 @@ class _HomePageState extends State<HomePage> {
         int negetivePrice = random.nextInt(30);
         var result = price - negetivePrice;
         DateTime now = DateTime.now().add(Duration(hours: -25 + i));
-        String convertedDateTime =
-            "${now.hour.toString().padLeft(2, '0')}";
+        String convertedDateTime = "${now.hour.toString().padLeft(2, '0')}";
 
         PriceData newData = PriceData(result, convertedDateTime);
         newDataList.add(newData);
@@ -101,6 +100,106 @@ class _HomePageState extends State<HomePage> {
     var sidePadding = MediaQuery.of(context).size.width / 6;
     return Scaffold(
       appBar: AppBar(),
+      drawer: Drawer(
+        child: ListView(
+          // Important: Remove any padding from the ListView.
+          padding: EdgeInsets.zero,
+          children: [
+            DrawerHeader(
+              decoration: BoxDecoration(
+                color: Colors.red,
+              ),
+              child: Padding(
+                padding: const EdgeInsets.only(top: 15.0, bottom: 15),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        Icon(
+                          Icons.account_circle_outlined,
+                          size: 40,
+                          color: Colors.white,
+                        ),
+                        SizedBox(
+                          width: 20,
+                        ),
+                        Text(
+                          widget.name,
+                          style: TextStyle(
+                            fontSize: 24,
+                            color: Colors.white,
+                          ),
+                        ),
+                      ],
+                    ),
+                    SizedBox(
+                      height: 20,
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        Icon(
+                          Icons.account_balance_wallet_outlined,
+                          size: 40,
+                          color: Colors.white,
+                        ),
+                        SizedBox(
+                          width: 20,
+                        ),
+                        Text(
+                          "10000 IOTA",
+                          style: TextStyle(
+                            fontSize: 24,
+                            color: Colors.white,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            ListTile(
+              title: Container(
+                height: 50,
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text(
+                        'My Assets',
+                        style: TextStyle(
+                          fontSize: 24,
+                          color: Colors.white,
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Icon(
+                        Icons.keyboard_arrow_right_outlined,
+                        color: Colors.white,
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              onTap: () {
+                Navigator.pop(context);
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (BuildContext cntx) => MyAssets(widget.title, widget.name),
+                  ),
+                );
+              },
+            ),
+          ],
+        ),
+      ),
       body: SingleChildScrollView(
         child: Padding(
           padding: EdgeInsets.fromLTRB(sidePadding, 50, sidePadding, 50),
@@ -244,61 +343,9 @@ class _HomePageState extends State<HomePage> {
                   color: Colors.grey[300],
                 ),
               ),
-              //buildMyPortfolio()
             ],
           ),
         ),
-      ),
-    );
-  }
-
-  buildMyPortfolio() {
-    return Container(
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Padding(
-            padding: const EdgeInsets.fromLTRB(35, 35, 20, 10),
-            child: Text(
-              "My Portfolio",
-              style: TextStyle(
-                color: Colors.black,
-                fontSize: 24,
-              ),
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.fromLTRB(35, 10, 35, 10),
-            child: Text(
-              totalnewPrice.toString() + " €",
-              style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 35,
-                  fontWeight: FontWeight.bold),
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.only(right: 35.0, left: 20),
-            child: Container(
-              height: 300,
-              child: SfCartesianChart(
-                  primaryXAxis: CategoryAxis(
-                      title: AxisTitle(
-                          text: 'Time', textStyle: TextStyle(fontSize: 12))),
-                  primaryYAxis: NumericAxis(
-                      title: AxisTitle(
-                          text: 'Price', textStyle: TextStyle(fontSize: 12))),
-                  tooltipBehavior: TooltipBehavior(enable: false),
-                  series: <ChartSeries<PriceData, dynamic>>[
-                    LineSeries<PriceData, String>(
-                      dataSource: totalData,
-                      xValueMapper: (PriceData sales, _) => sales.time,
-                      yValueMapper: (PriceData sales, _) => sales.value,
-                    )
-                  ]),
-            ),
-          ),
-        ],
       ),
     );
   }

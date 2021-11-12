@@ -156,7 +156,7 @@ class _ForwardTradingState extends State<ForwardTrading> {
                   child: SfCartesianChart(
                       primaryXAxis: CategoryAxis(),
                       title: ChartTitle(text: 'Avarage Price $avaragePrice €'),
-                      tooltipBehavior: TooltipBehavior(enable: true),
+                      tooltipBehavior: TooltipBehavior(enable: true,  header: ""),
                       series: <ChartSeries<FuturePriceData, String>>[
                         LineSeries<FuturePriceData, String>(
                           dataSource: priceData,
@@ -234,8 +234,8 @@ class _ForwardTradingState extends State<ForwardTrading> {
                   createTradeFields("Address: ", order.traderAdrres),
                   createTradeFields("Postcode: ", order.traderPostCode),
                   createTradeFields("Commodity: ", order.name),
-                  createTradeFields("Amount: ", order.amount.toString()),
-                  createTradeFields("Creator: ", order.price.toString()),
+                  createTradeFields("Amount: ", order.amount.toString() + " kg"),
+                  createTradeFields("Price: ", order.price.toString() + " €"),
                   createTradeFields("Created at: ", order.createdAt.toString()),
                 ],
               ),
@@ -264,7 +264,7 @@ class _ForwardTradingState extends State<ForwardTrading> {
                   child: RaisedButton(
                     color: Colors.red,
                     child: Text(
-                      "Execute Trade",
+                      "Buy",
                       style: TextStyle(color: Colors.white),
                     ),
                     onPressed: () {
@@ -443,7 +443,7 @@ class _ForwardTradingState extends State<ForwardTrading> {
                         Flexible(
                             child: TextFormField(
                               enabled: false,
-                          initialValue: _amount.toString(),
+                          initialValue: _amount.toString() + " kg",
                           style: TextStyle(color: Colors.red),
                           cursorColor: Colors.red,
                           decoration: InputDecoration(

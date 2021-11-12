@@ -19,7 +19,7 @@ void main() async {
         ),
       ),
       //home: Login(),
-      home: HomePage("", "asd"),
+      home: HomePage("Alpha Interface Demo", "Haled"),
     ),
   );
 }

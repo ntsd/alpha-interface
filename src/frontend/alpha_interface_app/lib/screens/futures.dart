@@ -81,7 +81,7 @@ class _FutureTradingState extends State<FutureTrading> {
       FuturePriceData newPriceData = FuturePriceData(convertedDateTime, price);
       priceData.add(newPriceData);
       totalPrice += price;
-      int duration = rand.nextInt(3);
+      int duration = rand.nextInt(3) + 1;
       Order newOrder = Order(id, widget.productName, "Future", actionType,
           _amount, price, convertedDateTime, duration,
           traderLocation: location);
@@ -193,7 +193,8 @@ class _FutureTradingState extends State<FutureTrading> {
                             title: ChartTitle(
                                 text: 'Yearly Production of ' +
                                     widget.productName),
-                            tooltipBehavior: TooltipBehavior(enable: true),
+                            tooltipBehavior:
+                                TooltipBehavior(enable: true, header: ""),
                             series: <ChartSeries<_SalesData, String>>[
                               LineSeries<_SalesData, String>(
                                 dataSource: data,
@@ -214,7 +215,8 @@ class _FutureTradingState extends State<FutureTrading> {
                             primaryXAxis: CategoryAxis(),
                             title: ChartTitle(
                                 text: 'Avarage Price $avaragePrice €'),
-                            tooltipBehavior: TooltipBehavior(enable: true),
+                            tooltipBehavior:
+                                TooltipBehavior(enable: true, header: ""),
                             series: <ChartSeries<FuturePriceData, String>>[
                               LineSeries<FuturePriceData, String>(
                                 dataSource: priceData,
@@ -318,7 +320,7 @@ class _FutureTradingState extends State<FutureTrading> {
                         ),
                         Flexible(
                           child: TextFormField(
-                            initialValue: _amount.toString(),
+                            initialValue: _amount.toString() + " kg",
                             enabled: false,
                             style: TextStyle(color: Colors.red),
                             cursorColor: Colors.red,
@@ -428,9 +430,11 @@ class _FutureTradingState extends State<FutureTrading> {
                   createTradeFields("Location: ", order.traderLocation),
                   createTradeFields("Commodity: ", order.name),
                   createTradeFields("Type: ", order.tradeType),
-                  createTradeFields("Duration: ", order.duration.toString()),
-                  createTradeFields("Amount: ", order.amount.toString()),
-                  createTradeFields("Creator: ", order.price.toString()),
+                  createTradeFields(
+                      "Duration: ", order.duration.toString() + " Years"),
+                  createTradeFields(
+                      "Amount: ", order.amount.toString() + " kg"),
+                  createTradeFields("Price: ", order.price.toString() + " €"),
                   createTradeFields("Created at: ", order.createdAt.toString()),
                 ],
               ),
@@ -523,6 +527,15 @@ class _FutureTradingState extends State<FutureTrading> {
               ),
               Row(
                 children: [
+                  Text("Duration: "),
+                  Text(order.duration.toString() + " Years"),
+                ],
+              ),
+              SizedBox(
+                height: 5,
+              ),
+              Row(
+                children: [
                   Text("Type: "),
                   Text(order.tradeType),
                 ],
@@ -542,7 +555,7 @@ class _FutureTradingState extends State<FutureTrading> {
               Row(
                 children: [
                   Text("Amount: "),
-                  Text(order.amount.toString()),
+                  Text(order.amount.toString() + " kg"),
                 ],
               ),
               SizedBox(
@@ -551,7 +564,7 @@ class _FutureTradingState extends State<FutureTrading> {
               Row(
                 children: [
                   Text("Price: "),
-                  Text(order.price.toString()),
+                  Text(order.price.toString() + " €"),
                 ],
               ),
               SizedBox(
