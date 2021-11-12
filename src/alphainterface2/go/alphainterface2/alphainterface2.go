@@ -108,11 +108,17 @@ func funcCreateOrder(ctx wasmlib.ScFuncContext, f *CreateOrderContext) {
 	amount := f.Params.Amount().Value()
 	orderType := f.Params.Type().Value()
 
-	// validate
-	if (orderType != ORDER_TYPE_SELL && orderType != ORDER_TYPE_BUY) ||
-		price*amount > incomingAmount {
-		ctx.Log("Validate failed")
+	// validate order type
+	if orderType != ORDER_TYPE_SELL && orderType != ORDER_TYPE_BUY {
+		ctx.Log("Invalid order type")
+		return
+	}
+
+	// validate buy order
+	if orderType == ORDER_TYPE_BUY && price*amount > incomingAmount {
+		ctx.Log("incoming amount not enough")
 		ctx.TransferToAddress(caller.Address(), wasmlib.NewScTransferIotas(incomingAmount))
+		return
 	}
 
 	// get states
@@ -126,6 +132,7 @@ func funcCreateOrder(ctx wasmlib.ScFuncContext, f *CreateOrderContext) {
 	if crop == nil {
 		ctx.Log("Crop not found")
 		ctx.TransferToAddress(caller.Address(), wasmlib.NewScTransferIotas(incomingAmount))
+		return
 	}
 
 	// get owner wallet by crop id
@@ -144,7 +151,13 @@ func funcCreateOrder(ctx wasmlib.ScFuncContext, f *CreateOrderContext) {
 			Amount:  0,
 		}
 	}
-	wallets.GetWallet(newOrderWallet.Idx).SetValue(newOrderWallet)
+	defer wallets.GetWallet(newOrderWallet.Idx).SetValue(newOrderWallet)
+
+	// validate sell order
+	if orderType == ORDER_TYPE_SELL && amount > newOrderWallet.Amount {
+		ctx.Log("not enough amount to sell")
+		return
+	}
 
 	newOrder := &Order{
 		Idx:       ordersLen,
