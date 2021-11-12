@@ -34,7 +34,7 @@ class MyTabBar extends StatelessWidget {
         body: TabBarView(
           children: <Widget>[
             FutureTrading(productName, currentPrice),
-            ForwardTrading(productName, currentPrice, data),
+            ForwardTrading(productName, currentPrice),
           ],
         ),
       ),

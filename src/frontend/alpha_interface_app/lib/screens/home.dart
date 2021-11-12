@@ -19,7 +19,16 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   List<Yield> yields = [];
-  List<String> vegetables = ["Wheat", "Barely", "Maize", "Potatoes"];
+  List<String> vegetables = [
+    "Wheat",
+    "Barely",
+    "Maize",
+    "Potatoes",
+    "Tomatoes",
+    "Strawberry",
+    "Onions",
+    "Banana"
+  ];
   List<List<PriceData>> data = [];
   List<PriceData> totalData = [];
   List<int> firstPrices = [];
@@ -45,8 +54,11 @@ class _HomePageState extends State<HomePage> {
         int price = generatedPrice + random.nextInt(20);
         int negetivePrice = random.nextInt(30);
         var result = price - negetivePrice;
+        DateTime now = DateTime.now().add(Duration(hours: -25 + i));
+        String convertedDateTime =
+            "${now.hour.toString().padLeft(2, '0')}";
 
-        PriceData newData = PriceData(result, i.toString());
+        PriceData newData = PriceData(result, convertedDateTime);
         newDataList.add(newData);
       }
       firstPrices.add(newDataList.first.value);
@@ -86,6 +98,7 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
+    var sidePadding = MediaQuery.of(context).size.width / 6;
     return Scaffold(
       appBar: AppBar(),
       drawer: Drawer(
@@ -218,145 +231,159 @@ class _HomePageState extends State<HomePage> {
           ],
         ),
       ),
-      body: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Padding(
-            padding: const EdgeInsets.fromLTRB(35, 25, 8, 8),
-            child: Text(
-              "Assets (24h)",
-              style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 24,
-                  fontWeight: FontWeight.bold),
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.all(35.0),
-            child: GridView.builder(
-              itemCount: vegetables.length,
-              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                crossAxisCount: 4,
+      body: SingleChildScrollView(
+        child: Padding(
+          padding: EdgeInsets.fromLTRB(sidePadding, 50, sidePadding, 50),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Padding(
+                padding: const EdgeInsets.fromLTRB(35, 25, 8, 8),
+                child: Text(
+                  "Commodities (24h)",
+                  style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 24,
+                      fontWeight: FontWeight.bold),
+                ),
               ),
-              shrinkWrap: true,
-              itemBuilder: (context, index) {
-                var priceDiff;
-                var lastPrice = lastPrices[index];
-                var firstPrice = firstPrices[index];
-                priceDiff = lastPrice - firstPrice;
-                return GestureDetector(
-                  onTap: () {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (BuildContext cntx) =>
-                                MyTabBar(vegetables[index], lastPrice.toString( ), data[index])));
-                  },
-                  child: Card(
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(10.0)),
-                    elevation: 2,
-                    child: Container(
-                      height: 100,
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Padding(
-                            padding: const EdgeInsets.fromLTRB(20, 10, 20, 10),
-                            child: Text(
-                              vegetables[index],
-                              style: TextStyle(
-                                color: Colors.black,
-                                fontSize: 24,
-                              ),
-                            ),
-                          ),
-                          Flexible(
-                            flex: 3,
-                            child: SfCartesianChart(
-                                primaryXAxis: CategoryAxis(
-                                    title: AxisTitle(
-                                        text: 'Time',
-                                        textStyle: TextStyle(fontSize: 12))),
-                                primaryYAxis: NumericAxis(
-                                    title: AxisTitle(
-                                        text: 'Price',
-                                        textStyle: TextStyle(fontSize: 12))),
-                                tooltipBehavior: TooltipBehavior(enable: false),
-                                series: <ChartSeries<PriceData, dynamic>>[
-                                  LineSeries<PriceData, String>(
-                                    dataSource: data[index],
-                                    xValueMapper: (PriceData sales, _) =>
-                                        sales.time,
-                                    yValueMapper: (PriceData sales, _) =>
-                                        sales.value,
-                                  )
-                                ]),
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.only(left: 20),
-                            child: Text(
-                              lastPrice.toString() + " €",
-                              style: TextStyle(
-                                  color: Colors.black,
-                                  fontSize: 24,
-                                  fontWeight: FontWeight.bold),
-                            ),
-                          ),
-                          Flexible(
-                            flex: 1,
-                            child: Padding(
-                              padding:
-                                  const EdgeInsets.fromLTRB(20, 10, 20, 10),
-                              child: Row(
-                                children: [
-                                  Text(
-                                    priceDiff >= 0
-                                        ? "+ $priceDiff €"
-                                        : "$priceDiff €",
+              Padding(
+                padding: const EdgeInsets.all(35.0),
+                child: Container(
+                  child: GridView.builder(
+                    itemCount: vegetables.length,
+                    gridDelegate:
+                        const SliverGridDelegateWithFixedCrossAxisCount(
+                      crossAxisCount: 4,
+                    ),
+                    shrinkWrap: true,
+                    itemBuilder: (context, index) {
+                      var priceDiff;
+                      var lastPrice = lastPrices[index];
+                      var firstPrice = firstPrices[index];
+                      priceDiff = lastPrice - firstPrice;
+                      return GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (BuildContext cntx) => MyTabBar(
+                                      vegetables[index],
+                                      lastPrice.toString(),
+                                      data[index])));
+                        },
+                        child: Card(
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(10.0)),
+                          elevation: 2,
+                          child: Container(
+                            height: 100,
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Padding(
+                                  padding:
+                                      const EdgeInsets.fromLTRB(20, 20, 20, 10),
+                                  child: Text(
+                                    vegetables[index],
                                     style: TextStyle(
-                                      color: priceDiff >= 0
-                                          ? Colors.green
-                                          : Colors.red,
-                                      fontSize: 12,
+                                      color: Colors.black,
+                                      fontSize: 24,
                                     ),
                                   ),
-                                  Icon(
-                                    priceDiff >= 0
-                                        ? Icons.keyboard_arrow_up
-                                        : Icons.keyboard_arrow_down,
-                                    color: priceDiff >= 0
-                                        ? Colors.green
-                                        : Colors.red,
+                                ),
+                                Flexible(
+                                  flex: 3,
+                                  child: SfCartesianChart(
+                                      primaryXAxis: CategoryAxis(
+                                          title: AxisTitle(
+                                              text: 'Time',
+                                              textStyle:
+                                                  TextStyle(fontSize: 12))),
+                                      primaryYAxis: NumericAxis(
+                                          title: AxisTitle(
+                                              text: 'Price',
+                                              textStyle:
+                                                  TextStyle(fontSize: 12))),
+                                      tooltipBehavior:
+                                          TooltipBehavior(enable: false),
+                                      series: <ChartSeries<PriceData, dynamic>>[
+                                        LineSeries<PriceData, String>(
+                                          dataSource: data[index],
+                                          xValueMapper: (PriceData sales, _) =>
+                                              sales.time,
+                                          yValueMapper: (PriceData sales, _) =>
+                                              sales.value,
+                                        )
+                                      ]),
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.only(left: 20),
+                                  child: Text(
+                                    lastPrice.toString() + " €",
+                                    style: TextStyle(
+                                        color: Colors.black,
+                                        fontSize: 24,
+                                        fontWeight: FontWeight.bold),
                                   ),
-                                ],
-                              ),
+                                ),
+                                Flexible(
+                                  flex: 1,
+                                  child: Padding(
+                                    padding: const EdgeInsets.fromLTRB(
+                                        20, 10, 20, 0),
+                                    child: Row(
+                                      children: [
+                                        Text(
+                                          priceDiff >= 0
+                                              ? "+ $priceDiff €"
+                                              : "$priceDiff €",
+                                          style: TextStyle(
+                                            color: priceDiff >= 0
+                                                ? Colors.green
+                                                : Colors.red,
+                                            fontSize: 12,
+                                          ),
+                                        ),
+                                        Icon(
+                                          priceDiff >= 0
+                                              ? Icons.keyboard_arrow_up
+                                              : Icons.keyboard_arrow_down,
+                                          color: priceDiff >= 0
+                                              ? Colors.green
+                                              : Colors.red,
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                              ],
                             ),
                           ),
-                        ],
-                      ),
-                    ),
+                        ),
+                      );
+                    },
                   ),
-                );
-              },
-            ),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(top: 10, bottom: 10),
+                child: Container(
+                  width: MediaQuery.of(context).size.width,
+                  height: 1,
+                  color: Colors.grey[300],
+                ),
+              ),
+              buildMyPortfolio()
+            ],
           ),
-          Padding(
-            padding: const EdgeInsets.only(top: 10, bottom: 10),
-            child: Container(
-              width: MediaQuery.of(context).size.width,
-              height: 1,
-              color: Colors.grey[300],
-            ),
-          ),
-          buildMyPortfolio()
-        ],
+        ),
       ),
     );
   }
 
   buildMyPortfolio() {
-    return Flexible(
+    return Container(
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -380,28 +407,25 @@ class _HomePageState extends State<HomePage> {
                   fontWeight: FontWeight.bold),
             ),
           ),
-          Flexible(
-            flex: 3,
-            child: Padding(
-              padding: const EdgeInsets.only(right: 35.0, left: 20),
-              child: Container(
-                height: 300,
-                child: SfCartesianChart(
-                    primaryXAxis: CategoryAxis(
-                        title: AxisTitle(
-                            text: 'Time', textStyle: TextStyle(fontSize: 12))),
-                    primaryYAxis: NumericAxis(
-                        title: AxisTitle(
-                            text: 'Price', textStyle: TextStyle(fontSize: 12))),
-                    tooltipBehavior: TooltipBehavior(enable: false),
-                    series: <ChartSeries<PriceData, dynamic>>[
-                      LineSeries<PriceData, String>(
-                        dataSource: totalData,
-                        xValueMapper: (PriceData sales, _) => sales.time,
-                        yValueMapper: (PriceData sales, _) => sales.value,
-                      )
-                    ]),
-              ),
+          Padding(
+            padding: const EdgeInsets.only(right: 35.0, left: 20),
+            child: Container(
+              height: 300,
+              child: SfCartesianChart(
+                  primaryXAxis: CategoryAxis(
+                      title: AxisTitle(
+                          text: 'Time', textStyle: TextStyle(fontSize: 12))),
+                  primaryYAxis: NumericAxis(
+                      title: AxisTitle(
+                          text: 'Price', textStyle: TextStyle(fontSize: 12))),
+                  tooltipBehavior: TooltipBehavior(enable: false),
+                  series: <ChartSeries<PriceData, dynamic>>[
+                    LineSeries<PriceData, String>(
+                      dataSource: totalData,
+                      xValueMapper: (PriceData sales, _) => sales.time,
+                      yValueMapper: (PriceData sales, _) => sales.value,
+                    )
+                  ]),
             ),
           ),
         ],
