@@ -17,6 +17,7 @@ func OnLoad() {
 	exports.AddFunc(FuncInit, funcInitThunk)
 	exports.AddFunc(FuncSetCrop, funcSetCropThunk)
 	exports.AddFunc(FuncSetOwner, funcSetOwnerThunk)
+	exports.AddFunc(FuncSetWalletAmount, funcSetWalletAmountThunk)
 	exports.AddFunc(FuncViewGetMyWallets, funcViewGetMyWalletsThunk)
 	exports.AddFunc(FuncViewGetOrders, funcViewGetOrdersThunk)
 	exports.AddView(ViewGetCrops, viewGetCropsThunk)
@@ -140,6 +141,32 @@ func funcSetOwnerThunk(ctx wasmlib.ScFuncContext) {
 	ctx.Require(f.Params.Owner().Exists(), "missing mandatory owner")
 	funcSetOwner(ctx, f)
 	ctx.Log("alphainterface2.funcSetOwner ok")
+}
+
+type SetWalletAmountContext struct {
+	Params ImmutableSetWalletAmountParams
+	State  Mutablealphainterface2State
+}
+
+func funcSetWalletAmountThunk(ctx wasmlib.ScFuncContext) {
+	ctx.Log("alphainterface2.funcSetWalletAmount")
+	// current owner of this smart contract
+	access := ctx.State().GetAgentID(wasmlib.Key("owner"))
+	ctx.Require(access.Exists(), "access not set: owner")
+	ctx.Require(ctx.Caller() == access.Value(), "no permission")
+
+	f := &SetWalletAmountContext{
+		Params: ImmutableSetWalletAmountParams{
+			id: wasmlib.OBJ_ID_PARAMS,
+		},
+		State: Mutablealphainterface2State{
+			id: wasmlib.OBJ_ID_STATE,
+		},
+	}
+	ctx.Require(f.Params.Amount().Exists(), "missing mandatory amount")
+	ctx.Require(f.Params.WalletIdx().Exists(), "missing mandatory walletIdx")
+	funcSetWalletAmount(ctx, f)
+	ctx.Log("alphainterface2.funcSetWalletAmount ok")
 }
 
 type ViewGetMyWalletsContext struct {

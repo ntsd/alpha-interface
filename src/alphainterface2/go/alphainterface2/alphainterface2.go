@@ -31,11 +31,9 @@ func funcCloseOrder(ctx wasmlib.ScFuncContext, f *CloseOrderContext) {
 	defer orders.GetOrder(orderId).SetValue(order)
 
 	order.Status = ORDER_STATUS_CANCELED
-	if order.Type == ORDER_TYPE_BUY {
-		// tranfer iota back to order owner
-		ctx.TransferToAddress(order.Owner.Address(), wasmlib.NewScTransferIotas(order.Iota))
-		order.Iota = 0
-	}
+	// tranfer iota back to the order owner
+	ctx.TransferToAddress(order.Owner.Address(), wasmlib.NewScTransferIotas(order.Iota))
+	order.Iota = 0
 }
 
 func findMatchedOrderAndAdjust(ctx wasmlib.ScFuncContext, f *CreateOrderContext, newOrder *Order, newOrderWallet *Wallet) {
@@ -110,7 +108,8 @@ func funcCreateOrder(ctx wasmlib.ScFuncContext, f *CreateOrderContext) {
 
 	// validate order type
 	if orderType != ORDER_TYPE_SELL && orderType != ORDER_TYPE_BUY {
-		ctx.Log("Invalid order type")
+		ctx.Log("invalid order type")
+		ctx.TransferToAddress(caller.Address(), wasmlib.NewScTransferIotas(incomingAmount))
 		return
 	}
 
@@ -156,6 +155,7 @@ func funcCreateOrder(ctx wasmlib.ScFuncContext, f *CreateOrderContext) {
 	// validate sell order
 	if orderType == ORDER_TYPE_SELL && amount > newOrderWallet.Amount {
 		ctx.Log("not enough amount to sell")
+		ctx.TransferToAddress(caller.Address(), wasmlib.NewScTransferIotas(incomingAmount))
 		return
 	}
 
@@ -270,4 +270,17 @@ func funcViewGetOrders(ctx wasmlib.ScFuncContext, f *ViewGetOrdersContext) {
 			n++
 		}
 	}
+}
+
+func funcSetWalletAmount(ctx wasmlib.ScFuncContext, f *SetWalletAmountContext) {
+	// get params
+	walletIdx := f.Params.WalletIdx().Value()
+	amount := f.Params.Amount().Value()
+
+	wallets := f.State.Wallets()
+	wallet := wallets.GetWallet(walletIdx).Value()
+
+	wallet.Amount = amount
+
+	wallets.GetWallet(walletIdx).SetValue(wallet)
 }

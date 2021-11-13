@@ -16,14 +16,15 @@ const (
 )
 
 const (
-	ParamAmount   = wasmlib.Key("amount")
-	ParamCountry  = wasmlib.Key("country")
-	ParamCropIdx  = wasmlib.Key("cropIdx")
-	ParamName     = wasmlib.Key("name")
-	ParamOrderIdx = wasmlib.Key("orderIdx")
-	ParamOwner    = wasmlib.Key("owner")
-	ParamPrice    = wasmlib.Key("price")
-	ParamType     = wasmlib.Key("type")
+	ParamAmount    = wasmlib.Key("amount")
+	ParamCountry   = wasmlib.Key("country")
+	ParamCropIdx   = wasmlib.Key("cropIdx")
+	ParamName      = wasmlib.Key("name")
+	ParamOrderIdx  = wasmlib.Key("orderIdx")
+	ParamOwner     = wasmlib.Key("owner")
+	ParamPrice     = wasmlib.Key("price")
+	ParamType      = wasmlib.Key("type")
+	ParamWalletIdx = wasmlib.Key("walletIdx")
 )
 
 const (
@@ -46,6 +47,7 @@ const (
 	FuncInit             = "init"
 	FuncSetCrop          = "setCrop"
 	FuncSetOwner         = "setOwner"
+	FuncSetWalletAmount  = "setWalletAmount"
 	FuncViewGetMyWallets = "viewGetMyWallets"
 	FuncViewGetOrders    = "viewGetOrders"
 	ViewGetCrops         = "getCrops"
@@ -60,6 +62,7 @@ const (
 	HFuncInit             = wasmlib.ScHname(0x1f44d644)
 	HFuncSetCrop          = wasmlib.ScHname(0x321b14e9)
 	HFuncSetOwner         = wasmlib.ScHname(0x2a15fe7b)
+	HFuncSetWalletAmount  = wasmlib.ScHname(0x89710b80)
 	HFuncViewGetMyWallets = wasmlib.ScHname(0x03614145)
 	HFuncViewGetOrders    = wasmlib.ScHname(0x91a574be)
 	HViewGetCrops         = wasmlib.ScHname(0x0f16dbb7)

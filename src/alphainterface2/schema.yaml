@@ -54,6 +54,11 @@ funcs:
   viewGetOrders:
     results:
       orders: Order[]
+  setWalletAmount:
+    access: owner // current owner of this smart contract
+    params:
+      walletIdx: Int32 // wallet id
+      amount: Int64 // amount to set
 views:
   getWallets:
     results:

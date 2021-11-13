@@ -10,25 +10,26 @@ package alphainterface2
 import "github.com/iotaledger/wasp/packages/vm/wasmlib/go/wasmlib"
 
 const (
-	IdxParamAmount   = 0
-	IdxParamCountry  = 1
-	IdxParamCropIdx  = 2
-	IdxParamName     = 3
-	IdxParamOrderIdx = 4
-	IdxParamOwner    = 5
-	IdxParamPrice    = 6
-	IdxParamType     = 7
-	IdxResultCrops   = 8
-	IdxResultOrders  = 9
-	IdxResultOwner   = 10
-	IdxResultWallets = 11
-	IdxStateCrops    = 12
-	IdxStateOrders   = 13
-	IdxStateOwner    = 14
-	IdxStateWallets  = 15
+	IdxParamAmount    = 0
+	IdxParamCountry   = 1
+	IdxParamCropIdx   = 2
+	IdxParamName      = 3
+	IdxParamOrderIdx  = 4
+	IdxParamOwner     = 5
+	IdxParamPrice     = 6
+	IdxParamType      = 7
+	IdxParamWalletIdx = 8
+	IdxResultCrops    = 9
+	IdxResultOrders   = 10
+	IdxResultOwner    = 11
+	IdxResultWallets  = 12
+	IdxStateCrops     = 13
+	IdxStateOrders    = 14
+	IdxStateOwner     = 15
+	IdxStateWallets   = 16
 )
 
-const keyMapLen = 16
+const keyMapLen = 17
 
 var keyMap = [keyMapLen]wasmlib.Key{
 	ParamAmount,
@@ -39,6 +40,7 @@ var keyMap = [keyMapLen]wasmlib.Key{
 	ParamOwner,
 	ParamPrice,
 	ParamType,
+	ParamWalletIdx,
 	ResultCrops,
 	ResultOrders,
 	ResultOwner,

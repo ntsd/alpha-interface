@@ -34,6 +34,11 @@ type SetOwnerCall struct {
 	Params MutableSetOwnerParams
 }
 
+type SetWalletAmountCall struct {
+	Func   *wasmlib.ScFunc
+	Params MutableSetWalletAmountParams
+}
+
 type ViewGetMyWalletsCall struct {
 	Func    *wasmlib.ScFunc
 	Results ImmutableViewGetMyWalletsResults
@@ -94,6 +99,12 @@ func (sc Funcs) SetCrop(ctx wasmlib.ScFuncCallContext) *SetCropCall {
 
 func (sc Funcs) SetOwner(ctx wasmlib.ScFuncCallContext) *SetOwnerCall {
 	f := &SetOwnerCall{Func: wasmlib.NewScFunc(ctx, HScName, HFuncSetOwner)}
+	f.Func.SetPtrs(&f.Params.id, nil)
+	return f
+}
+
+func (sc Funcs) SetWalletAmount(ctx wasmlib.ScFuncCallContext) *SetWalletAmountCall {
+	f := &SetWalletAmountCall{Func: wasmlib.NewScFunc(ctx, HScName, HFuncSetWalletAmount)}
 	f.Func.SetPtrs(&f.Params.id, nil)
 	return f
 }

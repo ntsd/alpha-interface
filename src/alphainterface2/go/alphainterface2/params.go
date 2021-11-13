@@ -119,3 +119,27 @@ type MutableSetOwnerParams struct {
 func (s MutableSetOwnerParams) Owner() wasmlib.ScMutableAgentID {
 	return wasmlib.NewScMutableAgentID(s.id, idxMap[IdxParamOwner])
 }
+
+type ImmutableSetWalletAmountParams struct {
+	id int32
+}
+
+func (s ImmutableSetWalletAmountParams) Amount() wasmlib.ScImmutableInt64 {
+	return wasmlib.NewScImmutableInt64(s.id, idxMap[IdxParamAmount])
+}
+
+func (s ImmutableSetWalletAmountParams) WalletIdx() wasmlib.ScImmutableInt32 {
+	return wasmlib.NewScImmutableInt32(s.id, idxMap[IdxParamWalletIdx])
+}
+
+type MutableSetWalletAmountParams struct {
+	id int32
+}
+
+func (s MutableSetWalletAmountParams) Amount() wasmlib.ScMutableInt64 {
+	return wasmlib.NewScMutableInt64(s.id, idxMap[IdxParamAmount])
+}
+
+func (s MutableSetWalletAmountParams) WalletIdx() wasmlib.ScMutableInt32 {
+	return wasmlib.NewScMutableInt32(s.id, idxMap[IdxParamWalletIdx])
+}
