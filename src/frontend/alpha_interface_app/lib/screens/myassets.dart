@@ -1,34 +1,22 @@
 import 'dart:math';
 
 import 'package:alpha_interface_app/model/yield.dart';
-import 'package:alpha_interface_app/screens/myassets.dart';
-import 'package:alpha_interface_app/screens/futures.dart';
-import 'package:alpha_interface_app/screens/tabBarScreen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:syncfusion_flutter_charts/charts.dart';
 
-class HomePage extends StatefulWidget {
+class MyAssets extends StatefulWidget {
   final String title;
   final String name;
-  HomePage(this.title, this.name);
+  MyAssets(this.title, this.name);
 
   @override
-  _HomePageState createState() => _HomePageState();
+  _MyAssetsState createState() => _MyAssetsState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _MyAssetsState extends State<MyAssets> {
   List<Yield> yields = [];
-  List<String> vegetables = [
-    "Wheat",
-    "Barely",
-    "Maize",
-    "Potatoes",
-    "Tomatoes",
-    "Strawberry",
-    "Onions",
-    "Banana"
-  ];
+  List<String> vegetables = ["Potatoes", "Tomatoes", "Strawberry", "Banana"];
   List<List<PriceData>> data = [];
   List<PriceData> totalData = [];
   List<int> firstPrices = [];
@@ -86,13 +74,22 @@ class _HomePageState extends State<HomePage> {
       map.forEach((map) {
         map.forEach((key, value) {
           if (value == i.toString()) {
-            total += key;
+            total = key + total;
           }
         });
       });
-      PriceData newData = PriceData(total, i.toString());
-      totalData.add(newData);
+      if (total != 0) {
+        PriceData newData = PriceData(total, i.toString());
+        totalData.add(newData);
+      }
     }
+    var total = 0;
+    lastPrices.forEach((element) {
+      total = element + total;
+    });
+
+    PriceData newData = PriceData(total, "25");
+    totalData.add(newData);
   }
 
   @override
@@ -100,106 +97,6 @@ class _HomePageState extends State<HomePage> {
     var sidePadding = MediaQuery.of(context).size.width / 6;
     return Scaffold(
       appBar: AppBar(),
-      drawer: Drawer(
-        child: ListView(
-          // Important: Remove any padding from the ListView.
-          padding: EdgeInsets.zero,
-          children: [
-            DrawerHeader(
-              decoration: BoxDecoration(
-                color: Colors.red,
-              ),
-              child: Padding(
-                padding: const EdgeInsets.only(top: 15.0, bottom: 15),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      children: [
-                        Icon(
-                          Icons.account_circle_outlined,
-                          size: 40,
-                          color: Colors.white,
-                        ),
-                        SizedBox(
-                          width: 20,
-                        ),
-                        Text(
-                          widget.name,
-                          style: TextStyle(
-                            fontSize: 24,
-                            color: Colors.white,
-                          ),
-                        ),
-                      ],
-                    ),
-                    SizedBox(
-                      height: 20,
-                    ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      children: [
-                        Icon(
-                          Icons.account_balance_wallet_outlined,
-                          size: 40,
-                          color: Colors.white,
-                        ),
-                        SizedBox(
-                          width: 20,
-                        ),
-                        Text(
-                          "10000 IOTA",
-                          style: TextStyle(
-                            fontSize: 24,
-                            color: Colors.white,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ],
-                ),
-              ),
-            ),
-            ListTile(
-              title: Container(
-                height: 50,
-                child: Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text(
-                        'My Assets',
-                        style: TextStyle(
-                          fontSize: 24,
-                          color: Colors.white,
-                        ),
-                      ),
-                      SizedBox(
-                        width: 10,
-                      ),
-                      Icon(
-                        Icons.keyboard_arrow_right_outlined,
-                        color: Colors.white,
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-              onTap: () {
-                Navigator.pop(context);
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (BuildContext cntx) => MyAssets(widget.title, widget.name),
-                  ),
-                );
-              },
-            ),
-          ],
-        ),
-      ),
       body: SingleChildScrollView(
         child: Padding(
           padding: EdgeInsets.fromLTRB(sidePadding, 50, sidePadding, 50),
@@ -209,7 +106,7 @@ class _HomePageState extends State<HomePage> {
               Padding(
                 padding: const EdgeInsets.fromLTRB(35, 25, 8, 8),
                 child: Text(
-                  "Commodities (24h)",
+                  "My Assets (24h)",
                   style: TextStyle(
                       color: Colors.black,
                       fontSize: 24,
@@ -232,15 +129,7 @@ class _HomePageState extends State<HomePage> {
                       var firstPrice = firstPrices[index];
                       priceDiff = lastPrice - firstPrice;
                       return GestureDetector(
-                        onTap: () {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (BuildContext cntx) => MyTabBar(
-                                      vegetables[index],
-                                      lastPrice.toString(),
-                                      data[index])));
-                        },
+                        onTap: () {},
                         child: Card(
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(10.0)),
@@ -343,9 +232,61 @@ class _HomePageState extends State<HomePage> {
                   color: Colors.grey[300],
                 ),
               ),
+              buildMyPortfolio()
             ],
           ),
         ),
+      ),
+    );
+  }
+
+  buildMyPortfolio() {
+    return Container(
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Padding(
+            padding: const EdgeInsets.fromLTRB(35, 35, 20, 10),
+            child: Text(
+              "My Portfolio (24h)",
+              style: TextStyle(
+                color: Colors.black,
+                fontSize: 24,
+              ),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.fromLTRB(35, 10, 35, 10),
+            child: Text(
+              totalnewPrice.toString() + " €",
+              style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 35,
+                  fontWeight: FontWeight.bold),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(right: 35.0, left: 20),
+            child: Container(
+              height: 300,
+              child: SfCartesianChart(
+                  primaryXAxis: CategoryAxis(
+                      title: AxisTitle(
+                          text: 'Time', textStyle: TextStyle(fontSize: 12))),
+                  primaryYAxis: NumericAxis(
+                      title: AxisTitle(
+                          text: 'Price', textStyle: TextStyle(fontSize: 12))),
+                  tooltipBehavior: TooltipBehavior(enable: true, header: ""),
+                  series: <ChartSeries<PriceData, dynamic>>[
+                    LineSeries<PriceData, String>(
+                      dataSource: totalData,
+                      xValueMapper: (PriceData sales, _) => sales.time,
+                      yValueMapper: (PriceData sales, _) => sales.value,
+                    )
+                  ]),
+            ),
+          ),
+        ],
       ),
     );
   }
